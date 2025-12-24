@@ -1,4 +1,5 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom"
+import * as React from "react"
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -27,6 +28,10 @@ import {
   SmileyWinkIcon,
 } from "@phosphor-icons/react"
 
+import { useAuth } from "@/hooks/useAuth"
+
+const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000"
+
 function Background() {
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
@@ -43,6 +48,7 @@ type NavItem = {
   match?: "exact" | "prefix"
   icon: React.ReactNode
 }
+
 const NAV_ITEMS: NavItem[] = [
   { label: "Dashboard", to: "/dashboard", match: "exact", icon: <HouseIcon /> },
   {
@@ -77,7 +83,72 @@ function useIsActive(to: string, match: NavItem["match"] = "prefix") {
   return pathname === to || pathname.startsWith(to + "/")
 }
 
-function AppSidebar() {
+type User =
+  | null
+  | { authenticated: false }
+  | {
+      authenticated: true
+      twitch_user_id: string
+      login: string
+      display_name: string
+      profile_image_url: string | null
+    }
+
+function UserBadge({
+  user,
+  loading,
+}: {
+  user: User
+  loading: boolean
+}) {
+  const isAuthed = !!user && user.authenticated
+
+  const displayName = loading
+    ? "Loading..."
+    : isAuthed
+      ? user.display_name
+      : "Not signed in"
+
+  const handle = loading ? "" : isAuthed ? `@${user.login}` : ""
+
+  const avatarUrl = isAuthed ? user.profile_image_url : null
+  const initial =
+    isAuthed && user.display_name ? user.display_name.slice(0, 1).toUpperCase() : "?"
+
+  return (
+    <div className="flex items-center gap-2 px-2 py-1">
+      <div className="bg-muted size-8 shrink-0 overflow-hidden rounded-full ring-1 ring-border">
+        {avatarUrl ? (
+          <img
+            src={avatarUrl}
+            alt={displayName}
+            className="h-full w-full object-cover"
+            referrerPolicy="no-referrer"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center text-xs font-medium">
+            {initial}
+          </div>
+        )}
+      </div>
+
+      <div className="min-w-0 group-data-[collapsible=icon]:hidden">
+        <div className="truncate text-sm font-medium">{displayName}</div>
+        <div className="text-muted-foreground truncate text-xs">{handle}</div>
+      </div>
+    </div>
+  )
+}
+
+function AppSidebar({
+  user,
+  loading,
+  onSignOut,
+}: {
+  user: User
+  loading: boolean
+  onSignOut: () => void
+}) {
   return (
     <Sidebar variant="inset" collapsible="icon">
       <SidebarHeader>
@@ -85,9 +156,7 @@ function AppSidebar() {
           <span className="group-data-[collapsible=icon]:hidden">
             Streamers Edge
           </span>
-          <span className="hidden group-data-[collapsible=icon]:inline">
-            SE
-          </span>
+          <span className="hidden group-data-[collapsible=icon]:inline">SE</span>
         </div>
       </SidebarHeader>
 
@@ -100,7 +169,6 @@ function AppSidebar() {
             <SidebarMenu>
               {NAV_ITEMS.map((item) => {
                 const isActive = useIsActive(item.to, item.match)
-
                 return (
                   <SidebarMenuItem key={item.to}>
                     <SidebarMenuButton
@@ -122,10 +190,12 @@ function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter>
-        <Button variant="ghost" className="justify-start">
-          Sign out
-        </Button>
+      <SidebarSeparator />
+
+      <SidebarFooter className="gap-2">
+        <UserBadge user={user} loading={loading} />
+
+        
       </SidebarFooter>
 
       <SidebarRail />
@@ -134,17 +204,40 @@ function AppSidebar() {
 }
 
 export default function DashboardLayout() {
+  const navigate = useNavigate()
+  const { user, loading } = useAuth()
+
+  React.useEffect(() => {
+    if (!loading && (!user || user.authenticated === false)) {
+      navigate("/", { replace: true })
+    }
+  }, [loading, user, navigate])
+
+  const onSignOut = React.useCallback(async () => {
+    await fetch(`${API_URL}/auth/logout`, {
+      method: "POST",
+      credentials: "include",
+    })
+    navigate("/", { replace: true })
+  }, [navigate])
+
+  // Prevent a flash of dashboard content while auth is loading / redirecting
+  if (loading) return null
+  if (!user || user.authenticated === false) return null
+
   return (
     <SidebarProvider defaultOpen>
       <Background />
 
-      <AppSidebar />
+      <AppSidebar user={user} loading={loading} onSignOut={onSignOut} />
 
       <SidebarInset>
         <header className="flex items-center gap-2 px-10 py-6">
           <SidebarTrigger />
           <div className="flex-1" />
-          <Button variant="ghost">Sign out</Button>
+          <Button variant="ghost" onClick={onSignOut}>
+            Sign out
+          </Button>
         </header>
 
         <main className="px-10 pb-10">

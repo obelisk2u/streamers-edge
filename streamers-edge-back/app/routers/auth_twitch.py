@@ -2,14 +2,15 @@ import secrets
 from urllib.parse import urlencode
 
 import httpx
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from starlette.responses import RedirectResponse
+from fastapi import Response
+
 
 from app.core.config import settings
 
 router = APIRouter()
 
-# MVP-only in-memory state store (replace with Redis later)
 _OAUTH_STATE = set()
 
 TWITCH_AUTHORIZE_URL = "https://id.twitch.tv/oauth2/authorize"
@@ -26,7 +27,6 @@ def twitch_start():
         "client_id": settings.TWITCH_CLIENT_ID,
         "redirect_uri": settings.TWITCH_REDIRECT_URI,
         "response_type": "code",
-        # Keep scopes minimal at first. Add "user:read:email" only if you need email.
         "scope": "",
         "state": state,
     }
@@ -40,7 +40,6 @@ async def twitch_callback(code: str | None = None, state: str | None = None):
     _OAUTH_STATE.discard(state)
 
     async with httpx.AsyncClient(timeout=20) as client:
-        # 1) Exchange code -> token
         token_resp = await client.post(
             TWITCH_TOKEN_URL,
             data={
@@ -54,10 +53,8 @@ async def twitch_callback(code: str | None = None, state: str | None = None):
         if token_resp.status_code != 200:
             raise HTTPException(status_code=400, detail=f"Token exchange failed: {token_resp.text}")
 
-        token = token_resp.json()
-        access_token = token["access_token"]
+        access_token = token_resp.json()["access_token"]
 
-        # 2) Fetch user identity
         user_resp = await client.get(
             TWITCH_HELIX_USERS_URL,
             headers={
@@ -76,11 +73,8 @@ async def twitch_callback(code: str | None = None, state: str | None = None):
         twitch_user_id = me["id"]
         twitch_login = me["login"]
         display_name = me.get("display_name", twitch_login)
-
-    # MVP session cookie payload:
-    # Production: store server-side session and set cookie to opaque session id.
-    session_value = f"{twitch_user_id}:{twitch_login}:{display_name}"
-
+    profile_image_url = me.get("profile_image_url")
+    session_value = f"{twitch_user_id}:{twitch_login}:{display_name}:{profile_image_url}"
     resp = RedirectResponse(f"{settings.FRONTEND_URL}/dashboard")
     resp.set_cookie(
         key=settings.SESSION_COOKIE_NAME,
@@ -95,29 +89,30 @@ async def twitch_callback(code: str | None = None, state: str | None = None):
 
 
 @router.post("/auth/logout")
-def logout():
-    resp = RedirectResponse(settings.FRONTEND_URL + "/")
-    resp.delete_cookie(key=settings.SESSION_COOKIE_NAME, path="/")
-    return resp
+def logout(response: Response):
+    response.delete_cookie(key=settings.SESSION_COOKIE_NAME, path="/")
+    return {"ok": True}
 
 
 @router.get("/me")
-def me(request):
+def me(request: Request):
     raw = request.cookies.get(settings.SESSION_COOKIE_NAME)
     if not raw:
         return {"authenticated": False}
 
-    parts = raw.split(":", 2)
-    if len(parts) < 2:
+    parts = raw.split(":", 3)
+    if len(parts) < 3:
         return {"authenticated": False}
 
     twitch_user_id = parts[0]
-    twitch_login = parts[1]
-    display_name = parts[2] if len(parts) == 3 else twitch_login
+    login = parts[1]
+    display_name = parts[2]
+    profile_image_url = parts[3] if len(parts) == 4 else None
 
     return {
         "authenticated": True,
         "twitch_user_id": twitch_user_id,
-        "login": twitch_login,
+        "login": login,
         "display_name": display_name,
+        "profile_image_url": profile_image_url,
     }
