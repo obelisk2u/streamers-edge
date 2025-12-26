@@ -1,0 +1,20 @@
+data_root: /mnt/sata/SSD1TB/twitch
+
+streams:
+  channels:
+    - supertf
+    - hasanabi
+    - xqc
+    - ludwig
+    - emongg
+    - pge4
+
+helix:
+  poll_seconds: 60
+  batch_size: 100
+
+irc:
+  server: irc.chat.twitch.tv
+  port: 6697
+  use_tls: true
+  join_delay_s: 1.2
