@@ -2,11 +2,6 @@ Phase 1: Solid MVP frontend (what users see)
 
 Goal: clickable, coherent product shell.
 
-Authentication / access
-	•	Replace “Request access” email form with “Sign in with Twitch” button
-	•	Button can be a stub for now (just console.log("oauth"))
-	•	Remove email-only access flow (it’s a distraction)
-
 Pages (finish, don’t perfect)
 	•	Dashboard Home
 	•	Metrics only
