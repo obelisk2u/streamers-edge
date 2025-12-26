@@ -1,6 +1,5 @@
 from __future__ import annotations
 import argparse
-import os
 import sys
 import time
 from typing import Dict
@@ -19,9 +18,7 @@ def main() -> int:
     ap.add_argument("--config", required=True, help="Path to config.yaml")
     args = ap.parse_args()
 
-    # load .env from cwd or alongside config
     load_dotenv()
-
     cfg = load_config(args.config)
 
     storage = Storage(cfg.data_root)
@@ -29,13 +26,12 @@ def main() -> int:
 
     helix = HelixClient.from_env()
 
-    active_streams: Dict[str, ActiveStream] = {}  # channel -> stream session
+    active_streams: Dict[str, ActiveStream] = {}
 
     def on_privmsg(evt: Dict) -> None:
         ch = evt["channel"]
         stream = active_streams.get(ch)
         if not stream:
-            # chat arrived before we opened stream (rare); ignore
             return
         storage.append_chat(stream, evt)
 
@@ -49,13 +45,11 @@ def main() -> int:
     print(f"[boot] data_root={cfg.data_root}")
     print(f"[boot] tracking {len(cfg.streams.channels)} channels")
 
-    # connect once; reconnect logic is simple: if it dies, exit with nonzero for now
     irc.connect()
     print("[irc] connected")
 
     try:
         while True:
-            # poll helix for live status
             try:
                 live: Dict[str, StreamInfo] = helix.get_live_streams(
                     cfg.streams.channels,
@@ -69,14 +63,12 @@ def main() -> int:
             live_set = set(live.keys())
             active_set = set(active_streams.keys())
 
-            # channels that just went live
             went_live = sorted(live_set - active_set)
-            # channels that just went offline
             went_offline = sorted(active_set - live_set)
 
+            # 1) Handle newly live channels
             for ch in went_live:
                 info = live[ch]
-                # open per-stream session directory based on Helix started_at
                 stream = storage.open_stream({
                     "channel": ch,
                     "user_id": info.user_id,
@@ -87,39 +79,46 @@ def main() -> int:
                 })
                 active_streams[ch] = stream
 
-                # join IRC
                 irc.join(ch)
                 time.sleep(cfg.irc.join_delay_s)
 
+                # initial snapshot
+                storage.append_snapshot(stream, {
+                    "timestamp_utc": utc_now_iso(),
+                    "channel": ch,
+                    "started_at": stream.started_at,
+                    "viewer_count": info.viewer_count,
+                    "title": info.title,
+                    "game_name": info.game_name,
+                })
+
                 print(f"[live] {ch} started_at={info.started_at} title={info.title!r}")
 
-     
-                poll_ts = utc_now_iso()
-                for ch in sorted(live_set & active_set):
-                    info = live[ch]
-                    stream = active_streams[ch]
+            # 2) Update + snapshot for channels still live (every poll)
+            poll_ts = utc_now_iso()
+            for ch in sorted(live_set & set(active_streams.keys())):
+                info = live[ch]
+                stream = active_streams[ch]
 
-                    # keep some fields fresh in memory (final meta will reflect latest)
-                    stream.title = info.title
-                    stream.game_name = info.game_name
-                    stream.viewer_count = info.viewer_count
+                stream.title = info.title
+                stream.game_name = info.game_name
+                stream.viewer_count = info.viewer_count
 
-                    # append snapshot (time series)
-                    storage.append_snapshot(stream, {
-                        "timestamp_utc": poll_ts,
-                        "channel": ch,
-                        "started_at": stream.started_at,
-                        "viewer_count": info.viewer_count,
-                        "title": info.title,
-                        "game_name": info.game_name,
-                    })
+                storage.append_snapshot(stream, {
+                    "timestamp_utc": poll_ts,
+                    "channel": ch,
+                    "started_at": stream.started_at,
+                    "viewer_count": info.viewer_count,
+                    "title": info.title,
+                    "game_name": info.game_name,
+                })
 
+            # 3) Handle channels that went offline
             for ch in went_offline:
                 stream = active_streams.pop(ch, None)
                 if not stream:
                     continue
 
-                # part IRC, close files, write meta
                 irc.part(ch)
                 ended_at = utc_now_iso()
                 storage.close_stream(stream, ended_at=ended_at)
@@ -130,7 +129,6 @@ def main() -> int:
     except KeyboardInterrupt:
         print("\n[shutdown] ctrl-c")
     finally:
-        # close all active streams
         ended_at = utc_now_iso()
         for ch, stream in list(active_streams.items()):
             try:
