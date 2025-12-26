@@ -29,7 +29,7 @@ function MetricCard({
 }
 
 export default function VibeCheckPage() {
-  const hasData = false // flip later
+  const hasData = true // flip later
 
   return (
     <div className="max-w-7xl space-y-6">
@@ -76,26 +76,6 @@ export default function VibeCheckPage() {
           }
         />
       </div>
-
-      {/* Mood timeline placeholder */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Mood over time</CardTitle>
-          <CardDescription>
-            How chat sentiment shifted throughout the stream.
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="text-muted-foreground text-sm">
-          {hasData ? (
-            <div>TODO: sentiment timeline chart</div>
-          ) : (
-            <div>
-              A sentiment-over-time chart will appear here once chat messages
-              are analyzed.
-            </div>
-          )}
-        </CardContent>
-      </Card>
 
       {/* Standout chatters */}
       <Card>

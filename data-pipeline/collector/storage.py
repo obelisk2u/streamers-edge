@@ -15,10 +15,14 @@ class ActiveStream:
     title: str
     game_name: str
     viewer_count: int
+
     stream_dir: Path
     chat_path: Path
     meta_path: Path
+    snapshots_path: Path
+
     chat_fh: object
+    snapshots_fh: object
 
 
 class Storage:
@@ -27,7 +31,6 @@ class Storage:
 
     def ensure_root(self) -> None:
         self.data_root.mkdir(parents=True, exist_ok=True)
-        # quick write test
         test = self.data_root / ".write_test"
         test.write_text("ok\n", encoding="utf-8")
         test.unlink(missing_ok=True)
@@ -38,9 +41,6 @@ class Storage:
         return self.data_root / "raw_chat" / f"channel={ch}" / f"stream={st}"
 
     def open_stream(self, info: Dict) -> ActiveStream:
-        """
-        info keys: channel, started_at, user_id, title, game_name, viewer_count
-        """
         channel = info["channel"]
         started_at = info["started_at"]
 
@@ -48,9 +48,12 @@ class Storage:
         sdir.mkdir(parents=True, exist_ok=True)
 
         chat_path = sdir / "chat.jsonl"
+        snapshots_path = sdir / "stream_snapshots.jsonl"
         meta_path = sdir / "meta.json"
 
-        fh = chat_path.open("a", encoding="utf-8", buffering=1)  # line-buffered
+        # Line-buffered so each \n flushes, without fsync per line
+        chat_fh = chat_path.open("a", encoding="utf-8", buffering=1)
+        snapshots_fh = snapshots_path.open("a", encoding="utf-8", buffering=1)
 
         meta = {
             "channel": channel,
@@ -73,16 +76,29 @@ class Storage:
             stream_dir=sdir,
             chat_path=chat_path,
             meta_path=meta_path,
-            chat_fh=fh,
+            snapshots_path=snapshots_path,
+            chat_fh=chat_fh,
+            snapshots_fh=snapshots_fh,
         )
 
     def append_chat(self, stream: ActiveStream, evt: Dict) -> None:
         stream.chat_fh.write(json.dumps(evt, ensure_ascii=False) + "\n")
 
+    def append_snapshot(self, stream: ActiveStream, snap: Dict) -> None:
+        stream.snapshots_fh.write(json.dumps(snap, ensure_ascii=False) + "\n")
+
     def close_stream(self, stream: ActiveStream, ended_at: str, last_meta: Optional[Dict] = None) -> None:
+        # Close chat
         try:
             stream.chat_fh.flush()
             stream.chat_fh.close()
+        except Exception:
+            pass
+
+        # Close snapshots
+        try:
+            stream.snapshots_fh.flush()
+            stream.snapshots_fh.close()
         except Exception:
             pass
 

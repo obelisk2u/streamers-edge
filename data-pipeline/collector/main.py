@@ -93,14 +93,26 @@ def main() -> int:
 
                 print(f"[live] {ch} started_at={info.started_at} title={info.title!r}")
 
-            # update metadata for channels still live (lightweight)
-            for ch in sorted(live_set & active_set):
-                info = live[ch]
-                stream = active_streams[ch]
-                # keep some fields fresh in memory (final meta will reflect latest)
-                stream.title = info.title
-                stream.game_name = info.game_name
-                stream.viewer_count = info.viewer_count
+     
+                poll_ts = utc_now_iso()
+                for ch in sorted(live_set & active_set):
+                    info = live[ch]
+                    stream = active_streams[ch]
+
+                    # keep some fields fresh in memory (final meta will reflect latest)
+                    stream.title = info.title
+                    stream.game_name = info.game_name
+                    stream.viewer_count = info.viewer_count
+
+                    # append snapshot (time series)
+                    storage.append_snapshot(stream, {
+                        "timestamp_utc": poll_ts,
+                        "channel": ch,
+                        "started_at": stream.started_at,
+                        "viewer_count": info.viewer_count,
+                        "title": info.title,
+                        "game_name": info.game_name,
+                    })
 
             for ch in went_offline:
                 stream = active_streams.pop(ch, None)

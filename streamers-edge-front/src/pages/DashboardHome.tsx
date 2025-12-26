@@ -47,7 +47,7 @@ export default function DashboardHome() {
   // Later: persist this in query params or localStorage if you want.
   const [range, setRange] = React.useState<RangeKey>("last_stream")
 
-  const hasData = false // wire to backend later
+  const hasData = true // wire to backend later
 
   return (
     <div className="max-w-7xl space-y-6">
@@ -64,27 +64,39 @@ export default function DashboardHome() {
           <div className="bg-muted/40 flex rounded-xl border p-1">
             <Button
               size="sm"
-              variant={range === "last_stream" ? "secondary" : "ghost"}
+              variant="ghost"
               onClick={() => setRange("last_stream")}
-              className="px-3"
+              className={
+                range === "last_stream"
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "text-muted-foreground hover:text-foreground"
+              }
             >
               Last stream
             </Button>
 
             <Button
               size="sm"
-              variant={range === "past_week" ? "secondary" : "ghost"}
+              variant="ghost"
               onClick={() => setRange("past_week")}
-              className="px-3"
+              className={
+                range === "past_week"
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "text-muted-foreground hover:text-foreground"
+              }
             >
               Past week
             </Button>
 
             <Button
               size="sm"
-              variant={range === "past_month" ? "secondary" : "ghost"}
+              variant="ghost"
               onClick={() => setRange("past_month")}
-              className="px-3"
+              className={
+                range === "past_month"
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "text-muted-foreground hover:text-foreground"
+              }
             >
               Past month
             </Button>
@@ -95,7 +107,7 @@ export default function DashboardHome() {
       {/* Core metrics */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <StatCard
-          title="Streams analyzed"
+          title="Unique chatters"
           value={hasData ? "3" : "—"}
           subtitle={
             hasData

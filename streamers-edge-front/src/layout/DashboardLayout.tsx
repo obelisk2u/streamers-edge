@@ -51,30 +51,10 @@ type NavItem = {
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Dashboard", to: "/dashboard", match: "exact", icon: <HouseIcon /> },
-  {
-    label: "Streams",
-    to: "/dashboard/streams",
-    match: "prefix",
-    icon: <FilmStripIcon />,
-  },
-  {
-    label: "Chat MVPs",
-    to: "/dashboard/vibe-check",
-    match: "prefix",
-    icon: <SmileyWinkIcon />,
-  },
-  {
-    label: "Reports",
-    to: "/dashboard/reports",
-    match: "prefix",
-    icon: <FileTextIcon />,
-  },
-  {
-    label: "Deep Insights",
-    to: "/dashboard/insights",
-    match: "prefix",
-    icon: <ChartLineUpIcon />,
-  },
+  { label: "Streams", to: "/dashboard/streams", match: "prefix", icon: <FilmStripIcon /> },
+  { label: "Chat MVPs", to: "/dashboard/vibe-check", match: "prefix", icon: <SmileyWinkIcon /> },
+  { label: "Reports", to: "/dashboard/reports", match: "prefix", icon: <FileTextIcon /> },
+  { label: "Deep Insights", to: "/dashboard/insights", match: "prefix", icon: <ChartLineUpIcon /> },
 ]
 
 function useIsActive(to: string, match: NavItem["match"] = "prefix") {
@@ -94,22 +74,11 @@ type User =
       profile_image_url: string | null
     }
 
-function UserBadge({
-  user,
-  loading,
-}: {
-  user: User
-  loading: boolean
-}) {
+function UserBadge({ user, loading }: { user: User; loading: boolean }) {
   const isAuthed = !!user && user.authenticated
 
-  const displayName = loading
-    ? "Loading..."
-    : isAuthed
-      ? user.display_name
-      : "Not signed in"
-
-  const handle = loading ? "" : isAuthed ? `@${user.login}` : ""
+  const displayName = loading ? "Loading..." : isAuthed ? user.display_name : "Not signed in"
+  const handle = loading ? "" : isAuthed ? `@${"supertf"}` : ""
 
   const avatarUrl = isAuthed ? user.profile_image_url : null
   const initial =
@@ -143,19 +112,15 @@ function UserBadge({
 function AppSidebar({
   user,
   loading,
-  onSignOut,
 }: {
   user: User
   loading: boolean
-  onSignOut: () => void
 }) {
   return (
     <Sidebar variant="inset" collapsible="icon">
       <SidebarHeader>
         <div className="px-2 py-2 text-sm font-semibold tracking-tight">
-          <span className="group-data-[collapsible=icon]:hidden">
-            Streamers Edge
-          </span>
+          <span className="group-data-[collapsible=icon]:hidden">Streamers Edge</span>
           <span className="hidden group-data-[collapsible=icon]:inline">SE</span>
         </div>
       </SidebarHeader>
@@ -171,16 +136,9 @@ function AppSidebar({
                 const isActive = useIsActive(item.to, item.match)
                 return (
                   <SidebarMenuItem key={item.to}>
-                    <SidebarMenuButton
-                      isActive={isActive}
-                      render={<NavLink to={item.to} />}
-                    >
-                      <span className="shrink-0 [&>svg]:size-4">
-                        {item.icon}
-                      </span>
-                      <span className="group-data-[collapsible=icon]:hidden">
-                        {item.label}
-                      </span>
+                    <SidebarMenuButton isActive={isActive} render={<NavLink to={item.to} />}>
+                      <span className="shrink-0 [&>svg]:size-4">{item.icon}</span>
+                      <span className="group-data-[collapsible=icon]:hidden">{item.label}</span>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 )
@@ -194,8 +152,6 @@ function AppSidebar({
 
       <SidebarFooter className="gap-2">
         <UserBadge user={user} loading={loading} />
-
-        
       </SidebarFooter>
 
       <SidebarRail />
@@ -203,9 +159,28 @@ function AppSidebar({
   )
 }
 
+function ChatPanel({ channel }: { channel: string }) {
+  const parent = window.location.hostname
+  const src = `https://www.twitch.tv/embed/supertf/chat?parent=${parent}&darkpopout`
+
+  return (
+    <div className="flex h-full flex-col overflow-hidden rounded-2xl border bg-card">
+      <div className="flex items-center justify-between border-b px-3 py-2">
+        <div className="text-sm font-medium">Live chat</div>
+        <div className="text-xs text-muted-foreground">@{channel}</div>
+      </div>
+
+      <iframe title="Twitch chat" src={src} className="h-full w-full" frameBorder={0} />
+    </div>
+  )
+}
+
 export default function DashboardLayout() {
   const navigate = useNavigate()
   const { user, loading } = useAuth()
+
+  // hooks must be above returns
+  const [chatOpen, setChatOpen] = React.useState(true)
 
   React.useEffect(() => {
     if (!loading && (!user || user.authenticated === false)) {
@@ -214,35 +189,49 @@ export default function DashboardLayout() {
   }, [loading, user, navigate])
 
   const onSignOut = React.useCallback(async () => {
-    await fetch(`${API_URL}/auth/logout`, {
-      method: "POST",
-      credentials: "include",
-    })
+    await fetch(`${API_URL}/auth/logout`, { method: "POST", credentials: "include" })
     navigate("/", { replace: true })
   }, [navigate])
 
-  // Prevent a flash of dashboard content while auth is loading / redirecting
   if (loading) return null
   if (!user || user.authenticated === false) return null
+
+  const channel = user.login // or "supertf" for testing
 
   return (
     <SidebarProvider defaultOpen>
       <Background />
-
-      <AppSidebar user={user} loading={loading} onSignOut={onSignOut} />
+      <AppSidebar user={user} loading={loading} />
 
       <SidebarInset>
-        <header className="flex items-center gap-2 px-10 py-6">
-          <SidebarTrigger />
-          <div className="flex-1" />
-          <Button variant="ghost" onClick={onSignOut}>
-            Sign out
-          </Button>
-        </header>
+        <div className={["grid min-h-screen", chatOpen ? "lg:grid-cols-[1fr_420px]" : "lg:grid-cols-1"].join(" ")}>
+          <div>
+            <header className="flex items-center gap-2 px-10 py-6">
+              <SidebarTrigger />
+              <div className="flex-1" />
 
-        <main className="px-10 pb-10">
-          <Outlet />
-        </main>
+              <Button variant="outline" size="sm" onClick={() => setChatOpen((v) => !v)}>
+                {chatOpen ? "Hide chat" : "Show chat"}
+              </Button>
+
+              <Button variant="ghost" onClick={onSignOut}>
+                Sign out
+              </Button>
+            </header>
+
+            <main className="px-10 pb-10">
+              <Outlet />
+            </main>
+          </div>
+
+          {chatOpen ? (
+            <aside className="hidden lg:block border-l bg-background/40 p-4">
+              <div className="h-[calc(100vh-32px)]">
+                <ChatPanel channel={channel} />
+              </div>
+            </aside>
+          ) : null}
+        </div>
       </SidebarInset>
     </SidebarProvider>
   )
