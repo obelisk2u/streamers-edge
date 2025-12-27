@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 320 64"
+     preserveAspectRatio="xMinYMid meet">
+  <!-- Icon -->
+  <g fill="" transform="translate(0,8)">
+    <rect x="0"  y="4" width="30" height="45" rx="0" />
+    <rect x="35" y="4" width="10" height="45" rx="0" />
+  </g>
+
+  <!-- Text -->
+  <g fill="currentColor" transform="translate(112,0)">
+    <text x="-60" y="26"
+      font-family="Inter, Space Grotesk, system-ui, -apple-system, Segoe UI, sans-serif"
+      font-size="20"
+      font-weight="450"
+      letter-spacing="-0.01em">
+      streamers
+    </text>
+    <text x="-60" y="56"
+      font-family="Inter, Space Grotesk, system-ui, -apple-system, Segoe UI, sans-serif"
+      font-size="30"
+      font-weight="650"
+      letter-spacing="-0.015em">
+      edge
+    </text>
+  </g>
+</svg>

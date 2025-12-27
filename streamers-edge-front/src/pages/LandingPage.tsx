@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import logo from "@/assets/logo_horizontal_white.svg"
 
 function Background() {
   return (
@@ -52,7 +53,11 @@ export default function LandingPage() {
       {/* Top nav */}
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
         <div className="flex items-center gap-3">
-          <div className="text-sm font-semibold tracking-tight">Streamers Edge</div>
+          <img
+            src={logo}
+            alt="Streamers Edge"
+            className="h-6 w-auto"
+          />
           <Badge variant="secondary" className="text-[11px]">
             Beta
           </Badge>

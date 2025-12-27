@@ -65,12 +65,14 @@ export default function DashboardHome() {
             <Button
               size="sm"
               variant="ghost"
+              aria-pressed={range === "last_stream"}
               onClick={() => setRange("last_stream")}
-              className={
-                range === "last_stream"
-                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                  : "text-muted-foreground hover:text-foreground"
-              }
+              className={[
+                "px-3",
+                "text-muted-foreground hover:text-foreground",
+                "aria-pressed:bg-primary aria-pressed:text-primary-foreground",
+                "aria-pressed:hover:bg-primary/90",
+              ].join(" ")}
             >
               Last stream
             </Button>
@@ -78,12 +80,14 @@ export default function DashboardHome() {
             <Button
               size="sm"
               variant="ghost"
+              aria-pressed={range === "past_week"}
               onClick={() => setRange("past_week")}
-              className={
-                range === "past_week"
-                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                  : "text-muted-foreground hover:text-foreground"
-              }
+              className={[
+                "px-3",
+                "text-muted-foreground hover:text-foreground",
+                "aria-pressed:bg-primary aria-pressed:text-primary-foreground",
+                "aria-pressed:hover:bg-primary/90",
+              ].join(" ")}
             >
               Past week
             </Button>
@@ -91,12 +95,14 @@ export default function DashboardHome() {
             <Button
               size="sm"
               variant="ghost"
+              aria-pressed={range === "past_month"}
               onClick={() => setRange("past_month")}
-              className={
-                range === "past_month"
-                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                  : "text-muted-foreground hover:text-foreground"
-              }
+              className={[
+                "px-3",
+                "text-muted-foreground hover:text-foreground",
+                "aria-pressed:bg-primary aria-pressed:text-primary-foreground",
+                "aria-pressed:hover:bg-primary/90",
+              ].join(" ")}
             >
               Past month
             </Button>
