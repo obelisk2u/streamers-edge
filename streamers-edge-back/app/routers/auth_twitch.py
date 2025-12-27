@@ -73,19 +73,21 @@ async def twitch_callback(code: str | None = None, state: str | None = None):
         twitch_user_id = me["id"]
         twitch_login = me["login"]
         display_name = me.get("display_name", twitch_login)
-    profile_image_url = me.get("profile_image_url")
-    session_value = f"{twitch_user_id}:{twitch_login}:{display_name}:{profile_image_url}"
-    resp = RedirectResponse(f"{settings.FRONTEND_URL}/dashboard")
-    resp.set_cookie(
-        key=settings.SESSION_COOKIE_NAME,
-        value=session_value,
-        httponly=True,
-        secure=settings.COOKIE_SECURE,
-        samesite=settings.COOKIE_SAMESITE,
-        max_age=60 * 60 * 24 * 7,
-        path="/",
-    )
-    return resp
+        profile_image_url = me.get("profile_image_url") or ""
+
+        session_value = f"{twitch_user_id}:{twitch_login}:{display_name}:{profile_image_url}"
+
+        resp = RedirectResponse(f"{settings.FRONTEND_URL}/app", status_code=302)
+        resp.set_cookie(
+            key=settings.SESSION_COOKIE_NAME,
+            value=session_value,
+            httponly=True,
+            secure=settings.COOKIE_SECURE,
+            samesite=settings.COOKIE_SAMESITE,
+            max_age=60 * 60 * 24 * 7,
+            path="/",
+        )
+        return resp
 
 
 @router.post("/auth/logout")
@@ -107,7 +109,7 @@ def me(request: Request):
     twitch_user_id = parts[0]
     login = parts[1]
     display_name = parts[2]
-    profile_image_url = parts[3] if len(parts) == 4 else None
+    profile_image_url = parts[3] if len(parts) == 4 and parts[3] else None
 
     return {
         "authenticated": True,

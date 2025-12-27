@@ -50,11 +50,11 @@ type NavItem = {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Dashboard", to: "/dashboard", match: "exact", icon: <HouseIcon /> },
-  { label: "Streams", to: "/dashboard/streams", match: "prefix", icon: <FilmStripIcon /> },
-  { label: "Chat MVPs", to: "/dashboard/vibe-check", match: "prefix", icon: <SmileyWinkIcon /> },
-  { label: "Reports", to: "/dashboard/reports", match: "prefix", icon: <FileTextIcon /> },
-  { label: "Deep Insights", to: "/dashboard/insights", match: "prefix", icon: <ChartLineUpIcon /> },
+  { label: "Dashboard", to: "/app", match: "exact", icon: <HouseIcon /> },
+  { label: "Streams", to: "/app/streams", match: "prefix", icon: <FilmStripIcon /> },
+  { label: "Insights", to: "/app/insights", match: "prefix", icon: <ChartLineUpIcon /> },
+  { label: "Reports", to: "/app/reports", match: "prefix", icon: <FileTextIcon /> },
+  { label: "Live Chat", to: "/app/livechat", match: "prefix", icon: <SmileyWinkIcon /> },
 ]
 
 function useIsActive(to: string, match: NavItem["match"] = "prefix") {
@@ -184,13 +184,13 @@ export default function DashboardLayout() {
 
   React.useEffect(() => {
     if (!loading && (!user || user.authenticated === false)) {
-      navigate("/", { replace: true })
+      navigate("/login", { replace: true })
     }
   }, [loading, user, navigate])
 
   const onSignOut = React.useCallback(async () => {
     await fetch(`${API_URL}/auth/logout`, { method: "POST", credentials: "include" })
-    navigate("/", { replace: true })
+    navigate("/login", { replace: true })
   }, [navigate])
 
   if (loading) return null
