@@ -44,7 +44,7 @@ export default function LoginPage() {
 
   const onWaitlist = () => {
     if (!waitlistEmail || !waitlistTwitch) return
-    console.log("Request access:", {
+    console.log("Book a demo:", {
       twitch: waitlistTwitch,
       email: waitlistEmail,
     })
@@ -91,7 +91,7 @@ export default function LoginPage() {
                 <AlertDialogTrigger
                   render={
                     <Button variant="outline" className="px-6">
-                      Request access
+                      Book a demo
                     </Button>
                   }
                 />

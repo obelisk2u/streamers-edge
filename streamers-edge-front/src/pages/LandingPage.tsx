@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 
 function Background() {
   return (
@@ -14,27 +12,39 @@ function Background() {
     </div>
   )
 }
-
-function Feature({
-  title,
-  description,
+function Stat({
+  value,
+  label,
 }: {
-  title: string
-  description: string
+  value: string
+  label: string
 }) {
   return (
-    <Card className="border bg-card/60 backdrop-blur-sm">
-      <CardContent className="p-5">
-        <div className="text-sm font-semibold tracking-tight">{title}</div>
-        <div className="text-muted-foreground mt-2 text-sm leading-relaxed">
-          {description}
-        </div>
-      </CardContent>
-    </Card>
+    <div className="relative overflow-hidden rounded-2xl border bg-card/55 px-5 py-4 backdrop-blur-sm">
+      <div className="pointer-events-none absolute -top-10 right-[-60px] h-28 w-28 rounded-full bg-indigo-500/10 blur-2xl" />
+      <div className="text-2xl font-semibold tracking-tight">{value}</div>
+      <div className="text-muted-foreground mt-1 text-xs leading-relaxed">
+        {label}
+      </div>
+    </div>
+  )
+}
+
+function StatsStrip() {
+  return (
+    <div className="mx-auto mt-10 w-full max-w-3xl">
+      <div className="grid gap-3 sm:grid-cols-3">
+        <Stat value="20+" label="creators worked with" />
+        <Stat value="12M" label="chat messages processed" />
+        <Stat value="2,000+" label="hours of stream audio analyzed" />
+      </div>
+    </div>
   )
 }
 
 export default function LandingPage() {
+  const navigate = useNavigate()
+
   return (
     <div className="min-h-screen">
       <Background />
@@ -48,139 +58,61 @@ export default function LandingPage() {
           </Badge>
         </div>
 
-        <div className="flex items-center gap-2">
-          <Button asChild variant="ghost" size="sm">
-            <Link to="/portal">Login</Link>
-          </Button>
-        </div>
+        <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
+          Portal
+        </Button>
       </header>
 
       {/* Hero */}
-      <main className="mx-auto w-full max-w-6xl px-6 pb-16">
-        <section className="grid gap-10 py-10 lg:grid-cols-12 lg:items-center">
-          <div className="lg:col-span-7">
-            <div className="space-y-5">
-              <Badge variant="secondary" className="w-fit">
-                Creator analytics platform
-              </Badge>
-
-              <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-                Professional analytics for stream performance.
-              </h1>
-
-              <p className="text-muted-foreground max-w-xl text-base leading-relaxed">
-                Streamers Edge turns your streams into structured insights: what happened,
-                when it mattered, and what to do next. Built for creators who want
-                repeatable improvement, not gimmicks.
-              </p>
-
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Link to="/login">
-                    <Button size="lg">
-                    Go to login portal
-                    </Button>
-                </Link>
-
-                <Button size="lg" variant="outline" asChild={false}>
-                    <a href="#product">See what you get</a>
-                </Button>
-                </div>
-              </div>
-
-              <div className="text-muted-foreground text-xs">
-                Secure sign-in via Twitch. No passwords stored.
-              </div>
-            </div>
+      <main className="mx-auto flex w-full max-w-6xl flex-col px-6 pb-16">
+        <section className="mx-auto flex w-full max-w-3xl flex-1 flex-col justify-center py-16 text-center">
+          <div className="flex justify-center">
+            <Badge variant="secondary" className="w-fit">
+              Data-driven growth for Twitch
+            </Badge>
           </div>
 
-          <div className="lg:col-span-5">
-            <Card className="border bg-card/60 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <div className="text-sm font-semibold tracking-tight">
-                  What this replaces
-                </div>
-                <div className="text-muted-foreground mt-2 text-sm leading-relaxed">
-                  Manual VOD scrubbing, guessing why engagement dropped, and relying
-                  on memory. You get a clear readout of the stream with metrics and
-                  annotated moments.
-                </div>
+          <h1 className="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
+            Modernize your growth strategy
+          </h1>
 
-                <Separator className="my-5" />
+          <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-base leading-relaxed">
+            Turns your stream data into personalized insights on what drives engagement, improves audience retention, and helps you grow your stream.
+          </p>
 
-                <div className="grid gap-3 text-sm">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="text-muted-foreground">Stream summary</div>
-                    <div className="font-medium">Auto-generated</div>
-                  </div>
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="text-muted-foreground">Key moments</div>
-                    <div className="font-medium">Detected + timestamped</div>
-                  </div>
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="text-muted-foreground">Trend tracking</div>
-                    <div className="font-medium">Week / month views</div>
-                  </div>
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="text-muted-foreground">Access</div>
-                    <div className="font-medium">Streamer portal</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <Button size="lg" onClick={() => navigate("/login")}>
+              Go to portal
+            </Button>
+
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => {
+                document.getElementById("details")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }}
+            >
+              How it works
+            </Button>
+          </div>
+
+          <div className="text-muted-foreground mt-4 text-xs">
+            Secure sign-in via Twitch. No passwords stored.
           </div>
         </section>
+        <StatsStrip />
 
-        {/* Features */}
-        <section id="product" className="py-10">
-          <div className="mb-6">
-            <div className="text-sm font-semibold tracking-tight">Product</div>
-            <p className="text-muted-foreground mt-1 max-w-2xl text-sm">
-              A focused set of tools that answer the questions streamers actually have.
-            </p>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Feature
-              title="Executive summary"
-              description="One page you can trust: the stream’s outcomes, notable segments, and the few metrics that explain the story."
-            />
-            <Feature
-              title="Moments that matter"
-              description="Automatically identify spikes, dips, and standout segments so you can review fast and clip intelligently."
-            />
-            <Feature
-              title="Trend views"
-              description="Compare last stream vs week vs month to see if changes are consistent or just noise."
-            />
-            <Feature
-              title="Reports"
-              description="Exportable reports designed for decisions: content planning, pacing, and stream format tuning."
-            />
-            <Feature
-              title="Streamer-first privacy"
-              description="Access is scoped to the streamer account. Authentication is handled via Twitch."
-            />
-            <Feature
-              title="Built for iteration"
-              description="Clear baselines and deltas so you can test changes and see whether they actually worked."
-            />
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="mt-8 border-t pt-8">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <footer className="mt-10 flex flex-col gap-3 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="text-muted-foreground text-xs">
               © {new Date().getFullYear()} Streamers Edge. All rights reserved.
             </div>
-            <div className="flex items-center gap-2">
-                <Button variant="ghost" size="sm">
-                <a href="/portal">Login</a>
-                </Button>
-            </div>
-          </div>
-        </footer>
+            <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
+              Portal
+            </Button>
+          </footer>
       </main>
     </div>
   )
