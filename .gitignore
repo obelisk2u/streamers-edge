@@ -10,15 +10,15 @@ Thumbs.db
 
 .idea/
 *.swp
-
 ################################
 # Frontend (Vite / React)
 ################################
-streamers-edge-front/node_modules/
-streamers-edge-front/dist/
-streamers-edge-front/.env
-streamers-edge-front/.env.local
-streamers-edge-front/.env.*.local
+complex-streamers-edge-front/node_modules/
+complex-streamers-edge-front/dist/
+complex-streamers-edge-front/.env
+complex-streamers-edge-front/.env.local
+complex-streamers-edge-front/.env.*.local
+complex-streamers-edge-front/
 
 npm-debug.log*
 yarn-debug.log*
