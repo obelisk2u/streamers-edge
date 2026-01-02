@@ -1,6 +1,24 @@
 {
   "positive": [
     {
+      "username": "shodandbg",
+      "message": "I'm so happy I tuned to the stream at the right time! I love Kingdom Hearts! <3",
+      "label": "positive",
+      "score": 0.993610680103302
+    },
+    {
+      "username": "JippyL",
+      "message": "Wow, this game is so much fun! I can't wait to hop on with all my friends after watching this fantastic SuperTF Broadcast! (Chat sponsored by NetEase Games)",
+      "label": "positive",
+      "score": 0.9935641884803772
+    },
+    {
+      "username": "BasimZB",
+      "message": "Cheer100 Cheer100 Cheer100  Sounds great! Thank you! Have a great stream!",
+      "label": "positive",
+      "score": 0.9935471415519714
+    },
+    {
       "username": "hypnofruit",
       "message": "wow you look so handsome today again! cant wait to watch you win this game cuz ur so good at deadlock ^-^",
       "label": "positive",
@@ -13,114 +31,96 @@
       "score": 0.9932912588119507
     },
     {
+      "username": "draginofungus",
+      "message": "so excited for funger 2, one of my favorite games ever, gnight chat n super <3",
+      "label": "positive",
+      "score": 0.9932712912559509
+    },
+    {
       "username": "rwettti",
       "message": "just got to 47 min in the chainsaw man movie. its so wholesome!! cant wait to see more tomorrow",
       "label": "positive",
       "score": 0.9931679368019104
     },
     {
-      "username": "999aige",
-      "message": "bvffy omg so soon!!! have fun in philly ^-^ happy early bday",
+      "username": "hypnofruit",
+      "message": "wow supertf u look so handsome today i hope you have an amazing stream ^-^",
       "label": "positive",
-      "score": 0.9929388761520386
+      "score": 0.9931650757789612
     },
     {
-      "username": "fynnster48",
-      "message": "Free YAAAY happy new years eve my king YAAAY I hope that 2026 is a great year for you :3",
+      "username": "FrogChest",
+      "message": "i Absolutely love Marvel Rivals! So much! Cant wait to watch my favorite streamer Supertf Play this awesome game!!!!",
       "label": "positive",
-      "score": 0.9928967356681824
+      "score": 0.9931173324584961
     },
     {
-      "username": "fynnster48",
-      "message": "frogsssssssssss YAAAY and that is perfectly great <3 so im glad to hear",
+      "username": "katycaat",
+      "message": "hi @supertf looking cute and handsome today, hope you have a great day!!! <3 <3 <3",
       "label": "positive",
-      "score": 0.9927182197570801
-    },
-    {
-      "username": "animewetspot",
-      "message": "@Temmietem_ HAPPY NEW YEARS moon2CUTE hope you have the best year of ur life!",
-      "label": "positive",
-      "score": 0.9926120638847351
-    },
-    {
-      "username": "itshidy",
-      "message": "omg you just reminded me my favorite leader at work got engaged and it made me so happy cause him and his fiancee are the BEST",
-      "label": "positive",
-      "score": 0.9925325512886047
-    },
-    {
-      "username": "aeverlis",
-      "message": "omg i love GTA !! so glad to see u play it",
-      "label": "positive",
-      "score": 0.9924577474594116
-    },
-    {
-      "username": "one_cool_mom",
-      "message": "I LOVE THE SUPERTF STREAM HAPPY NEW YEAR EVERYBODY",
-      "label": "positive",
-      "score": 0.9924221634864807
+      "score": 0.993035078048706
     }
   ],
   "negative": [
     {
-      "username": "pieismyfav",
-      "message": "you ruined my day by playing this poopoo ass game",
+      "username": "mrbuttersk3t",
+      "message": "just had popeyes for the first time, it was fucking dogshit, why do people like that shit @supertf",
       "label": "negative",
-      "score": 0.9839805960655212
+      "score": 0.9850026965141296
     },
     {
-      "username": "teccon",
-      "message": "@hakeasucks both games are fucking trash FreeSpeech e33 sucks and so does DS1 & 2",
+      "username": "Gilky92",
+      "message": "this might be the SHITTIEST game i've ever seen in my fucking life. who defends this garbage?",
       "label": "negative",
-      "score": 0.9833765625953674
+      "score": 0.9845321774482727
     },
     {
-      "username": "gnolle0",
-      "message": "omgBruh i dont wanna watch this shitty ass game",
+      "username": "quantumop",
+      "message": "@WHITEWOMANTHREE that movie is fucking soul crushing jesus christ, i'm not even the target audience of it and it FUCKED ME UP",
       "label": "negative",
-      "score": 0.9832192063331604
+      "score": 0.9845227003097534
     },
     {
-      "username": "96mashi",
-      "message": "Once again fucking stop with that shit ass song",
+      "username": "ThatLaggyPerson",
+      "message": "\"this is the worst fucking piece of chicken ive ever eaten. its hot, has no flavour, expensive. 5.2\"",
       "label": "negative",
-      "score": 0.9831129908561707
+      "score": 0.984375536441803
     },
     {
-      "username": "bluetshirtguy",
-      "message": "Alex Jones is such a fuck ass hateful person",
+      "username": "mutha3li",
+      "message": "emote extensions suck so much ass why they stop working every 10 min what the hell is wrong with them",
       "label": "negative",
-      "score": 0.9831110239028931
+      "score": 0.9842215776443481
     },
     {
-      "username": "issac1222",
-      "message": "OMEGALUL this game is so fucking shit",
+      "username": "soma_pupp",
+      "message": "im so tired of this fuck ass country bro, brain hurts from hearing any news omgbruh",
       "label": "negative",
-      "score": 0.9830785393714905
+      "score": 0.9840344190597534
     },
     {
-      "username": "hpdw1",
-      "message": "this book sucks so much ass irl",
+      "username": "BuffPachimari",
+      "message": "i fucking hated it, every single radio station played this dogshit song 24/7",
       "label": "negative",
-      "score": 0.9828139543533325
+      "score": 0.9839328527450562
     },
     {
-      "username": "genj1ma1n38",
-      "message": "Went to watch stranger things finale at the theater, that shit was so ass",
+      "username": "shady_basement",
+      "message": "@supertf i gave cane's a third attempt today and why the fuck is it so bland that place sucks",
       "label": "negative",
-      "score": 0.9828104972839355
+      "score": 0.9839173555374146
     },
     {
-      "username": "mellowmic",
-      "message": "this game is so ass OMEGALUL",
+      "username": "BWAAP",
+      "message": "its so fucking dumb that everything i love has gone to shit cause of this orange fucking troglodyte in office",
       "label": "negative",
-      "score": 0.9828076362609863
+      "score": 0.9839099049568176
     },
     {
-      "username": "lwisecarver",
-      "message": "@mauroh__ this guy actually pisses me off what the fuck is he doing wasting his fucking glass canon stacks",
+      "username": "Aaron_buh",
+      "message": "@smello_vision and i have a horrid experience this game fuckin sucks",
       "label": "negative",
-      "score": 0.9826996326446533
+      "score": 0.9838903546333313
     }
   ]
 }

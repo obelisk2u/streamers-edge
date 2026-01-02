@@ -26,10 +26,6 @@ type StreamExtreme = {
 
 type StreamExtremesCardProps = {
   data: StreamExtreme[];
-  metadata?: Record<
-    string,
-    { title?: string | null; date?: string | null; category?: string | null }
-  >;
 };
 
 function formatDate(value?: string | null) {
@@ -59,7 +55,7 @@ function formatStreamDate(streamId: string) {
   });
 }
 
-export function StreamExtremesCard({ data, metadata }: StreamExtremesCardProps) {
+export function StreamExtremesCard({ data }: StreamExtremesCardProps) {
   return (
     <Card className="bg-white/80 backdrop-blur">
       <CardHeader>
@@ -72,29 +68,22 @@ export function StreamExtremesCard({ data, metadata }: StreamExtremesCardProps) 
       <CardContent className="space-y-6">
         {data.length ? (
           <div className="space-y-5">
-            {data.map((entry) => {
-              const meta = metadata?.[entry.stream];
-              return (
-                <div
-                  key={entry.stream}
-                  className="rounded-xl border border-black/5 bg-white p-4"
-                >
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <div>
-                      <p className="text-sm font-medium">
-                        {meta?.title || formatStreamDate(entry.stream)}
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        {formatDate(entry.started_at)} —{" "}
-                        {formatDate(entry.ended_at)}
-                      </p>
-                      {meta?.category ? (
-                        <p className="text-xs text-muted-foreground">
-                          {meta.category}
-                        </p>
-                      ) : null}
-                    </div>
+            {data.map((entry) => (
+              <div
+                key={entry.stream}
+                className="rounded-xl border border-black/5 bg-white p-4"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <p className="text-sm font-medium">
+                      VOD ID: {entry.stream}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {formatDate(entry.started_at)} —{" "}
+                      {formatDate(entry.ended_at)}
+                    </p>
                   </div>
+                </div>
 
                 <div className="mt-4 grid gap-4 md:grid-cols-2">
                   <div className="space-y-3 rounded-lg border border-black/5 bg-white p-3">
@@ -147,9 +136,8 @@ export function StreamExtremesCard({ data, metadata }: StreamExtremesCardProps) 
                     )}
                   </div>
                 </div>
-                </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         ) : (
           <p className="text-sm text-muted-foreground">

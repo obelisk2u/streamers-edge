@@ -26,6 +26,7 @@ import { GithubIcon } from "lucide-react";
 import { SentimentLineChart } from "@/components/sentiment-line-chart";
 import { ModeratorSentimentCard } from "@/components/moderator-sentiment-card";
 import { StreamExtremesCard } from "@/components/stream-extremes-card";
+import { SentimentBarChart } from "@/components/sentiment-bar-chart";
 
 const DATA_DIR = path.join(process.cwd(), "public", "data");
 
@@ -49,7 +50,8 @@ export default async function Page() {
     topMentions,
     moderatorSentiment,
     streamExtremes,
-    streamMetadata,
+    chatCount,
+    sentimentCounts,
   ] = await Promise.all([
     loadJson<Array<{ label: string; chatters: number; percent: number }>>(
       "chatter_distribution.json"
@@ -115,29 +117,24 @@ export default async function Page() {
         } | null;
       }>
     >("stream_extreme_sentiment.json"),
-    loadJson<
-      Array<{
-        stream: string;
-        date?: string | null;
-        title?: string | null;
-        category?: string | null;
-      }>
-    >("stream_metadata.json"),
+    loadJson<{ count: number }>("chat_count.json"),
+    loadJson<{ negative: number; neutral: number; positive: number }>(
+      "sentiment_counts.json"
+    ),
   ]);
 
-  const streamMetadataById = Object.fromEntries(
-    streamMetadata.map((entry) => [entry.stream, entry])
-  );
-
-  const totalChats = sentimentBins.bins.reduce(
+  const totalScoredChats = sentimentBins.bins.reduce(
     (sum, bin) => sum + bin.count,
     0
   );
+  const totalChats = chatCount.count;
   const weightedSentiment = sentimentBins.bins.reduce(
     (sum, bin) => sum + bin.avg_sentiment * bin.count,
     0
   );
-  const avgSentiment = totalChats ? weightedSentiment / totalChats : 0;
+  const avgSentiment = totalScoredChats
+    ? weightedSentiment / totalScoredChats
+    : 0;
   const topNegative = mostNegativeUsers[0];
   const topPositive = mostPositiveUsers[0];
 
@@ -175,6 +172,7 @@ export default async function Page() {
       detail: topNegative ? `${topNegative.count} chats` : "—",
     },
   ];
+
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#f7f2ea] text-foreground">
@@ -326,6 +324,22 @@ export default async function Page() {
           </Card>
         </section>
 
+        <section>
+          <Card className="bg-white/80 backdrop-blur">
+            <CardHeader>
+              <CardTitle>Sentiment Mix</CardTitle>
+              <CardDescription>
+                Count of negative, neutral, and positive chats greater than 10 words
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="h-64 w-full">
+                <SentimentBarChart counts={sentimentCounts} />
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         <section className="grid gap-4 lg:grid-cols-2">
           <Card className="bg-white/80 backdrop-blur">
             <CardHeader>
@@ -433,14 +447,86 @@ export default async function Page() {
         </section>
 
         <section>
-          <StreamExtremesCard
-            data={streamExtremes}
-            metadata={streamMetadataById}
-          />
+          <Card className="bg-white/80 backdrop-blur">
+            <CardHeader>
+              <CardTitle>Obelisk&apos;s Favorites</CardTitle>
+              <CardDescription>
+                Hand-picked sentiment highlights from the community.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="grid gap-4 md:grid-cols-2">
+              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-medium">Most Positive</p>
+                  <Badge variant="secondary">0.989</Badge>
+                </div>
+                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                  You probably won’t see this, but I just wanted to say I’ve
+                  been watching you for about 7 years now, and your streams
+                  have been a constant source of good vibes. Thanks for all the
+                  laughs, the clutch plays, and the genuinely positive energy
+                  you bring to the community. Keep doing what you do, Super!!
+                  it means more than you know. 💛
+                </p>
+              </div>
+              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-medium">Most Negative</p>
+                  <Badge className="bg-[#ff5f56] text-white">0.980</Badge>
+                </div>
+                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                  i dont like these snowman models, it just looks like
+                  they're pelvic thrusting their icy cocks at your direction
+                  and ur character takes mental damage
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
+          <Card className="bg-white/80 backdrop-blur">
+            <CardHeader>
+              <CardTitle>One-Chat Standouts</CardTitle>
+              <CardDescription>
+                Highlights from viewers who only chatted once across 30 streams
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="grid gap-4 md:grid-cols-2">
+              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-medium">Most Positive</p>
+                  <Badge variant="secondary">0.992</Badge>
+                </div>
+                <p className="text-xs text-muted-foreground">@kari_sumi</p>
+                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                  @supertf Hey king! Just recently checked my YouTube Recap. You
+                  are my most watched channel! Thanks for all the funny content
+                  and being my favorite twink! Keep up there great work! :3
+                </p>
+              </div>
+              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-medium">Most Negative</p>
+                  <Badge className="bg-[#ff5f56] text-white">0.982</Badge>
+                </div>
+                <p className="text-xs text-muted-foreground">@Hallowmanny</p>
+                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                  bro i hate you so much no super i really do like you dont
+                  understand my anger towards you right now i hope your eagles
+                  fly to the moon and never come back
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         <section>
           <ModeratorSentimentCard data={moderatorSentiment} />
+        </section>
+
+        <section>
+          <StreamExtremesCard data={streamExtremes} />
         </section>
       </div>
     </main>

@@ -1,27 +1,27 @@
 [
   {
     "label": "1-3 chats",
-    "chatters": 4628,
-    "percent": 53.58
+    "chatters": 5076,
+    "percent": 69.69
   },
   {
     "label": "4-10 chats",
-    "chatters": 1796,
-    "percent": 20.79
+    "chatters": 1270,
+    "percent": 17.44
   },
   {
     "label": "11-25 chats",
-    "chatters": 916,
-    "percent": 10.61
+    "chatters": 477,
+    "percent": 6.55
   },
   {
     "label": "26-50 chats",
-    "chatters": 478,
-    "percent": 5.53
+    "chatters": 211,
+    "percent": 2.9
   },
   {
     "label": "51+ chats",
-    "chatters": 819,
-    "percent": 9.48
+    "chatters": 250,
+    "percent": 3.43
   }
 ]

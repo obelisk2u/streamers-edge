@@ -1,135 +1,572 @@
 [
   {
-    "stream": "stream=2025-12-26T02-14-23Z",
-    "started_at": "2025-12-26T02:14:23Z",
-    "ended_at": "2025-12-26T09:50:41.874176Z",
+    "stream": "2631490965",
+    "started_at": "2025-11-30T02:13:34.797Z",
+    "ended_at": "2025-11-30T09:26:44.896Z",
+    "most_positive": {
+      "username": "etohKP",
+      "message": "@kiwiddle_ i'm looking forward to it!! :3 i am somewhat limited to what i'm allowed to share but i am so down to talk more about it haha",
+      "timestamp_utc": "2025-11-30T06:24:13.41Z",
+      "label": "positive",
+      "score": 0.980997622013092
+    },
+    "most_negative": {
+      "username": "ishqx",
+      "message": "this art is so dogshit NAHH this art is so dogshit NAHH this art is so dogshit NAHH this art is so dogshit NAHH this art is so dogshit NAHH",
+      "timestamp_utc": "2025-11-30T06:10:55.59Z",
+      "label": "negative",
+      "score": 0.982220470905304
+    }
+  },
+  {
+    "stream": "2632373845",
+    "started_at": "2025-12-01T02:18:05.3Z",
+    "ended_at": "2025-12-01T09:57:48.647Z",
+    "most_positive": {
+      "username": "TurtleMaGeee",
+      "message": "guys there is a full moon showing through a hole in the cloud outside of my window it looks really cool",
+      "timestamp_utc": "2025-12-01T06:23:48.254Z",
+      "label": "positive",
+      "score": 0.9874886870384216
+    },
+    "most_negative": {
+      "username": "ltterasshai",
+      "message": "no fucking way glorpNotL no fucking way glorpNotL no fucking way glorpNotL no fucking way glorpNotL no fucking way glorpNotL no fucking way glorpNotL no fucking way glorpNotL no fucking way glorpNotL no fucking way glorpNotL",
+      "timestamp_utc": "2025-12-01T03:30:30.292Z",
+      "label": "negative",
+      "score": 0.972931981086731
+    }
+  },
+  {
+    "stream": "2633165696",
+    "started_at": "2025-12-02T02:22:00.393Z",
+    "ended_at": "2025-12-02T09:47:12.762Z",
+    "most_positive": {
+      "username": "Fynnster48",
+      "message": "godleyy catKISS im doin good, so so glad to hear that you are amazing pepeKneel hope life has been treating you great",
+      "timestamp_utc": "2025-12-02T03:16:50.358Z",
+      "label": "positive",
+      "score": 0.9916670918464661
+    },
+    "most_negative": {
+      "username": "imednah",
+      "message": "@supertf every time i see a clip of you, i cant guess what day it was because you are always wearing the same ugly stinky ass hoodie and that fuck ass coconut haircut",
+      "timestamp_utc": "2025-12-02T03:37:25.137Z",
+      "label": "negative",
+      "score": 0.9787213802337646
+    }
+  },
+  {
+    "stream": "2633989629",
+    "started_at": "2025-12-03T02:17:57.83Z",
+    "ended_at": "2025-12-03T09:53:52.373Z",
+    "most_positive": {
+      "username": "OhFishally",
+      "message": "@batotao I think da new skill is just alright in terms of the mechanics of leveling it, but the exploration and how much it opened up the world is very cool :)",
+      "timestamp_utc": "2025-12-03T04:19:16.045Z",
+      "label": "positive",
+      "score": 0.9858982563018799
+    },
+    "most_negative": {
+      "username": "\u307e\u3057\u30de\u30ed",
+      "message": "Oh for FUCK'S sake, this stupid ass song is gonna be stuck in my head for weeks now. I hate this stream",
+      "timestamp_utc": "2025-12-03T05:09:12.931Z",
+      "label": "negative",
+      "score": 0.9836890697479248
+    }
+  },
+  {
+    "stream": "2634822107",
+    "started_at": "2025-12-04T02:18:53.858Z",
+    "ended_at": "2025-12-04T09:16:32.081Z",
+    "most_positive": {
+      "username": "kimono___107",
+      "message": "kimono___107 subscribed at Tier 3. They've subscribed for 5 months! Hi super, you were my most watched YouTuber on YouTube recap! thanks for another amazing year super suprLOVE",
+      "timestamp_utc": "2025-12-04T07:55:57.227Z",
+      "label": "positive",
+      "score": 0.9923740029335022
+    },
+    "most_negative": {
+      "username": "smaesie",
+      "message": "@pandatsky i'm doing veterinary science and the prereqs and gen eds r all so evil i actually hate my chud life",
+      "timestamp_utc": "2025-12-04T03:47:34.397Z",
+      "label": "negative",
+      "score": 0.9806052446365356
+    }
+  },
+  {
+    "stream": "2635647073",
+    "started_at": "2025-12-05T02:06:34.442Z",
+    "ended_at": "2025-12-05T08:50:58.607Z",
+    "most_positive": {
+      "username": "imdiagnosedwschizophrenia",
+      "message": "im so happy to be among such cool chatters and people and everyone is so beautiful message me if you want to become pen pals sending letters to our little quaint mailboxes",
+      "timestamp_utc": "2025-12-05T04:34:11.031Z",
+      "label": "positive",
+      "score": 0.99261873960495
+    },
+    "most_negative": {
+      "username": "bbbbananabreadddd",
+      "message": "Why is comp so toxic I just played for 6 hours and I feel like I was just tortured by the most hateful people alive",
+      "timestamp_utc": "2025-12-05T03:42:20.163Z",
+      "label": "negative",
+      "score": 0.9818542003631592
+    }
+  },
+  {
+    "stream": "2638695730",
+    "started_at": "2025-12-08T16:41:24.537Z",
+    "ended_at": "2025-12-09T00:24:26.936Z",
+    "most_positive": {
+      "username": "TZlawns",
+      "message": "I know I said it already but you looked handsome and cute and did such a good job I am very proud of you",
+      "timestamp_utc": "2025-12-08T22:55:24.374Z",
+      "label": "positive",
+      "score": 0.9909975528717041
+    },
+    "most_negative": {
+      "username": "oncejordan",
+      "message": "fanfans shit wasnt that funny but holy shit streamers are so boring and cringe and dont know how to act normal irl theyre such bad crowds",
+      "timestamp_utc": "2025-12-08T17:14:40.458Z",
+      "label": "negative",
+      "score": 0.9835198521614075
+    }
+  },
+  {
+    "stream": "2639866758",
+    "started_at": "2025-12-10T00:43:35.488Z",
+    "ended_at": "2025-12-10T08:46:30.19Z",
+    "most_positive": {
+      "username": "FemboyOrio",
+      "message": "You probably won\u2019t see this, but I just wanted to say I\u2019ve been watching you for about 7 years now, and your streams have been a constant source of good vibes. Thanks for all the laughs, the clutch plays, and the genuinely positive energy you bring to the community. Keep doing what you do, Super!! it means more than you know. \ud83d\udc9b",
+      "timestamp_utc": "2025-12-10T05:47:15.841Z",
+      "label": "positive",
+      "score": 0.9890962243080139
+    },
+    "most_negative": {
+      "username": "quantumop",
+      "message": "@WHITEWOMANTHREE that movie is fucking soul crushing jesus christ, i'm not even the target audience of it and it FUCKED ME UP",
+      "timestamp_utc": "2025-12-10T03:02:08.8Z",
+      "label": "negative",
+      "score": 0.9845227003097534
+    }
+  },
+  {
+    "stream": "2640718586",
+    "started_at": "2025-12-11T01:08:24.717Z",
+    "ended_at": "2025-12-11T09:29:49.214Z",
+    "most_positive": {
+      "username": "TheNFLOnFox",
+      "message": "it's lowkey nice that a lot of streamers talked to him even though they probably felt obligated, glad they were nice to our streamer FeelsStrongMan",
+      "timestamp_utc": "2025-12-11T01:34:10.499Z",
+      "label": "positive",
+      "score": 0.9811528921127319
+    },
+    "most_negative": {
+      "username": "nightraven413",
+      "message": "@gnolle0, the hook + the fact that bomb is just an autolock is so fucking stupid man like fuck off AINTNOWAY",
+      "timestamp_utc": "2025-12-11T07:23:57.858Z",
+      "label": "negative",
+      "score": 0.9796326160430908
+    }
+  },
+  {
+    "stream": "2641486315",
+    "started_at": "2025-12-12T00:00:25.985Z",
+    "ended_at": "2025-12-12T08:10:49.855Z",
+    "most_positive": {
+      "username": "Schweinhardt",
+      "message": "I'm so glad we were given an anime that is completely faithful to the series perhaps even better at parts. We DMC fans ARE satisfied!",
+      "timestamp_utc": "2025-12-12T03:15:03.687Z",
+      "label": "positive",
+      "score": 0.9905449151992798
+    },
+    "most_negative": {
+      "username": "inv0iid",
+      "message": "jeaus fucking christ man just put it top left or turn it off. we dont need this fucking dogshit cam placement. the idf woudnt even place shit this badly",
+      "timestamp_utc": "2025-12-12T00:49:55.979Z",
+      "label": "negative",
+      "score": 0.9799171090126038
+    }
+  },
+  {
+    "stream": "2642208328",
+    "started_at": "2025-12-12T21:12:05.945Z",
+    "ended_at": "2025-12-13T06:37:43.793Z",
+    "most_positive": {
+      "username": "CamManHavok",
+      "message": "OH BOY I LOVE WHEN MY GOAT SUPERTF PLAYS MY FAVORITE GAME MARVEL RIVALS!!!! THEY SHOULD MAKE AN AWARD FOR BEING AN AMAZING MARVEL RIVALS STREAMER LIKE YOU!!!!",
+      "timestamp_utc": "2025-12-12T21:13:06.938Z",
+      "label": "positive",
+      "score": 0.989626407623291
+    },
+    "most_negative": {
+      "username": "adachi_____",
+      "message": "even if you can play it uncensored ts is so gross bruh whoever made this game is a genuine psychopath and needs help",
+      "timestamp_utc": "2025-12-13T03:36:57.726Z",
+      "label": "negative",
+      "score": 0.9807263016700745
+    }
+  },
+  {
+    "stream": "2643313156",
+    "started_at": "2025-12-14T01:31:11.598Z",
+    "ended_at": "2025-12-14T08:56:37.381Z",
+    "most_positive": {
+      "username": "doofenshmirtz121",
+      "message": "Can you believe it guys? Christmas, just a week away! Christmas is in a week! Woo-hoo! I am so happy about this information. Christmas, just a week away. Oh, wow!",
+      "timestamp_utc": "2025-12-14T08:06:22.604Z",
+      "label": "positive",
+      "score": 0.9909793138504028
+    },
+    "most_negative": {
+      "username": "TheScapeGoatJ",
+      "message": "i fucking hate how i was wondering what u said cuz u cant fucking say orange like a normal fucking person",
+      "timestamp_utc": "2025-12-14T06:43:58.492Z",
+      "label": "negative",
+      "score": 0.982344925403595
+    }
+  },
+  {
+    "stream": "2644231738",
+    "started_at": "2025-12-15T02:22:29.192Z",
+    "ended_at": "2025-12-15T09:49:10.389Z",
+    "most_positive": {
+      "username": "Bishop9990",
+      "message": "Winter is the best due to it having the best holidays, snow being the best weather, and the food and vibes associated with it :3",
+      "timestamp_utc": "2025-12-15T03:46:18.717Z",
+      "label": "positive",
+      "score": 0.9911172389984131
+    },
+    "most_negative": {
+      "username": "Gilky92",
+      "message": "god this game is fucking ass. who finds this shit enjoyable? oh, you stepped on a nail guess you gotta start over",
+      "timestamp_utc": "2025-12-15T07:06:00.259Z",
+      "label": "negative",
+      "score": 0.9835758805274963
+    }
+  },
+  {
+    "stream": "2644995533",
+    "started_at": "2025-12-16T01:39:48.668Z",
+    "ended_at": "2025-12-16T09:27:03.348Z",
+    "most_positive": {
+      "username": "Lixeron",
+      "message": "@supertf how can I become someone as cool and good looking as you? You are one of the best streamers ever",
+      "timestamp_utc": "2025-12-16T05:14:34.842Z",
+      "label": "positive",
+      "score": 0.9862225651741028
+    },
+    "most_negative": {
+      "username": "gondirge",
+      "message": "It takes a sick demented person to see a game where their character gets fisted to death and keep playing Felon",
+      "timestamp_utc": "2025-12-16T08:08:10.435Z",
+      "label": "negative",
+      "score": 0.9772295951843262
+    }
+  },
+  {
+    "stream": "2645835741",
+    "started_at": "2025-12-17T02:02:51.727Z",
+    "ended_at": "2025-12-17T09:42:10.344Z",
+    "most_positive": {
+      "username": "Distance_Break",
+      "message": "WE ALL YES ALL OF US YES LITERALLY EVERYONE WE ALL LOVE MOONLESS aga tail woof woof aga tail aga tail woof",
+      "timestamp_utc": "2025-12-17T09:29:14.062Z",
+      "label": "positive",
+      "score": 0.9650099873542786
+    },
+    "most_negative": {
+      "username": "bluetshirtguy",
+      "message": "It's gonna be so fucked 1 or 2 years from now when some fuck ass billionaire ceo markets a fully AI generated slop movie and I see a fuckass commercial for it.",
+      "timestamp_utc": "2025-12-17T05:11:08.794Z",
+      "label": "negative",
+      "score": 0.9787797331809998
+    }
+  },
+  {
+    "stream": "2646653504",
+    "started_at": "2025-12-18T02:04:53.546Z",
+    "ended_at": "2025-12-18T09:36:31.824Z",
+    "most_positive": {
+      "username": "ThatLaggyPerson",
+      "message": "Can you believe it guys? Christmas, just a week away. YAAAY Christmas is in a week! Woohoo! I am so happy about this information. YAAAY Christmas! Just a week away, oh wow. YAAAY Can you believe it? Christmas! Just in a week! It got here so fast! YAAAY Christmas! Just a week away! YAAAY",
+      "timestamp_utc": "2025-12-18T03:17:36.404Z",
+      "label": "positive",
+      "score": 0.990041196346283
+    },
+    "most_negative": {
+      "username": "bahckettm",
+      "message": "i dont like these snowman models, it just looks like they're pelvic thrusting their icy cocks at your direction and ur character takes mental damage",
+      "timestamp_utc": "2025-12-18T07:51:39.053Z",
+      "label": "negative",
+      "score": 0.9797288775444031
+    }
+  },
+  {
+    "stream": "2647474084",
+    "started_at": "2025-12-19T02:15:51.015Z",
+    "ended_at": "2025-12-19T09:35:38.841Z",
+    "most_positive": {
+      "username": "smello_vision",
+      "message": "WAIT GUYS HAVE U SEEN THE NEW SEASON OF STRANGER THINGS ITS SOOO GOOD WOWWWW I LOVED IT AOT AOT AOT Cinema Overwatch",
+      "timestamp_utc": "2025-12-19T05:13:46.172Z",
+      "label": "positive",
+      "score": 0.9909605383872986
+    },
+    "most_negative": {
+      "username": "smello_vision",
+      "message": "@SuperSillyGoose_ im sorry im just a fucking dumb bastard u shouldve not read my comment. im sorry that happened to you it sucks, fuck that guy",
+      "timestamp_utc": "2025-12-19T05:13:04.862Z",
+      "label": "negative",
+      "score": 0.9806564450263977
+    }
+  },
+  {
+    "stream": "2648091543",
+    "started_at": "2025-12-19T21:29:19.763Z",
+    "ended_at": "2025-12-20T07:26:36.991Z",
+    "most_positive": {
+      "username": "JippyL",
+      "message": "Wow, this game is so much fun! I can't wait to hop on with all my friends after watching this fantastic SuperTF Broadcast! (Chat sponsored by NetEase Games)",
+      "timestamp_utc": "2025-12-20T01:18:09.322Z",
+      "label": "positive",
+      "score": 0.9935641884803772
+    },
+    "most_negative": {
+      "username": "Sev1029",
+      "message": "dumbass chatters don't know to just let the streamer get bored of this fuckass game don't tell him to get off",
+      "timestamp_utc": "2025-12-20T01:16:44.599Z",
+      "label": "negative",
+      "score": 0.9767152667045593
+    }
+  },
+  {
+    "stream": "2649164278",
+    "started_at": "2025-12-21T02:22:22.095Z",
+    "ended_at": "2025-12-21T09:24:57.629Z",
+    "most_positive": {
+      "username": "gnanon",
+      "message": "@QUAZAR117 truee. prerendered cutscenes- especially recent ones, have been nice. and i think hoyo is gonna drop a new game that looks even better than zzz. forgot the name but it looks good, idk if u heard",
+      "timestamp_utc": "2025-12-21T03:48:07.274Z",
+      "label": "positive",
+      "score": 0.9856341481208801
+    },
+    "most_negative": {
+      "username": "noir",
+      "message": "tesla is not that good this patch chat it was a power farm item and now it does piss dmg to neuts",
+      "timestamp_utc": "2025-12-21T09:03:26.299Z",
+      "label": "negative",
+      "score": 0.9680355787277222
+    }
+  },
+  {
+    "stream": "2650017889",
+    "started_at": "2025-12-22T02:18:13.276Z",
+    "ended_at": "2025-12-22T08:35:07.254Z",
+    "most_positive": {
+      "username": "Twitch",
+      "message": "Merry Twitchmas! Just a few gifts for the Holidays from us to you. Thank you for being a part of the community! HolidayPresent",
+      "timestamp_utc": "2025-12-22T07:59:06.179Z",
+      "label": "positive",
+      "score": 0.9873787760734558
+    },
+    "most_negative": {
+      "username": "swuftyn",
+      "message": "god i FUCKING HATE AI DETECTORS, most of them either don't work properly and can't tell the actual difference between human and robot writing. Just shit.",
+      "timestamp_utc": "2025-12-22T03:03:33.846Z",
+      "label": "negative",
+      "score": 0.9831680655479431
+    }
+  },
+  {
+    "stream": "2651589476",
+    "started_at": "2025-12-24T01:05:01.647Z",
+    "ended_at": "2025-12-24T09:41:16.682Z",
+    "most_positive": {
+      "username": "gravepassing",
+      "message": "he was playing so good too\u2026 glad I got to see him drop 40 at the wells a couple weeks ago",
+      "timestamp_utc": "2025-12-24T01:49:12.804Z",
+      "label": "positive",
+      "score": 0.9845602512359619
+    },
+    "most_negative": {
+      "username": "smello_vision",
+      "message": "can we stop with this \"we all\" nonsense? i go against the grain. i do not find what most people find enjoyable enjoyable, because i am a miserable conceited ASSHOLE who needs to end it all!!! IMMEDIATELY",
+      "timestamp_utc": "2025-12-24T05:35:53.306Z",
+      "label": "negative",
+      "score": 0.9816341996192932
+    }
+  },
+  {
+    "stream": "2652385859",
+    "started_at": "2025-12-25T03:00:05.893Z",
+    "ended_at": "2025-12-25T09:23:24.987Z",
+    "most_positive": {
+      "username": "mynameprep",
+      "message": "MERRY CHRISTMAS TO EVERYONE WHO CELEBRATES I HOPE YOU ALL HAVE A GREAT TIME AND A GREAT NEW YEAR suprLOVE suprLOVE",
+      "timestamp_utc": "2025-12-25T03:00:53.626Z",
+      "label": "positive",
+      "score": 0.9905160069465637
+    },
+    "most_negative": {
+      "username": "crondoluim",
+      "message": "bro i fucking hate the twisted bud this little asshole crying and whining in my ear while the game is paused",
+      "timestamp_utc": "2025-12-25T04:18:27.079Z",
+      "label": "negative",
+      "score": 0.9831295609474182
+    }
+  },
+  {
+    "stream": "2653080783",
+    "started_at": "2025-12-26T02:14:50.224Z",
+    "ended_at": "2025-12-26T09:50:10.562Z",
     "most_positive": {
       "username": "diiscordia",
       "message": "WE ALL LOVE DEADLOCK YAAAY WE ALL LOVE DEADLOCK YAAAY WE ALL LOVE DEADLOCK YAAAY WE ALL LOVE DEADLOCK YAAAY WE ALL LOVE DEADLOCK YAAAY",
-      "timestamp_utc": "2025-12-26T03:17:25.298374Z",
+      "timestamp_utc": "2025-12-26T03:17:25.192Z",
       "label": "positive",
       "score": 0.9852290749549866
     },
     "most_negative": {
-      "username": "ohsostarry",
-      "message": "god i need drifter so fucking bad every time i hear his voice i think about him leaving me bleeding profusely from the neck and leaking from every",
-      "timestamp_utc": "2025-12-26T04:17:25.156027Z",
+      "username": "Gilky92",
+      "message": "funger frogs have to be the MOST obnoxious people i've ever had the misfortune to interact with. your game fucking sucks, and i hope super never plays the sequel.",
+      "timestamp_utc": "2025-12-26T06:52:04.385Z",
       "label": "negative",
-      "score": 0.9796562194824219
+      "score": 0.9834499955177307
     }
   },
   {
-    "stream": "stream=2025-12-27T01-12-05Z",
-    "started_at": "2025-12-27T01:12:05Z",
-    "ended_at": "2025-12-27T09:32:51.588983Z",
+    "stream": "2653816662",
+    "started_at": "2025-12-27T01:12:32.304Z",
+    "ended_at": "2025-12-27T09:32:00.919Z",
     "most_positive": {
       "username": "itshidy",
       "message": "omg you just reminded me my favorite leader at work got engaged and it made me so happy cause him and his fiancee are the BEST",
-      "timestamp_utc": "2025-12-27T01:54:22.213390Z",
+      "timestamp_utc": "2025-12-27T01:54:22.113Z",
       "label": "positive",
       "score": 0.9925325512886047
     },
     "most_negative": {
       "username": "prodbrayden",
       "message": "reaves out for 4 weeks i'm blow my head bro fuck lakers basketball and fuck chuka and fuck bronze and fuck jayjay reddit fucking fuck my chud life",
-      "timestamp_utc": "2025-12-27T02:15:51.097021Z",
+      "timestamp_utc": "2025-12-27T02:15:50.993Z",
       "label": "negative",
       "score": 0.9771725535392761
     }
   },
   {
-    "stream": "stream=2025-12-28T01-34-59Z",
-    "started_at": "2025-12-28T01:34:59Z",
-    "ended_at": "2025-12-28T09:21:30.580185Z",
+    "stream": "2654679135",
+    "started_at": "2025-12-28T01:35:41.465Z",
+    "ended_at": "2025-12-28T09:20:22.53Z",
     "most_positive": {
       "username": "guil7777",
       "message": "nightraven413 i love milady euporia and bhb the most but there are so many cool weapons and the deflect tear is legit so fun",
-      "timestamp_utc": "2025-12-28T03:03:58.102799Z",
+      "timestamp_utc": "2025-12-28T03:03:57.985Z",
       "label": "positive",
       "score": 0.9894704818725586
     },
     "most_negative": {
       "username": "rwettti",
       "message": "oh my god im trying to use my 2 free months of apple TV and these 5 mins of trying to use apple shit has been horrible. it doesn't let you sign in and locks you out for no reason. how do these apple subhumans buy these phones and use this dogshit system.",
-      "timestamp_utc": "2025-12-28T07:43:08.022021Z",
+      "timestamp_utc": "2025-12-28T07:43:07.908Z",
       "label": "negative",
       "score": 0.9820427298545837
     }
   },
   {
-    "stream": "stream=2025-12-29T01-54-29Z",
-    "started_at": "2025-12-29T01:54:29Z",
-    "ended_at": "2025-12-29T09:12:27.765036Z",
+    "stream": "2655555494",
+    "started_at": "2025-12-29T01:55:28.903Z",
+    "ended_at": "2025-12-29T09:11:38.986Z",
     "most_positive": {
       "username": "wilddogthecat",
       "message": "im so happy you're streaming dealcok:) it makes me so happy i love it thanky ou  mr :) uh m wasian boy",
-      "timestamp_utc": "2025-12-29T06:31:51.544732Z",
+      "timestamp_utc": "2025-12-29T06:31:51.458Z",
       "label": "positive",
       "score": 0.9924188852310181
     },
     "most_negative": {
       "username": "lyodi",
       "message": "@supertf I fucking hate this fucking game holy fucking fuck play fucking overrweacth what the fuck man do the funny reaper meme man fuck",
-      "timestamp_utc": "2025-12-29T04:21:00.137461Z",
+      "timestamp_utc": "2025-12-29T04:21:00.029Z",
       "label": "negative",
       "score": 0.9811285734176636
     }
   },
   {
-    "stream": "stream=2025-12-30T01-29-50Z",
-    "started_at": "2025-12-30T01:29:50Z",
-    "ended_at": "2025-12-30T08:21:05.629721Z",
+    "stream": "2656370963",
+    "started_at": "2025-12-30T01:31:08.982Z",
+    "ended_at": "2025-12-30T08:20:48.959Z",
     "most_positive": {
-      "username": "wowzersinmetrowzers",
+      "username": "WowzersInMeTrowzers",
       "message": "@scootbishop It's so good and I been to PH lots of times I would say very similar quality at that location",
-      "timestamp_utc": "2025-12-30T04:40:38.851792Z",
+      "timestamp_utc": "2025-12-30T04:40:38.748Z",
       "label": "positive",
       "score": 0.9896072745323181
     },
     "most_negative": {
       "username": "cee_1224",
       "message": "dude why must i remember random embarrassing moments of my life at random moments of the night, shit is not ok",
-      "timestamp_utc": "2025-12-30T03:46:49.794451Z",
+      "timestamp_utc": "2025-12-30T03:46:49.706Z",
       "label": "negative",
-      "score": 0.9817222952842712
+      "score": 0.9817224144935608
     }
   },
   {
-    "stream": "stream=2025-12-31T01-50-44Z",
-    "started_at": "2025-12-31T01:50:44Z",
-    "ended_at": "2025-12-31T09:28:03.931209Z",
+    "stream": "2657237349",
+    "started_at": "2025-12-31T01:51:27.634Z",
+    "ended_at": "2025-12-31T09:27:52.194Z",
     "most_positive": {
       "username": "hypnofruit",
       "message": "wow you look so handsome today again! cant wait to watch you win this game cuz ur so good at deadlock ^-^",
-      "timestamp_utc": "2025-12-31T05:09:38.387536Z",
+      "timestamp_utc": "2025-12-31T05:09:38.268Z",
       "label": "positive",
-      "score": 0.9933387637138367
+      "score": 0.9933388829231262
     },
     "most_negative": {
       "username": "kapably",
       "message": "Your background is so depressing to look at, fold out table, static disco light, broken fridge, poster on the floor and bad lighting",
-      "timestamp_utc": "2025-12-31T02:42:17.179296Z",
+      "timestamp_utc": "2025-12-31T02:42:17.096Z",
       "label": "negative",
       "score": 0.9815617203712463
     }
   },
   {
-    "stream": "stream=2026-01-01T02-07-01Z",
-    "started_at": "2026-01-01T02:07:01Z",
-    "ended_at": "2026-01-01T09:29:18.751461Z",
+    "stream": "2658027596",
+    "started_at": "2026-01-01T02:07:32.159Z",
+    "ended_at": "2026-01-01T09:28:16.768Z",
     "most_positive": {
       "username": "frogsssssssssss",
       "message": "@Fynnster48 omg hiii!!!! YAAAY It is eve for me, but Happy New Years Eve/Day to you too! !!!! :33 hope 2026 is amazing for u",
-      "timestamp_utc": "2026-01-01T02:47:41.747965Z",
+      "timestamp_utc": "2026-01-01T02:47:41.599Z",
       "label": "positive",
       "score": 0.9932912588119507
     },
     "most_negative": {
       "username": "ali_257",
       "message": "yea this made me lose whatever remaining sympathy or care I had for dollman when I played this game. Absurdly stupid decision.",
-      "timestamp_utc": "2026-01-01T07:28:49.267410Z",
+      "timestamp_utc": "2026-01-01T07:28:49.136Z",
       "label": "negative",
       "score": 0.9754241704940796
+    }
+  },
+  {
+    "stream": "2658820634",
+    "started_at": "2026-01-02T01:53:21.71Z",
+    "ended_at": "2026-01-02T05:23:01.852Z",
+    "most_positive": {
+      "username": "NobleSloth_",
+      "message": "Cheer100 Cheer100 guys he's gonna do RL1 from a high production set guys. Marathon until he beats it. Im so excited guys",
+      "timestamp_utc": "2026-01-02T03:08:40.79Z",
+      "label": "positive",
+      "score": 0.9873260855674744
+    },
+    "most_negative": {
+      "username": "LiezardXXIX",
+      "message": "VENTURE'S IN! NO ABILITIES TO GET OUT! ZERO! AND YOU SAID MONKEY THAT WAS STANDING BEHIND A PILLAR LOS-ing EVERYONE EXCEPT ME. YOU COULDNT EVEN SHOOT HIM AND HE WAS FULL HP YOU DIDNT KNOW WHAT HP HE WAS AT, YOU JUST CALLED \"MONKEY MONKEY MONKEY\" YOU'RE A FUCKING IDIOT. I'VE NEVER SEEN YOU WIN A SINGLE GAME, I've never seen you win a single game, you are dogshit. You are playing Dva against: Monkey, torb AND VENTURE! AND 19 KILLS! WO-",
+      "timestamp_utc": "2026-01-02T03:44:50.672Z",
+      "label": "negative",
+      "score": 0.9655655026435852
     }
   }
 ]
