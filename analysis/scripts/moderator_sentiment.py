@@ -7,6 +7,8 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
+from data30_utils import iter_data30_messages
+
 try:
     from tqdm import tqdm
 except ImportError:  # pragma: no cover - optional dependency
@@ -16,34 +18,29 @@ MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment"
 LABELS = ["negative", "neutral", "positive"]
 
 
-def iter_moderator_messages(root: Path):
-    for path in sorted(root.rglob("chat.jsonl")):
-        with path.open("r", encoding="utf-8") as handle:
-            for line in handle:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    payload = json.loads(line)
-                except json.JSONDecodeError:
-                    continue
-                tags = payload.get("tags") or {}
-                if str(tags.get("mod", "0")) != "1":
-                    continue
-                badges = str(tags.get("badges", ""))
-                if "bot/1" in badges:
-                    continue
-                username = payload.get("user", "")
-                if username in {"streamelements", "nightbot", "voll"}:
-                    continue
-                message = payload.get("message", "")
-                if not message:
-                    continue
-                yield {
-                    "username": username,
-                    "message": message,
-                    "timestamp_utc": payload.get("timestamp_utc"),
-                }
+def load_moderator_allowlist(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    with path.open("r", encoding="utf-8") as handle:
+        data = json.load(handle)
+    return {str(item).lower() for item in data}
+
+
+def iter_moderator_messages(allowlist: set[str]):
+    for record in iter_data30_messages():
+        username = record.get("username", "")
+        if not username:
+            continue
+        if allowlist and username.lower() not in allowlist:
+            continue
+        message = record.get("message", "")
+        if not message:
+            continue
+        yield {
+            "username": username,
+            "message": message,
+            "timestamp_utc": record.get("timestamp"),
+        }
 
 
 def run_sentiment(records: list[dict], batch_size: int = 32) -> list[dict]:
@@ -95,11 +92,19 @@ def run_sentiment(records: list[dict], batch_size: int = 32) -> list[dict]:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    raw_root = root / "data" / "raw"
     output_path = root / "data" / "processed" / "moderator_sentiment.json"
+    allowlist_path = root / "data" / "data30" / "moderators.json"
+    allowlist = load_moderator_allowlist(allowlist_path)
+    if not allowlist:
+        print(
+            "No moderators.json allowlist found. Add a list of moderator usernames "
+            "to analysis/data/data30/moderators.json.",
+            file=sys.stderr,
+        )
+        return
 
     print("Loading moderator messages...")
-    records = list(iter_moderator_messages(raw_root))
+    records = list(iter_moderator_messages(allowlist))
     print(f"Found {len(records)} moderator messages")
     results = run_sentiment(records)
 

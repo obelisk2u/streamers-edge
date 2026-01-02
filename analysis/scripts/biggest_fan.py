@@ -3,21 +3,15 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-
-def load_records(path: Path) -> list[dict]:
-    with path.open("r", encoding="utf-8") as handle:
-        return json.load(handle)
+from data30_utils import iter_data30_messages
 
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    input_path = root / "data" / "processed" / "combined_chat.json"
-
-    records = load_records(input_path)
     most_mentions: dict[str, int] = {}
     mentions_by_user: dict[str, list[str]] = {}
 
-    for record in records:
+    for record in iter_data30_messages():
         username = record.get("username", "")
         message = record.get("message", "")
         if not username:

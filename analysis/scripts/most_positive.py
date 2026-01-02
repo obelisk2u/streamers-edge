@@ -8,7 +8,7 @@ from most_negative import load_records, sentiment_value
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    input_path = root / "data" / "processed" / "combined_chat_5_sentiment.json"
+    input_path = root / "data" / "processed" / "combined_chat_sentiment.json"
     output_path = root / "data" / "processed" / "most_positive_users.json"
 
     records = load_records(input_path)

@@ -17,7 +17,7 @@ def top_n(records: list[dict], label: str, n: int = 10) -> list[dict]:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    input_path = root / "data" / "processed" / "combined_chat_5_sentiment.json"
+    input_path = root / "data" / "processed" / "combined_chat_sentiment.json"
     output_path = root / "data" / "processed" / "top_10_sentiment.json"
 
     records = load_records(input_path)

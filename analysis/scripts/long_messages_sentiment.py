@@ -6,10 +6,18 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-from data30_utils import iter_data30_messages
+try:
+    from tqdm import tqdm
+except ImportError:  # pragma: no cover - optional dependency
+    tqdm = None
 
 MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment"
 LABELS = ["negative", "neutral", "positive"]
+
+
+def load_messages(path: Path) -> list[dict]:
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
 
 
 def run_sentiment(records: list[dict], batch_size: int = 32) -> list[dict]:
@@ -25,7 +33,15 @@ def run_sentiment(records: list[dict], batch_size: int = 32) -> list[dict]:
     model.eval()
 
     results: list[dict] = []
-    for start in range(0, len(records), batch_size):
+    total_batches = (len(records) + batch_size - 1) // batch_size
+    if tqdm is None:
+        print(f"Scoring {len(records)} messages in {total_batches} batches...")
+
+    for start in tqdm(
+        range(0, len(records), batch_size),
+        desc="Scoring batches",
+        disable=tqdm is None,
+    ):
         batch = records[start : start + batch_size]
         texts = [record.get("message", "") for record in batch]
         encoded = tokenizer(
@@ -44,8 +60,7 @@ def run_sentiment(records: list[dict], batch_size: int = 32) -> list[dict]:
             top_index = int(torch.argmax(score_vec).item())
             results.append(
                 {
-                    "username": record.get("username", ""),
-                    "message": record.get("message", ""),
+                    **record,
                     "label": LABELS[top_index],
                     "score": float(score_vec[top_index].item()),
                 }
@@ -56,12 +71,10 @@ def run_sentiment(records: list[dict], batch_size: int = 32) -> list[dict]:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    output_path = root / "data" / "processed" / "combined_chat_sentiment.json"
+    input_path = root / "data" / "processed" / "long_messages.json"
+    output_path = root / "data" / "processed" / "long_messages_sentiment.json"
 
-    records = [
-        {"username": record["username"], "message": record["message"]}
-        for record in iter_data30_messages()
-    ]
+    records = load_messages(input_path)
     results = run_sentiment(records)
 
     with output_path.open("w", encoding="utf-8") as handle:

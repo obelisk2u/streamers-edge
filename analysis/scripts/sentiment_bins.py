@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+from data30_utils import iter_data30_messages, parse_timestamp
 
 try:
     from tqdm import tqdm
@@ -16,12 +17,6 @@ except ImportError:  # pragma: no cover - optional dependency
 MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment"
 LABELS = ["negative", "neutral", "positive"]
 BIN_COUNT = 20
-
-
-def parse_timestamp(value: str) -> datetime:
-    return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(
-        timezone.utc
-    )
 
 
 def sentiment_values(model, tokenizer, texts: list[str], device) -> list[float]:
@@ -68,7 +63,6 @@ def iter_with_progress(iterable, label: str):
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    raw_root = root / "data" / "raw"
     output_path = root / "data" / "processed" / "sentiment_bins_5pct.json"
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -82,61 +76,61 @@ def main() -> None:
     model.to(device)
     model.eval()
 
-    meta_paths = sorted(raw_root.rglob("meta.json"))
-    print(f"Found {len(meta_paths)} streams")
+    print("Scanning stream bounds...")
+    bounds: dict[str, dict[str, datetime]] = {}
+    for record in iter_with_progress(iter_data30_messages(), "Collecting bounds"):
+        stream_id = record.get("stream_id", "")
+        timestamp = record.get("timestamp")
+        if not stream_id or not timestamp:
+            continue
+        ts = parse_timestamp(timestamp)
+        entry = bounds.setdefault(stream_id, {"min": ts, "max": ts})
+        if ts < entry["min"]:
+            entry["min"] = ts
+        if ts > entry["max"]:
+            entry["max"] = ts
+
+    stream_count = len(bounds)
+    print(f"Found {stream_count} streams")
 
     global_sums = [0.0] * BIN_COUNT
     global_counts = [0] * BIN_COUNT
 
-    for meta_path in iter_with_progress(meta_paths, "Processing streams"):
-        stream_dir = meta_path.parent
-        chat_path = stream_dir / "chat.jsonl"
-        if not chat_path.exists():
+    batch_texts: list[str] = []
+    batch_bins: list[int] = []
+    for record in iter_with_progress(iter_data30_messages(), "Scoring messages"):
+        stream_id = record.get("stream_id", "")
+        timestamp = record.get("timestamp")
+        message = record.get("message", "")
+        if not stream_id or not timestamp or not message:
             continue
-
-        meta = json.loads(meta_path.read_text(encoding="utf-8"))
-        started_at = parse_timestamp(meta["started_at"])
-        ended_at = parse_timestamp(meta["ended_at"])
-        duration = (ended_at - started_at).total_seconds()
+        bound = bounds.get(stream_id)
+        if not bound:
+            continue
+        duration = (bound["max"] - bound["min"]).total_seconds()
         if duration <= 0:
             continue
+        ts = parse_timestamp(timestamp)
+        position = (ts - bound["min"]).total_seconds() / duration
+        if position < 0 or position > 1:
+            continue
+        bin_index = min(int(position * BIN_COUNT), BIN_COUNT - 1)
+        batch_texts.append(message)
+        batch_bins.append(bin_index)
 
-        batch_texts: list[str] = []
-        batch_bins: list[int] = []
-        with chat_path.open("r", encoding="utf-8") as handle:
-            for line in iter_with_progress(handle, f"  {stream_dir.name}"):
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    payload = json.loads(line)
-                except json.JSONDecodeError:
-                    continue
-                message = payload.get("message", "")
-                timestamp = payload.get("timestamp_utc")
-                if not message or not timestamp:
-                    continue
-                ts = parse_timestamp(timestamp)
-                position = (ts - started_at).total_seconds() / duration
-                if position < 0 or position > 1:
-                    continue
-                bin_index = min(int(position * BIN_COUNT), BIN_COUNT - 1)
-                batch_texts.append(message)
-                batch_bins.append(bin_index)
-
-                if len(batch_texts) >= 32:
-                    values = sentiment_values(model, tokenizer, batch_texts, device)
-                    for bin_idx, value in zip(batch_bins, values):
-                        global_sums[bin_idx] += value
-                        global_counts[bin_idx] += 1
-                    batch_texts.clear()
-                    batch_bins.clear()
-
-        if batch_texts:
+        if len(batch_texts) >= 32:
             values = sentiment_values(model, tokenizer, batch_texts, device)
             for bin_idx, value in zip(batch_bins, values):
                 global_sums[bin_idx] += value
                 global_counts[bin_idx] += 1
+            batch_texts.clear()
+            batch_bins.clear()
+
+    if batch_texts:
+        values = sentiment_values(model, tokenizer, batch_texts, device)
+        for bin_idx, value in zip(batch_bins, values):
+            global_sums[bin_idx] += value
+            global_counts[bin_idx] += 1
 
     labels = bin_labels()
     bins = []
@@ -151,7 +145,7 @@ def main() -> None:
         )
 
     results = {
-        "stream_count": len(meta_paths),
+        "stream_count": stream_count,
         "bins": bins,
     }
 

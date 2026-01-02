@@ -6,23 +6,22 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
+from data30_utils import iter_data30_messages
+
 
 MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment"
 LABELS = ["negative", "neutral", "positive"]
 MIN_WORDS = 20
 
 
-def load_records(path: Path) -> list[dict]:
-    with path.open("r", encoding="utf-8") as handle:
-        return json.load(handle)
-
-
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    input_path = root / "data" / "processed" / "combined_chat.json"
     output_path = root / "data" / "processed" / "singleton_extremes.json"
 
-    records = load_records(input_path)
+    records = [
+        {"username": record["username"], "message": record["message"]}
+        for record in iter_data30_messages()
+    ]
     counts: dict[str, int] = {}
     for record in records:
         username = record.get("username", "")
