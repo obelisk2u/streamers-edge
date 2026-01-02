@@ -7,7 +7,7 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
-
+**/package.json
 .idea/
 *.swp
 ################################
@@ -26,6 +26,7 @@ yarn-error.log*
 pnpm-debug.log*
 **/data/
 
+
 ################################
 # Backend (FastAPI / Python)
 ################################
@@ -40,7 +41,7 @@ streamers-edge-back/.env
 streamers-edge-back/.env.*
 
 # Python cache (global)
-__pycache__/
+**/__pycache__/
 *.py[cod]
 
 
