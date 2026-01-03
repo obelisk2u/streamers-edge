@@ -10,7 +10,6 @@ import {
   AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
-  AlertDialogMedia,
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
@@ -22,7 +21,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { GithubIcon } from "lucide-react";
+import Link from "next/link";
 import { SentimentLineChart } from "@/components/sentiment-line-chart";
 import { ModeratorSentimentCard } from "@/components/moderator-sentiment-card";
 import { StreamExtremesCard } from "@/components/stream-extremes-card";
@@ -43,7 +42,6 @@ function formatSigned(value: number) {
 
 export default async function Page() {
   const [
-    chatterDistribution,
     mostNegativeUsers,
     mostPositiveUsers,
     sentimentBins,
@@ -53,9 +51,6 @@ export default async function Page() {
     chatCount,
     sentimentCounts,
   ] = await Promise.all([
-    loadJson<Array<{ label: string; chatters: number; percent: number }>>(
-      "chatter_distribution.json"
-    ),
     loadJson<
       Array<{
         username: string;
@@ -92,7 +87,7 @@ export default async function Page() {
           username: string;
           message: string;
           label: string;
-          score: number;
+        score: number;
         }>;
       }>
     >("moderator_sentiment.json"),
@@ -176,24 +171,6 @@ export default async function Page() {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#f7f2ea] text-foreground">
-      <div className="fixed right-4 top-4 z-50 w-72">
-        <Card className="bg-white/90 backdrop-blur">
-          <CardContent className="space-y-2 p-4 text-sm">
-            <p className="font-medium">Please help me get a job</p>
-            <p className="text-muted-foreground">
-              Star my projects on{" "}
-              <a
-                className="underline underline-offset-4"
-                href="https://github.com/obelisk2u"
-                target="_blank"
-                rel="noreferrer"
-              >
-                github.com/obelisk2u
-              </a>
-            </p>
-          </CardContent>
-        </Card>
-      </div>
       <div className="pointer-events-none absolute -left-32 top-0 h-80 w-80 rounded-full bg-[#ffbc7a]/40 blur-[90px]" />
       <div className="pointer-events-none absolute right-0 top-24 h-96 w-96 rounded-full bg-[#8bb7ff]/40 blur-[110px]" />
       <div className="pointer-events-none absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-[#92f2c8]/40 blur-[120px]" />
@@ -203,7 +180,7 @@ export default async function Page() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="space-y-2">
               <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                Streamer Edge • NLP & Sentiment
+                Streamer's Edge • NLP & Sentiment
               </p>
               <h1 className="text-3xl font-semibold md:text-4xl">
                 Posi Vibes Dashboard
@@ -214,35 +191,26 @@ export default async function Page() {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <AlertDialog>
-                <AlertDialogTrigger render={<Button className="h-9" />}>
-                  <GithubIcon data-icon="inline-start" />
-                  GitHub
-                </AlertDialogTrigger>
-                <AlertDialogContent size="sm">
-                  <AlertDialogHeader>
-                    <AlertDialogMedia className="bg-black text-white">
-                      <GithubIcon />
-                    </AlertDialogMedia>
-                    <AlertDialogTitle>Visit my GitHub</AlertDialogTitle>
-                    <AlertDialogDescription>
-                      This will not download anything. It simply opens my
-                      profile page on GitHub.
-                    </AlertDialogDescription>
-                  </AlertDialogHeader>
-                  <AlertDialogFooter>
-                    <AlertDialogCancel>Close</AlertDialogCancel>
-                    <a
-                      className={cn(buttonVariants({ variant: "secondary" }))}
-                      href="https://github.com/obelisk2u"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Open GitHub
-                    </a>
-                  </AlertDialogFooter>
-                </AlertDialogContent>
-              </AlertDialog>
+              <div className="flex items-center gap-2 rounded-full border border-black/5 bg-white/80 p-1 text-xs">
+                <Link
+                  className={cn(
+                    buttonVariants({ variant: "secondary", size: "sm" }),
+                    "h-7 px-3"
+                  )}
+                  href="/"
+                >
+                  Posi Vibes
+                </Link>
+                <Link
+                  className={cn(
+                    buttonVariants({ variant: "ghost", size: "sm" }),
+                    "h-7 px-3"
+                  )}
+                  href="/fun"
+                >
+                  Fun Stats
+                </Link>
+              </div>
             </div>
           </div>
         </header>
@@ -266,34 +234,7 @@ export default async function Page() {
 
         
 
-        <section className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
-          <Card className="bg-white/80 backdrop-blur">
-            <CardHeader>
-              <CardTitle>Chatter Distribution</CardTitle>
-              <CardDescription>
-                What percentage of chatters fall into each message volume band.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {chatterDistribution.map((band) => (
-                <div key={band.label} className="space-y-2">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="font-medium">{band.label}</span>
-                    <span className="text-muted-foreground">
-                      {band.percent}% • {band.chatters} chatters
-                    </span>
-                  </div>
-                  <div className="h-2 w-full rounded-full bg-black/5">
-                    <div
-                      className="h-full rounded-full bg-gradient-to-r from-[#7ab7ff] via-[#8ad1ff] to-[#a9ffe2]"
-                      style={{ width: `${band.percent}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </CardContent>
-          </Card>
-
+        <section>
           <Card className="bg-white/80 backdrop-blur">
             <CardHeader>
               <CardTitle>Sentiment Over Stream</CardTitle>
@@ -303,7 +244,7 @@ export default async function Page() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="rounded-xl border border-black/5 bg-white px-4 py-4">
-                <div className="h-48 w-full">
+                <div className="h-56 w-full">
                   <SentimentLineChart bins={sentimentBins.bins} />
                 </div>
                 <div className="mt-3 flex items-center justify-between text-xs text-muted-foreground">
@@ -335,6 +276,44 @@ export default async function Page() {
             <CardContent className="space-y-4">
               <div className="h-64 w-full">
                 <SentimentBarChart counts={sentimentCounts} />
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
+          <Card className="bg-white/80 backdrop-blur">
+            <CardHeader>
+              <CardTitle>Obelisk&apos;s Favorites</CardTitle>
+              <CardDescription>
+                Hand-picked sentiment highlights from the community.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="grid gap-4 md:grid-cols-2">
+              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-medium">Most Positive</p>
+                  <Badge variant="secondary">0.989</Badge>
+                </div>
+                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                  You probably won’t see this, but I just wanted to say I’ve
+                  been watching you for about 7 years now, and your streams
+                  have been a constant source of good vibes. Thanks for all the
+                  laughs, the clutch plays, and the genuinely positive energy
+                  you bring to the community. Keep doing what you do, Super!!
+                  it means more than you know. 💛
+                </p>
+              </div>
+              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-medium">Most Negative</p>
+                  <Badge className="bg-[#ff5f56] text-white">0.980</Badge>
+                </div>
+                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                  i dont like these snowman models, it just looks like
+                  they're pelvic thrusting their icy cocks at your direction
+                  and ur character takes mental damage
+                </p>
               </div>
             </CardContent>
           </Card>
@@ -442,81 +421,6 @@ export default async function Page() {
                   </AlertDialog>
                 </div>
               ))}
-            </CardContent>
-          </Card>
-        </section>
-
-        <section>
-          <Card className="bg-white/80 backdrop-blur">
-            <CardHeader>
-              <CardTitle>Obelisk&apos;s Favorites</CardTitle>
-              <CardDescription>
-                Hand-picked sentiment highlights from the community.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-4 md:grid-cols-2">
-              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium">Most Positive</p>
-                  <Badge variant="secondary">0.989</Badge>
-                </div>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                  You probably won’t see this, but I just wanted to say I’ve
-                  been watching you for about 7 years now, and your streams
-                  have been a constant source of good vibes. Thanks for all the
-                  laughs, the clutch plays, and the genuinely positive energy
-                  you bring to the community. Keep doing what you do, Super!!
-                  it means more than you know. 💛
-                </p>
-              </div>
-              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium">Most Negative</p>
-                  <Badge className="bg-[#ff5f56] text-white">0.980</Badge>
-                </div>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                  i dont like these snowman models, it just looks like
-                  they're pelvic thrusting their icy cocks at your direction
-                  and ur character takes mental damage
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        <section>
-          <Card className="bg-white/80 backdrop-blur">
-            <CardHeader>
-              <CardTitle>One-Chat Standouts</CardTitle>
-              <CardDescription>
-                Highlights from viewers who only chatted once across 30 streams
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-4 md:grid-cols-2">
-              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium">Most Positive</p>
-                  <Badge variant="secondary">0.992</Badge>
-                </div>
-                <p className="text-xs text-muted-foreground">@kari_sumi</p>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                  @supertf Hey king! Just recently checked my YouTube Recap. You
-                  are my most watched channel! Thanks for all the funny content
-                  and being my favorite twink! Keep up there great work! :3
-                </p>
-              </div>
-              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium">Most Negative</p>
-                  <Badge className="bg-[#ff5f56] text-white">0.982</Badge>
-                </div>
-                <p className="text-xs text-muted-foreground">@Hallowmanny</p>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                  bro i hate you so much no super i really do like you dont
-                  understand my anger towards you right now i hope your eagles
-                  fly to the moon and never come back
-                </p>
-              </div>
             </CardContent>
           </Card>
         </section>
