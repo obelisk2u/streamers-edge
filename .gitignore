@@ -39,6 +39,8 @@ streamers-edge-back/**/*.pyd
 
 streamers-edge-back/.env
 streamers-edge-back/.env.*
+landing-page/
+streamer-edge-back/
 
 # Python cache (global)
 **/__pycache__/
