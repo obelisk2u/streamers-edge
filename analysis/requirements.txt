@@ -2,3 +2,5 @@ torch
 transformers
 tdqm
 matplotlib
+datasets
+peft
