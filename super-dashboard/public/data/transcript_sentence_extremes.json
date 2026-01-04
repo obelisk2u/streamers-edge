@@ -1,0 +1,86 @@
+{
+  "positive": [
+    {
+      "vod_id": "2634822107",
+      "start": 9479.67,
+      "end": 9488.31,
+      "text": "Well, I'm so excited to see slime this weekend.",
+      "label": "positive",
+      "score": 0.992440938949585
+    },
+    {
+      "vod_id": "2654679135",
+      "start": 2572.53,
+      "end": 2573.53,
+      "text": "Hi, I'm really excited to be here.",
+      "label": "positive",
+      "score": 0.9923110008239746
+    },
+    {
+      "vod_id": "2657237349",
+      "start": 5890.32,
+      "end": 5903.85,
+      "text": "I actually thought I played pretty well so I'm kind of excited for this game.",
+      "label": "positive",
+      "score": 0.9921364784240723
+    },
+    {
+      "vod_id": "2642208328",
+      "start": 19296.42,
+      "end": 19314.74,
+      "text": "I want to wish you all a very happy anniversary and many more to come Oh, wow, happy birthday to you and thank you for your support my ryan mckenzie grace and john I want to wish you all a very happy birthday and thank you.",
+      "label": "positive",
+      "score": 0.9918612241744995
+    },
+    {
+      "vod_id": "2656370963",
+      "start": 776.4,
+      "end": 779.6,
+      "text": "Very happy birthday and thank you for supporting the channel.",
+      "label": "positive",
+      "score": 0.9917480945587158
+    }
+  ],
+  "negative": [
+    {
+      "vod_id": "2656370963",
+      "start": 536.21,
+      "end": 538.77,
+      "text": "You ruined my day by playing this poopoo ass game.",
+      "label": "negative",
+      "score": 0.9836639165878296
+    },
+    {
+      "vod_id": "2657237349",
+      "start": 26027.67,
+      "end": 26072.57,
+      "text": "I have like I even have enough fucking equipment for this shit, bro Hey you cheated took away my high ground motherfucker this is just a complete fucking disaster This is just that is just so everything.",
+      "label": "negative",
+      "score": 0.9834553003311157
+    },
+    {
+      "vod_id": "2649164278",
+      "start": 18331.31,
+      "end": 18361.41,
+      "text": "I gotta go Wait guys, this build fucking sucks ass I just looked at the fucking mid game What the fuck is this build?",
+      "label": "negative",
+      "score": 0.9830306172370911
+    },
+    {
+      "vod_id": "2639866758",
+      "start": 18267.49,
+      "end": 18281.7,
+      "text": "This is the stupidest game i've ever played in my life What is this shit?",
+      "label": "negative",
+      "score": 0.9829666614532471
+    },
+    {
+      "vod_id": "2644231738",
+      "start": 1390.59,
+      "end": 1393.59,
+      "text": "The gloves I have are fucking terrible and they like don't even insulate.",
+      "label": "negative",
+      "score": 0.982951819896698
+    }
+  ]
+}
