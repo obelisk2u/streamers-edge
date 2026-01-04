@@ -2,18 +2,7 @@
 
 import * as React from "react";
 
-import {
-  AlertDialog,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -81,7 +70,6 @@ export function ModeratorSentimentCard({
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium">Top Positive</p>
-                <Badge variant="secondary">5 messages</Badge>
               </div>
               <div className="space-y-2">
                 {entry.positive.map((item, index) => (
@@ -95,27 +83,6 @@ export function ModeratorSentimentCard({
                       </p>
                       <p className="text-sm">{item.message}</p>
                     </div>
-                    <AlertDialog>
-                      <AlertDialogTrigger
-                        render={<Button size="sm" variant="outline" />}
-                      >
-                        View
-                      </AlertDialogTrigger>
-                      <AlertDialogContent>
-                        <AlertDialogHeader>
-                          <AlertDialogTitle>
-                            @{entry.username} • Positive
-                          </AlertDialogTitle>
-                          <AlertDialogDescription>
-                            Score {item.score.toFixed(3)}
-                          </AlertDialogDescription>
-                        </AlertDialogHeader>
-                        <p className="text-sm">{item.message}</p>
-                        <AlertDialogFooter>
-                          <AlertDialogCancel>Close</AlertDialogCancel>
-                        </AlertDialogFooter>
-                      </AlertDialogContent>
-                    </AlertDialog>
                   </div>
                 ))}
               </div>
@@ -124,7 +91,6 @@ export function ModeratorSentimentCard({
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium">Top Negative</p>
-                <Badge className="bg-[#ff5f56] text-white">5 messages</Badge>
               </div>
               <div className="space-y-2">
                 {entry.negative.map((item, index) => (
@@ -138,27 +104,6 @@ export function ModeratorSentimentCard({
                       </p>
                       <p className="text-sm">{item.message}</p>
                     </div>
-                    <AlertDialog>
-                      <AlertDialogTrigger
-                        render={<Button size="sm" variant="outline" />}
-                      >
-                        View
-                      </AlertDialogTrigger>
-                      <AlertDialogContent>
-                        <AlertDialogHeader>
-                          <AlertDialogTitle>
-                            @{entry.username} • Negative
-                          </AlertDialogTitle>
-                          <AlertDialogDescription>
-                            Score {item.score.toFixed(3)}
-                          </AlertDialogDescription>
-                        </AlertDialogHeader>
-                        <p className="text-sm">{item.message}</p>
-                        <AlertDialogFooter>
-                          <AlertDialogCancel>Close</AlertDialogCancel>
-                        </AlertDialogFooter>
-                      </AlertDialogContent>
-                    </AlertDialog>
                   </div>
                 ))}
               </div>

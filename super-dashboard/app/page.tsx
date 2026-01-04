@@ -135,16 +135,14 @@ export default async function Page() {
 
   const kpis = [
     {
-      label: "Average Sentiment",
+      label: "Average Chat Sentiment",
       value: formatSigned(avgSentiment),
-      tone: avgSentiment >= 0 ? "Positive tilt" : "Negative tilt",
-      detail: `${totalChats.toLocaleString()} chats scored`,
+      tone: "Sentiment scored between -1 and 1",
     },
     {
-      label: "Biggest Fan",
-      value: `@${topMentions.username}`,
-      tone: `${topMentions.mentions} mentions`,
-      detail: `${topMentions.messages.length} mention messages`,
+      label: "Chats Scored",
+      value: "1,233,169",
+      tone: "Total messages scored",
     },
     {
       label: "Most Positive Avg",
@@ -170,20 +168,20 @@ export default async function Page() {
 
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#f7f2ea] text-foreground">
+    <main className="relative min-h-screen bg-[#f7f2ea] text-foreground">
       <div className="pointer-events-none absolute -left-32 top-0 h-80 w-80 rounded-full bg-[#ffbc7a]/40 blur-[90px]" />
       <div className="pointer-events-none absolute right-0 top-24 h-96 w-96 rounded-full bg-[#8bb7ff]/40 blur-[110px]" />
       <div className="pointer-events-none absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-[#92f2c8]/40 blur-[120px]" />
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 py-10">
-        <header className="flex flex-col gap-6">
+        <header className="sticky top-0 z-40 -mx-6 flex flex-col gap-4 bg-[#f7f2ea]/95 px-6 py-3 backdrop-blur">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="space-y-2">
               <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
                 Streamer's Edge • NLP & Sentiment
               </p>
               <h1 className="text-3xl font-semibold md:text-4xl">
-                Posi Vibes Dashboard
+                Posi Vibes Dashboard - Chat
               </h1>
               <p className="max-w-2xl text-sm text-muted-foreground">
                 Dashboard for sentiment analysis and
@@ -199,8 +197,9 @@ export default async function Page() {
                   )}
                   href="/"
                 >
-                  Posi Vibes
+                  Chat
                 </Link>
+                {/*
                 <Link
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "sm" }),
@@ -209,6 +208,16 @@ export default async function Page() {
                   href="/fun"
                 >
                   Fun Stats
+                </Link>
+                */}
+                <Link
+                  className={cn(
+                    buttonVariants({ variant: "ghost", size: "sm" }),
+                    "h-7 px-3"
+                  )}
+                  href="/streamer"
+                >
+                  Streamer
                 </Link>
               </div>
             </div>
@@ -237,9 +246,9 @@ export default async function Page() {
         <section>
           <Card className="bg-white/80 backdrop-blur">
             <CardHeader>
-              <CardTitle>Sentiment Over Stream</CardTitle>
+              <CardTitle>Chat Sentiment Over Stream</CardTitle>
               <CardDescription>
-                Average sentiment per 5% stream segment.
+                Average chat sentiment per 5% stream segment.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -276,44 +285,6 @@ export default async function Page() {
             <CardContent className="space-y-4">
               <div className="h-64 w-full">
                 <SentimentBarChart counts={sentimentCounts} />
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        <section>
-          <Card className="bg-white/80 backdrop-blur">
-            <CardHeader>
-              <CardTitle>Obelisk&apos;s Favorites</CardTitle>
-              <CardDescription>
-                Hand-picked sentiment highlights from the community.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-4 md:grid-cols-2">
-              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium">Most Positive</p>
-                  <Badge variant="secondary">0.989</Badge>
-                </div>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                  You probably won’t see this, but I just wanted to say I’ve
-                  been watching you for about 7 years now, and your streams
-                  have been a constant source of good vibes. Thanks for all the
-                  laughs, the clutch plays, and the genuinely positive energy
-                  you bring to the community. Keep doing what you do, Super!!
-                  it means more than you know. 💛
-                </p>
-              </div>
-              <div className="space-y-3 rounded-xl border border-black/5 bg-white p-4">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium">Most Negative</p>
-                  <Badge className="bg-[#ff5f56] text-white">0.980</Badge>
-                </div>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                  i dont like these snowman models, it just looks like
-                  they're pelvic thrusting their icy cocks at your direction
-                  and ur character takes mental damage
-                </p>
               </div>
             </CardContent>
           </Card>

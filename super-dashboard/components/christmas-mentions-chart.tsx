@@ -78,7 +78,7 @@ export function ChristmasMentionsChart({ data }: ChristmasMentionsChartProps) {
         <Line
           type="monotone"
           dataKey="super"
-          name="Super"
+          name="super"
           stroke="#10b981"
           strokeWidth={2}
           dot={false}

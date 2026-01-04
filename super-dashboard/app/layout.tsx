@@ -46,6 +46,15 @@ export default function RootLayout({
                   github.com/obelisk2u
                 </a>
               </p>
+              <p className="text-muted-foreground">
+                Inquiries to{" "}
+                <a
+                  className="underline underline-offset-4"
+                  href="mailto:jordan@streamers-edge.com"
+                >
+                  jordan@streamers-edge.com
+                </a>
+              </p>
             </CardContent>
           </Card>
         </div>
