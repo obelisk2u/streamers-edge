@@ -52,7 +52,10 @@ export function ModeratorSentimentCard({
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
-        <Select value={selected} onValueChange={setSelected}>
+        <Select
+          value={selected}
+          onValueChange={(value) => setSelected(value ?? "")}
+        >
           <SelectTrigger className="w-full sm:w-72">
             <SelectValue placeholder="Pick a moderator" />
           </SelectTrigger>
