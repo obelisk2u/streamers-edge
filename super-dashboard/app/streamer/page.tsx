@@ -72,11 +72,16 @@ export default async function Page() {
       positive: [],
       negative: [],
     }),
-    loadJsonFromSafe(ANALYSIS_DIR, "transcript_sentiment_bins_5pct.json", {
+    loadJsonFromSafe<{
+      stream_count: number;
+      bins: Array<{ label: string; avg_sentiment: number; count: number }>;
+    }>(ANALYSIS_DIR, "transcript_sentiment_bins_5pct.json", {
       stream_count: 0,
       bins: [],
     }),
-    loadJsonFromSafe(PUBLIC_DIR, "sentiment_bins_5pct.json", { bins: [] }),
+    loadJsonFromSafe<{
+      bins: Array<{ avg_sentiment: number; count: number }>;
+    }>(PUBLIC_DIR, "sentiment_bins_5pct.json", { bins: [] }),
     loadJsonFromSafe(PUBLIC_DIR, "transcript_sentence_counts.json", {
       negative: 0,
       neutral: 0,
