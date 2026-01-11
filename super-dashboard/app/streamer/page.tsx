@@ -53,22 +53,39 @@ export default async function Page() {
     sentenceCounts,
     swearCounts,
   ] = await Promise.all([
-    loadJsonFromSafe(
-      ANALYSIS_DIR,
-      "transcript_avg_sentiment.json",
-      {
-        avg_sentiment: 0,
-        total_sentences: 0,
-        total_streams: 0,
-      }
-    ),
+    loadJsonFromSafe<{
+      avg_sentiment: number;
+      total_sentences: number;
+      total_streams: number;
+    }>(ANALYSIS_DIR, "transcript_avg_sentiment.json", {
+      avg_sentiment: 0,
+      total_sentences: 0,
+      total_streams: 0,
+    }),
     loadJsonFromSafe<
       Array<{
         vod_id: string;
         transcript?: { duration?: number };
       }>
     >(ANALYSIS_DIR, "combined_transcripts_sentences.json", []),
-    loadJsonFromSafe(PUBLIC_DIR, "transcript_sentence_extremes.json", {
+    loadJsonFromSafe<{
+      positive: Array<{
+        vod_id: string;
+        start: number;
+        end: number;
+        text: string;
+        label: string;
+        score: number;
+      }>;
+      negative: Array<{
+        vod_id: string;
+        start: number;
+        end: number;
+        text: string;
+        label: string;
+        score: number;
+      }>;
+    }>(PUBLIC_DIR, "transcript_sentence_extremes.json", {
       positive: [],
       negative: [],
     }),
@@ -82,12 +99,21 @@ export default async function Page() {
     loadJsonFromSafe<{
       bins: Array<{ avg_sentiment: number; count: number }>;
     }>(PUBLIC_DIR, "sentiment_bins_5pct.json", { bins: [] }),
-    loadJsonFromSafe(PUBLIC_DIR, "transcript_sentence_counts.json", {
+    loadJsonFromSafe<{
+      negative: number;
+      neutral: number;
+      positive: number;
+    }>(PUBLIC_DIR, "transcript_sentence_counts.json", {
       negative: 0,
       neutral: 0,
       positive: 0,
     }),
-    loadJsonFromSafe(ANALYSIS_DIR, "streamer_swear_counts.json", {
+    loadJsonFromSafe<{
+      fuck: number;
+      shit: number;
+      ass: number;
+      hell: number;
+    }>(ANALYSIS_DIR, "streamer_swear_counts.json", {
       fuck: 0,
       shit: 0,
       ass: 0,
