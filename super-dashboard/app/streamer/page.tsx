@@ -62,11 +62,12 @@ export default async function Page() {
         total_streams: 0,
       }
     ),
-    loadJsonFromSafe(
-      ANALYSIS_DIR,
-      "combined_transcripts_sentences.json",
-      []
-    ),
+    loadJsonFromSafe<
+      Array<{
+        vod_id: string;
+        transcript?: { duration?: number };
+      }>
+    >(ANALYSIS_DIR, "combined_transcripts_sentences.json", []),
     loadJsonFromSafe(PUBLIC_DIR, "transcript_sentence_extremes.json", {
       positive: [],
       negative: [],
