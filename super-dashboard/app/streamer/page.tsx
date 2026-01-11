@@ -24,6 +24,14 @@ async function loadJsonFrom(dir: string, filename: string) {
   return JSON.parse(raw);
 }
 
+async function loadJsonFromSafe<T>(dir: string, filename: string, fallback: T) {
+  try {
+    return (await loadJsonFrom(dir, filename)) as T;
+  } catch {
+    return fallback;
+  }
+}
+
 function formatHoursMinutes(totalSeconds: number) {
   const hours = Math.floor(totalSeconds / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
@@ -45,53 +53,40 @@ export default async function Page() {
     sentenceCounts,
     swearCounts,
   ] = await Promise.all([
-    loadJsonFrom(ANALYSIS_DIR, "transcript_avg_sentiment.json") as Promise<{
-      avg_sentiment: number;
-      total_sentences: number;
-      total_streams: number;
-    }>,
-    loadJsonFrom(ANALYSIS_DIR, "combined_transcripts_sentences.json") as Promise<
-      Array<{
-        vod_id: string;
-        transcript?: { duration?: number };
-      }>
-    >,
-    loadJsonFrom(PUBLIC_DIR, "transcript_sentence_extremes.json") as Promise<{
-      positive: Array<{
-        vod_id: string;
-        start: number;
-        end: number;
-        text: string;
-        label: string;
-        score: number;
-      }>;
-      negative: Array<{
-        vod_id: string;
-        start: number;
-        end: number;
-        text: string;
-        label: string;
-        score: number;
-      }>;
-    }>,
-    loadJsonFrom(ANALYSIS_DIR, "transcript_sentiment_bins_5pct.json") as Promise<{
-      stream_count: number;
-      bins: Array<{ label: string; avg_sentiment: number; count: number }>;
-    }>,
-    loadJsonFrom(PUBLIC_DIR, "sentiment_bins_5pct.json") as Promise<{
-      bins: Array<{ avg_sentiment: number; count: number }>;
-    }>,
-    loadJsonFrom(PUBLIC_DIR, "transcript_sentence_counts.json") as Promise<{
-      negative: number;
-      neutral: number;
-      positive: number;
-    }>,
-    loadJsonFrom(ANALYSIS_DIR, "streamer_swear_counts.json") as Promise<{
-      fuck: number;
-      shit: number;
-      ass: number;
-      hell: number;
-    }>,
+    loadJsonFromSafe(
+      ANALYSIS_DIR,
+      "transcript_avg_sentiment.json",
+      {
+        avg_sentiment: 0,
+        total_sentences: 0,
+        total_streams: 0,
+      }
+    ),
+    loadJsonFromSafe(
+      ANALYSIS_DIR,
+      "combined_transcripts_sentences.json",
+      []
+    ),
+    loadJsonFromSafe(PUBLIC_DIR, "transcript_sentence_extremes.json", {
+      positive: [],
+      negative: [],
+    }),
+    loadJsonFromSafe(ANALYSIS_DIR, "transcript_sentiment_bins_5pct.json", {
+      stream_count: 0,
+      bins: [],
+    }),
+    loadJsonFromSafe(PUBLIC_DIR, "sentiment_bins_5pct.json", { bins: [] }),
+    loadJsonFromSafe(PUBLIC_DIR, "transcript_sentence_counts.json", {
+      negative: 0,
+      neutral: 0,
+      positive: 0,
+    }),
+    loadJsonFromSafe(ANALYSIS_DIR, "streamer_swear_counts.json", {
+      fuck: 0,
+      shit: 0,
+      ass: 0,
+      hell: 0,
+    }),
   ]);
 
   const totalStreamSeconds = transcripts.reduce((sum, entry) => {
