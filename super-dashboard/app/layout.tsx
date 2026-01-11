@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
+import { PersistentChat } from "@/components/persistent-chat";
 import { Card, CardContent } from "@/components/ui/card";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
@@ -31,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="fixed right-4 top-4 z-50 w-72">
+        <div className="fixed right-4 top-4 z-50 w-72 space-y-4">
           <Card className="bg-white/90 backdrop-blur">
             <CardContent className="space-y-2 p-4 text-sm">
               <p className="font-medium">Please help me get a job</p>
@@ -57,6 +58,7 @@ export default function RootLayout({
               </p>
             </CardContent>
           </Card>
+          <PersistentChat />
         </div>
         {children}
       </body>

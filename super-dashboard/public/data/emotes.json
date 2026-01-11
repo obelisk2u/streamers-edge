@@ -1,0 +1,3224 @@
+{
+  "updated_at": "2026-01-11T01:30:25.305Z",
+  "channel": {
+    "name": "supertf",
+    "id": "59635827"
+  },
+  "emotes": [
+    {
+      "code": ":tf:",
+      "url": "https://cdn.betterttv.net/emote/54fa8f1401e468494b85b537/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "!gamble",
+      "url": "https://cdn.7tv.app/emote/01H0KHVXGR0006K2DSP3A6MHD1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "!slots",
+      "url": "https://cdn.7tv.app/emote/01FJT4HEXG000FZHS49NWQT5DZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "(7TV)",
+      "url": "https://cdn.7tv.app/emote/01GKQXGX1R000216YB0K7GN92X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "12345",
+      "url": "https://cdn.7tv.app/emote/01G74K9MFR000CY3BJ8KREWM9T/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "2BKiss",
+      "url": "https://cdn.7tv.app/emote/01GBH8N9YG000FM2QSG2CXHA5F/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "2Bsip",
+      "url": "https://cdn.7tv.app/emote/01GBJ4T538000EDQKRY6P7J0QZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "3Head",
+      "url": "https://cdn.7tv.app/emote/01F6PXMFT0000A6S4F82D55EYZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "4Gitte",
+      "url": "https://cdn.7tv.app/emote/01FVKD0Q6G0005J6PF8E9FAQFB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "4Shrug",
+      "url": "https://cdn.7tv.app/emote/01F6X47D7G0000374S98XE8MFQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "4Weird",
+      "url": "https://cdn.7tv.app/emote/01FP24BZ6R000FZADBM40VSA02/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "4WeirdBuff",
+      "url": "https://cdn.7tv.app/emote/01F6MVH3DR0004P7N4A9PNWV50/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "4WeirdBusiness",
+      "url": "https://cdn.7tv.app/emote/01F6MVEDFR0004P7N4A9PNQG8Q/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "5Head",
+      "url": "https://cdn.7tv.app/emote/01F6NPFQXG000AAS5FM9Q6GVCC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "7Cinema",
+      "url": "https://cdn.7tv.app/emote/01GBFDVP18000CRDCG0DV7KEMY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "aceStare",
+      "url": "https://cdn.7tv.app/emote/01JY2MX5BE5BVWWFV153ANMMHZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "aga",
+      "url": "https://cdn.7tv.app/emote/01HMBMJPV0000D32KQCYBK4S1D/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AGAIN",
+      "url": "https://cdn.7tv.app/emote/01JKCTHB96Y2867QYSX4978C9D/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AING",
+      "url": "https://cdn.7tv.app/emote/01GX67ZY9000070CSW25X3VFVR/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AINTNOWAY",
+      "url": "https://cdn.7tv.app/emote/01GDDQVMH000038Q48APH8VE3Q/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Alcoholic",
+      "url": "https://cdn.7tv.app/emote/01HCM64BM80005KTFQBNM1KVEJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AlienDance",
+      "url": "https://cdn.7tv.app/emote/01GB2ZJFBG000DTBJYANG8XYFP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ALRIGHT",
+      "url": "https://cdn.7tv.app/emote/01GBRQX1B8000834DRET9JNDQP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "amongS",
+      "url": "https://cdn.7tv.app/emote/01GX5GD9V0000DJJ63WGMEA0A6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "anchorTF",
+      "url": "https://cdn.7tv.app/emote/01JBX7NHRGCCHWFD878B2F7CHY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AngelThump",
+      "url": "https://cdn.betterttv.net/emote/566ca1a365dbbdab32ec055b/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "angy",
+      "url": "https://cdn.7tv.app/emote/01FYXG5C3G0001NTS4HQM4JKKW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AOT",
+      "url": "https://cdn.7tv.app/emote/01J7G4Y2GG0000R8ARQ6358JKA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ApuApustaja",
+      "url": "https://cdn.7tv.app/emote/01GGCQPCGR000C7MT8JZGP6E89/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ariW",
+      "url": "https://cdn.betterttv.net/emote/56fa09f18eff3b595e93ac26/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "ASSEMBLE",
+      "url": "https://cdn.7tv.app/emote/01GWDGXVG0000FVNNHM4H1HZRF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AutoCombo",
+      "url": "https://cdn.7tv.app/emote/01H3390BQG000DJXRR92CC0RX7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Aware",
+      "url": "https://cdn.7tv.app/emote/01FFWH9WV80000JT8GHDKHJNZC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AYAYA",
+      "url": "https://cdn.7tv.app/emote/01GB32XE6R00018VJGJ4A9BNCV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AYAYAChest",
+      "url": "https://cdn.7tv.app/emote/01FT3NXCA800001582V1DYAC8W/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AYAYAWeird",
+      "url": "https://cdn.7tv.app/emote/01F6TENRQR00023FNWP0P0ZYD6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AYAYAY",
+      "url": "https://cdn.7tv.app/emote/01F9AGQHN8000DJ6K0Q5YDFXEX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "AYOO",
+      "url": "https://cdn.7tv.app/emote/01F9JATJB0000E0F0BJY6NY0W6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BACKTOTHELAB",
+      "url": "https://cdn.7tv.app/emote/01FYQT70NR00050YXBB45F2GGZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Bars",
+      "url": "https://cdn.7tv.app/emote/01GZ85EJ8G0004NSYK83F7CZFV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BasedGod",
+      "url": "https://cdn.7tv.app/emote/01GB9W2CDG000BFSD141G0MGSA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BASEDHALT",
+      "url": "https://cdn.7tv.app/emote/01FGYFPWB0000DR9KT6H0R2B6S/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Bedeg",
+      "url": "https://cdn.7tv.app/emote/01FDSPD7BG000CA2GR6B8AQ1CN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Bedge",
+      "url": "https://cdn.7tv.app/emote/01FA5S9KGR0003RPW78DX3QB0Z/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BEGGING",
+      "url": "https://cdn.7tv.app/emote/01GD8AMDQ00002MSDCE86ZDRP6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BERSERKERRAGE",
+      "url": "https://cdn.7tv.app/emote/01JFTE24GPCP3RYXWJKVKX0HCP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BibleThump",
+      "url": "https://cdn.7tv.app/emote/01J8NMZ2HG0005G1FWF2H9Y615/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BigDog",
+      "url": "https://cdn.7tv.app/emote/01HJQ2P608000DQX3MV0V8TVM2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BigTrouble",
+      "url": "https://cdn.7tv.app/emote/01F712CZC80008GMQW4SB5RATX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BillyApprove",
+      "url": "https://cdn.7tv.app/emote/01GB2S7H7000018VJGJ4A9BMFS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "billyReady",
+      "url": "https://cdn.7tv.app/emote/01FYDQ1HXG0003KQDBF7EMASWZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BlessRNG",
+      "url": "https://cdn.7tv.app/emote/01EZPN2VQ800077NX500A43YFF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Bloons",
+      "url": "https://cdn.7tv.app/emote/01GB6VHGNG00070XHHMHDWAVRK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BLUBBERS",
+      "url": "https://cdn.7tv.app/emote/01GFP0NQRR0000G74DCPERWQHB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BOGGED",
+      "url": "https://cdn.7tv.app/emote/01F6QW2GR80000TEKRM6B0GGN2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BOOBA",
+      "url": "https://cdn.7tv.app/emote/01F6N31ETR0004P7N4A9PKS5X9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BOOBEST",
+      "url": "https://cdn.7tv.app/emote/01F6N72ZBR000E0GG0PF8PM45K/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BOOMIES",
+      "url": "https://cdn.7tv.app/emote/01F6WJVC8G0006Z93CX8Y8EWNB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Borpa",
+      "url": "https://cdn.7tv.app/emote/01F6R7RFHR0004V0XPDH2F46CJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "borpaSpin",
+      "url": "https://cdn.7tv.app/emote/01F6MNJEV000012ZP6HJJ6CM5M/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BouncinOnIt",
+      "url": "https://cdn.7tv.app/emote/01JS5SZV2J1XQ627FM5181KZVC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Broadcaster",
+      "url": "https://cdn.7tv.app/emote/01F5PJ2FSG000BAN36SW3NAJAY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "BroBalt",
+      "url": "https://cdn.betterttv.net/emote/54fbf00a01abde735115de5c/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "bttvNice",
+      "url": "https://cdn.betterttv.net/emote/54fab7d2633595ca4c713abf/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "bUrself",
+      "url": "https://cdn.betterttv.net/emote/566c9f3b65dbbdab32ec052e/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "c!",
+      "url": "https://cdn.betterttv.net/emote/6468f7acaee1f7f47567708e/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "cammyAbusingYou",
+      "url": "https://cdn.7tv.app/emote/01J2J8JM880006YFK521XXWM5T/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "cammyKiss",
+      "url": "https://cdn.7tv.app/emote/01J2JGWC58000FDPHGHFN1DWVY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "cammySip",
+      "url": "https://cdn.7tv.app/emote/01J2FVFXP00004XKCXV7SNYMH9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "cammyStretch",
+      "url": "https://cdn.7tv.app/emote/01GT18TFH00000FWZVNVRN33AH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "CandianRage",
+      "url": "https://cdn.betterttv.net/emote/54fbf09c01abde735115de61/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "catJAM",
+      "url": "https://cdn.7tv.app/emote/01F6MQ33FG000FFJ97ZB8MWV52/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "catKISS",
+      "url": "https://cdn.7tv.app/emote/01F5VW2TKR0003RCV2Z6JBHCST/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "catRose",
+      "url": "https://cdn.7tv.app/emote/01HPM6TQ70000FD2353Q4VNPK8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "CAUGHT",
+      "url": "https://cdn.7tv.app/emote/01H0SQNM9R0005HNCSM10SYJEQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Cereal",
+      "url": "https://cdn.7tv.app/emote/01FMYTJB6800068STSDCEP5AYM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Chadge",
+      "url": "https://cdn.7tv.app/emote/01FSVYAQX0000651CCCG314YEB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ChairmanMeow",
+      "url": "https://cdn.7tv.app/emote/01FJ182XJR000EFPWVER1MDDSB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Chatting",
+      "url": "https://cdn.7tv.app/emote/01FBZESCNR000A6AWCB1X558GZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ChiefsNeedHelp",
+      "url": "https://cdn.7tv.app/emote/01J8E4DP4G000DNWJ3ST67HEVZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Chillin",
+      "url": "https://cdn.7tv.app/emote/01GFF7MWDG000DDEJ5YZRG7B7Q/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ChugU",
+      "url": "https://cdn.7tv.app/emote/01F6M8J0NG000AXRNAAMW0FTEK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "chugW",
+      "url": "https://cdn.betterttv.net/emote/616a5af0054a252a431f469f/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "CiGrip",
+      "url": "https://cdn.betterttv.net/emote/54fa8fce01e468494b85b53c/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Cinema",
+      "url": "https://cdn.7tv.app/emote/01GBFDVP18000CRDCG0DV7KEMY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Clap",
+      "url": "https://cdn.7tv.app/emote/01GAM8EFQ00004MXFXAJYKA859/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Clap2",
+      "url": "https://cdn.7tv.app/emote/01GB2TN09G000AZXHZ8HNEZX6G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "clappi",
+      "url": "https://cdn.7tv.app/emote/01H9JADJJR0008QVVK15MGJ4NY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Classic",
+      "url": "https://cdn.7tv.app/emote/01GBPSCGR00007Q17796BDN5AJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Clueless",
+      "url": "https://cdn.7tv.app/emote/01F6T8NM9R0007M5BTFWSP1YSJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "COCKA",
+      "url": "https://cdn.7tv.app/emote/01F6NV46WR000BEKN8ZXWN0Z2A/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "CoffeeTime",
+      "url": "https://cdn.7tv.app/emote/01G3K148SG000A0NCN5ZE3PCYJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "COGGERS",
+      "url": "https://cdn.7tv.app/emote/01F6Q02C000009K4HVQSZJHD68/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "COMEONN",
+      "url": "https://cdn.7tv.app/emote/01JXBFYRHH78NGPH1QTEX9645B/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ConcernDoge",
+      "url": "https://cdn.betterttv.net/emote/566c9f6365dbbdab32ec0532/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Concerned",
+      "url": "https://cdn.7tv.app/emote/01G55AX00R000B2BBGEQH5KW8K/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Considering",
+      "url": "https://cdn.7tv.app/emote/01H9T8T4M80009A91MKCXRPCMM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "COOKING",
+      "url": "https://cdn.7tv.app/emote/01GBEBQQN00001RAQMJBWFVDXF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Copeless",
+      "url": "https://cdn.7tv.app/emote/01G27R6WHG000DX65PH389CNEF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "COPIUM",
+      "url": "https://cdn.7tv.app/emote/01GX5F40HR000DZQQC8JFXW88K/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Corpa",
+      "url": "https://cdn.7tv.app/emote/01FDZBEN080007C1Q6BS7PHCDB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "cowPls",
+      "url": "https://cdn.7tv.app/emote/01JX1C3JNCR4RJXZCGB3VZJ3GE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "CrayonTime",
+      "url": "https://cdn.7tv.app/emote/01G98TT6BR000A39K5ZSQFTPWR/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "cReady",
+      "url": "https://cdn.7tv.app/emote/01F6R2SREG000ATZXMPM5PSJYY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "CruW",
+      "url": "https://cdn.betterttv.net/emote/55471c2789d53f2d12781713/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Cuisine",
+      "url": "https://cdn.7tv.app/emote/01HVCK878R00042QPZA2WPGZVH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "cvHazmat",
+      "url": "https://cdn.betterttv.net/emote/5e76d338d6581c3724c0f0b2/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "cvL",
+      "url": "https://cdn.betterttv.net/emote/5e76d2d2d112fc372574d222/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "cvMask",
+      "url": "https://cdn.betterttv.net/emote/5e76d399d6581c3724c0f0b8/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "cvR",
+      "url": "https://cdn.betterttv.net/emote/5e76d2ab8c0f5c3723a9a87d/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "D:",
+      "url": "https://cdn.betterttv.net/emote/55028cd2135896936880fdd7/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "DankG",
+      "url": "https://cdn.7tv.app/emote/01F6MMSC3G0008DZ20TJ4B20SX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DANKIES",
+      "url": "https://cdn.7tv.app/emote/01F2ZW54JR000DSBG200DM9SG4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Dapmeup",
+      "url": "https://cdn.7tv.app/emote/01K9WPFM3VY64XZ9CF2B5Q5T72/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DatSauce",
+      "url": "https://cdn.betterttv.net/emote/54fa903b01e468494b85b53f/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "DDoomer",
+      "url": "https://cdn.7tv.app/emote/01F6ZSWWRR000AP063NAQ5MZ6J/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Deadge",
+      "url": "https://cdn.7tv.app/emote/01F8YE5QNR00081476FRV8XDEZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Delusional",
+      "url": "https://cdn.7tv.app/emote/01H1M30Z100005DBYT6M85RC4X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DemCowboys",
+      "url": "https://cdn.7tv.app/emote/01GFHT5BH80009DJ8T8D7X9ZAE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Dentge",
+      "url": "https://cdn.7tv.app/emote/01G18VSZHG0000B31NY2K6DADK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Despairge",
+      "url": "https://cdn.7tv.app/emote/01FTGK77VG0009FNT3YE4024KV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DIESOFCRINGE",
+      "url": "https://cdn.7tv.app/emote/01J665TVHR0002EA4N4W7AGZ41/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DIESOFPAIN",
+      "url": "https://cdn.7tv.app/emote/01G6TVSH00000EFWPT7ER1KG1Y/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DinkDonk",
+      "url": "https://cdn.7tv.app/emote/01GAFVZWJ800000RRDBCNCTSQG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "doakes",
+      "url": "https://cdn.7tv.app/emote/01K4RW2KFWAQJSG785DPSTYECG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DogChamp",
+      "url": "https://cdn.betterttv.net/emote/5ffdf28dc96152314ad63960/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Dogege",
+      "url": "https://cdn.7tv.app/emote/01F728PAA8000F7ZM31E7ZQY0J/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "donkMiner",
+      "url": "https://cdn.7tv.app/emote/01F6SS8968000EWQN4SGAWSFYC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "donkRun",
+      "url": "https://cdn.7tv.app/emote/01F6NWTH5R00015NVG2J8WDW3H/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "donkWalk",
+      "url": "https://cdn.7tv.app/emote/01F7S707X80001E6PG54YCKBJT/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DONOTCUM",
+      "url": "https://cdn.7tv.app/emote/01FBWNT6AG00043ARMQBQ7WETH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DonoWall",
+      "url": "https://cdn.7tv.app/emote/01F6RY9FT80003SBEQ3QZM7GCS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DOWNLOADED",
+      "url": "https://cdn.7tv.app/emote/01H5C0QKH0000B1J9Q3F9DE9PV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Drake",
+      "url": "https://cdn.7tv.app/emote/01F5PFXKP80004R630K8ESP57S/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "dreamCD",
+      "url": "https://cdn.7tv.app/emote/01FN8JX55R00068STSDCEP6FA2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Drinkin",
+      "url": "https://cdn.7tv.app/emote/01G6JB5YPG000CNSK2B9AZXV0D/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DrumTime",
+      "url": "https://cdn.7tv.app/emote/01FS7FKMBG00015JNW7YN0W8PQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "DuckerZ",
+      "url": "https://cdn.betterttv.net/emote/573d38b50ffbf6cc5cc38dc9/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "duckPls",
+      "url": "https://cdn.7tv.app/emote/01FBBPVZQ00004CMZNTV0TZ92H/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "EarlyStreamTomorrow",
+      "url": "https://cdn.7tv.app/emote/01GB1S37Y800006TW50PGWA7NN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "eGuitarTime",
+      "url": "https://cdn.7tv.app/emote/01F714DFTR0001QQR52M9B18FM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "elclassico",
+      "url": "https://cdn.7tv.app/emote/01HFK85W8R00053PHAJVKF3W0P/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "EMAN",
+      "url": "https://cdn.7tv.app/emote/01GJSJ3JJR000EFNJ9NHD7VEBP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "emoneyArrive",
+      "url": "https://cdn.7tv.app/emote/01J0HQDQER000729D1HHCVN0TZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "emoneyLeave",
+      "url": "https://cdn.7tv.app/emote/01J0HQEJSR0006HGJYSD04EGJB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "EZ",
+      "url": "https://cdn.7tv.app/emote/01GB4CK01800090V9B3D8CGEEX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "fadedthanaho",
+      "url": "https://cdn.7tv.app/emote/01GGR1AWTR0008910MCJH7MYWD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FALCONKICK",
+      "url": "https://cdn.7tv.app/emote/01GX7PENF8000DPG87785E0ESN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FatKiryu",
+      "url": "https://cdn.7tv.app/emote/01GJQA1DPR00070QXXXHQFN2KQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsAmazingMan",
+      "url": "https://cdn.betterttv.net/emote/5733ff12e72c3c0814233e20/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "FeelsBadMan",
+      "url": "https://cdn.betterttv.net/emote/566c9fc265dbbdab32ec053b/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "FeelsBirthdayMan",
+      "url": "https://cdn.betterttv.net/emote/55b6524154eefd53777b2580/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "FeelsCarriedMan",
+      "url": "https://cdn.7tv.app/emote/01G4BHRNHG000563NYE7GT9ZDV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsDankMan",
+      "url": "https://cdn.7tv.app/emote/01GB9W8JN80004CKF2H1TWA99H/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsExhaustedMan",
+      "url": "https://cdn.7tv.app/emote/01G1V1BT68000EQBW1MSQKT2NT/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsGoodMan",
+      "url": "https://cdn.betterttv.net/emote/566c9fde65dbbdab32ec053e/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "FeelsHornyMan",
+      "url": "https://cdn.7tv.app/emote/01GX5GW5DR000FRDHR6A82TMQX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsLagMan",
+      "url": "https://cdn.7tv.app/emote/01F6X8APD0000APAHAKJATWCR4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsOkayMan",
+      "url": "https://cdn.7tv.app/emote/01GB46137R000BJ5HR8F6XV8J1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsPumpkinMan",
+      "url": "https://cdn.betterttv.net/emote/580e438942170bfd57189866/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "FeelsRainMan",
+      "url": "https://cdn.7tv.app/emote/01EZPGBXMR0001DCZS00AD662R/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsSnowMan",
+      "url": "https://cdn.betterttv.net/emote/566dde0e65dbbdab32ec068f/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "FeelsSnowyMan",
+      "url": "https://cdn.betterttv.net/emote/566decae65dbbdab32ec0699/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "FeelsStrongMan",
+      "url": "https://cdn.7tv.app/emote/01GB4EV0Q800090V9B3D8CGEHV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FeelsWeirdMan",
+      "url": "https://cdn.7tv.app/emote/01GB4FWTR8000DGEZ8VYY59RBN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Felon",
+      "url": "https://cdn.7tv.app/emote/01GQ96V83G000F8SBVNAFDJMB1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "felonListening",
+      "url": "https://cdn.7tv.app/emote/01GW1MTA380006RD0RX95JF1YM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Felony",
+      "url": "https://cdn.7tv.app/emote/01GT35EZ7G000EBPCJBPM143VX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FiddyWtf",
+      "url": "https://cdn.7tv.app/emote/01GFM5GHQR0004X9SDHTZ1AWSQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FireSpeed",
+      "url": "https://cdn.betterttv.net/emote/566c9ff365dbbdab32ec0541/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Fishge",
+      "url": "https://cdn.7tv.app/emote/01FBS8EZQ000009G15M8ZEPNRG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Fishinge",
+      "url": "https://cdn.7tv.app/emote/01FB5EN09000033EKAWRH3E7CE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FishMoley",
+      "url": "https://cdn.betterttv.net/emote/566ca00f65dbbdab32ec0544/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "fishnet",
+      "url": "https://cdn.7tv.app/emote/01GJTSQ348000AXQX83F1Y54PV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FLASHBANG",
+      "url": "https://cdn.7tv.app/emote/01FKJHQS6R0004X8QJ9S80JB9N/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FLOWERING",
+      "url": "https://cdn.7tv.app/emote/01HD5DHVW80001XXDZ5G61GFPC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Flushed",
+      "url": "https://cdn.7tv.app/emote/01HTDYEGG00004B0MV8TERQSR6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FluteTime",
+      "url": "https://cdn.7tv.app/emote/01F60P5WJ0000AE7CZT482PR3P/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FlyEaglesFly",
+      "url": "https://cdn.7tv.app/emote/01GJ7D0DN80005WW71NGC535Q0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Foodge",
+      "url": "https://cdn.7tv.app/emote/01FDJF05E800051CP0M93GBTNJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ForeverAlone",
+      "url": "https://cdn.betterttv.net/emote/54fa909b01e468494b85b542/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "forsenCD",
+      "url": "https://cdn.7tv.app/emote/01EZPRG5RR0002RYT500A3PHPQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "forsenLaughingAtYou",
+      "url": "https://cdn.7tv.app/emote/01FAPWYY280007NZXXVZKH6RFD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "forsenPls",
+      "url": "https://cdn.7tv.app/emote/01GB8EQNJ8000497KFBZWNSDFZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FreeSpeech",
+      "url": "https://cdn.7tv.app/emote/01HR0D56PG0005JCWGEQR4HYX8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Fridge",
+      "url": "https://cdn.7tv.app/emote/01FV09NPK800027W55BC5TGC9X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "FTC",
+      "url": "https://cdn.7tv.app/emote/01HD4A2ZF80001XXDZ5G61G553/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "furios",
+      "url": "https://cdn.7tv.app/emote/01G7QTHQ1G0009H0PZMRY84R0J/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GabeN",
+      "url": "https://cdn.betterttv.net/emote/54fa90ba01e468494b85b543/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Gacha",
+      "url": "https://cdn.7tv.app/emote/01H295PH7R00080K50KTZJ9TXJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "gachiBASS",
+      "url": "https://cdn.7tv.app/emote/01GB4P2HX0000BJ5HR8F6XV9Q0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "gachiGASM",
+      "url": "https://cdn.7tv.app/emote/01F9EM2ETG000E7SC8F953GXCX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "gachiHYPER",
+      "url": "https://cdn.7tv.app/emote/01F00ZJBQR0007E4VV006YKSKE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GachiPls",
+      "url": "https://cdn.7tv.app/emote/01FHF0PNSG00007JF8Q9REPZB1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "gachiRoll",
+      "url": "https://cdn.7tv.app/emote/01GMRMQ7480007YCNWFXF5ZW45/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "gachiW",
+      "url": "https://cdn.7tv.app/emote/01F00ZP4TR0007E4VV006YKSKG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GAMBA",
+      "url": "https://cdn.7tv.app/emote/01G3WEGZN0000ET2J0MQP5YJ0G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Gayge",
+      "url": "https://cdn.7tv.app/emote/01G4GQC5H0000D3DGNAYJJP8EB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GENJI",
+      "url": "https://cdn.7tv.app/emote/01JWYWA9ERW225SA7MRDPMJR0X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GiannisLaugh",
+      "url": "https://cdn.7tv.app/emote/01GFQJPEDR00061WV0T4T55JKJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GIGAKING",
+      "url": "https://cdn.7tv.app/emote/01HN30A7G80002CWWPS6R3Q5T6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GIGALEON",
+      "url": "https://cdn.7tv.app/emote/01GV6P71D8000D5TY4NWCMR7VG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GIGASOY",
+      "url": "https://cdn.7tv.app/emote/01FFYHTQ280001XDR7G9054JB8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "glorp",
+      "url": "https://cdn.7tv.app/emote/01H16FA16G0005EZED5J0EY7KN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "glorpa",
+      "url": "https://cdn.7tv.app/emote/01HC0K2XW8000EG661N979Y0S7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "glorpJam",
+      "url": "https://cdn.7tv.app/emote/01HNEKZY4G0001XDKW9GFY7KKV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "glorpNotL",
+      "url": "https://cdn.7tv.app/emote/01HZX4JT4G000A9JQ25Y1DJYBV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "glorpOOOO",
+      "url": "https://cdn.7tv.app/emote/01J6JDES18000CKHTDYB3M9VXB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Goblin",
+      "url": "https://cdn.7tv.app/emote/01H8ZKN2V000092YW05JE5NN4R/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GoingLive",
+      "url": "https://cdn.7tv.app/emote/01G5DT34700009C64PMWP6WVST/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GoodMorning",
+      "url": "https://cdn.7tv.app/emote/01F6MFEK8G0000WDA7ERTDTR9R/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GOONING",
+      "url": "https://cdn.7tv.app/emote/01HQXFC5G00003SVFRS0KDHZYN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "goosevibes",
+      "url": "https://cdn.7tv.app/emote/01G7BK0V70000DJJQKZ99SZXC0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GotCaughtTrolling",
+      "url": "https://cdn.7tv.app/emote/01F6N40D28000FD8P3PCS8JPBM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GotEEM",
+      "url": "https://cdn.7tv.app/emote/01FEHZZ60G000EM7RFQAJ79837/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GREETINGS",
+      "url": "https://cdn.7tv.app/emote/01GYEK6NG00007CK1ENYEVB8QX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Grumpge",
+      "url": "https://cdn.7tv.app/emote/01FKPEKW6R0008TM5NY9QEFQ7N/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GTAB",
+      "url": "https://cdn.7tv.app/emote/01GPAAY4Z00008ACJXHYNV5FKX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GuitarTime",
+      "url": "https://cdn.7tv.app/emote/01G98V5RFG0001CD052SPS435F/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "GULP",
+      "url": "https://cdn.7tv.app/emote/01FTC3VTZG000C2JH1E2C63BEV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "h!",
+      "url": "https://cdn.betterttv.net/emote/6468f845aee1f7f47567709b/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "HACKERMANS",
+      "url": "https://cdn.7tv.app/emote/01F6WP22CR0004YCK11WAVZHEW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "haHAA",
+      "url": "https://cdn.betterttv.net/emote/555981336ba1901877765555/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "HailHelix",
+      "url": "https://cdn.betterttv.net/emote/54fa90f201e468494b85b545/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "HandsUp",
+      "url": "https://cdn.7tv.app/emote/01EZTAFPF80002GHH6006GD244/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Happi",
+      "url": "https://cdn.7tv.app/emote/01G7YR9X5G0003Z50SB3FM5WR4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HARAM",
+      "url": "https://cdn.7tv.app/emote/01EZPJ3948000C438200A44F2N/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "heCrazy",
+      "url": "https://cdn.7tv.app/emote/01F6QPNCQ0000EB9BSAR8QNF07/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HELP",
+      "url": "https://cdn.7tv.app/emote/01HTXM75Z80007BVVDGZB8E4M4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "heScared",
+      "url": "https://cdn.7tv.app/emote/01GX5W8GKG0008PG44XVSHFTEB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "hesRight",
+      "url": "https://cdn.7tv.app/emote/01G16DYVQ8000ACH1GFP2P1NAE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Hhhehehe",
+      "url": "https://cdn.betterttv.net/emote/566ca02865dbbdab32ec0547/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Hmmm",
+      "url": "https://cdn.7tv.app/emote/01F6MCJXNG0005TFYTWP1V6W22/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "hmmMeeting",
+      "url": "https://cdn.7tv.app/emote/01G6ZAS2Z0000C5DHX3RQKV1W2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HOLD",
+      "url": "https://cdn.7tv.app/emote/01HKQ8X1ER000AQTHA9QZB8FME/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HOPIUM",
+      "url": "https://cdn.7tv.app/emote/01GCPR4KJG000CEFW6H34D5CMH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HotFemboy",
+      "url": "https://cdn.7tv.app/emote/01G06PX3PR000BX3EKNHDW0YQP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HUNGER",
+      "url": "https://cdn.7tv.app/emote/01FT5N3N6R000CS587T97XA1A5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HURTSPOV",
+      "url": "https://cdn.7tv.app/emote/01FJSC2N3R000BDMGTVBZVY9XC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HYPERCLAP",
+      "url": "https://cdn.7tv.app/emote/01F6MCJ5880009K1N00D4MGFX3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "HYPERS",
+      "url": "https://cdn.7tv.app/emote/01F6NMD520000AAS5FM9QEF9ZJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "iAsked",
+      "url": "https://cdn.7tv.app/emote/01FDJRBPD000093V89JTGSN6ZJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ICANT",
+      "url": "https://cdn.7tv.app/emote/01FA0PBXM8000AD7Y8T9ZMTFZ5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "IceDweller",
+      "url": "https://cdn.7tv.app/emote/01G38YDZCG0004KFXXGTW7Q38M/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "IDidEverythingRight",
+      "url": "https://cdn.7tv.app/emote/01H8N5ER30000ADFX52FWA0S7P/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "IHaveADumbQuestion",
+      "url": "https://cdn.7tv.app/emote/01J4B011QR0007828BBQM4M5KA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "IHaveAQuestion",
+      "url": "https://cdn.7tv.app/emote/01GRGSHCW80004RVBCVMBM4744/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ImHIM",
+      "url": "https://cdn.7tv.app/emote/01GX54EXGG000E0VG99V8WKCRW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "IMLITERALLYDEAD",
+      "url": "https://cdn.7tv.app/emote/01GXB2760G000F30TNHG4JCZC9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ImNotGonnaSugarcoatIt",
+      "url": "https://cdn.7tv.app/emote/01GZWZWA30000CMGYXMPR0088V/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "imsofuckingscared",
+      "url": "https://cdn.7tv.app/emote/01K1H95GQQ5X2BS8GZ12H16D8V/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ItalianHands",
+      "url": "https://cdn.7tv.app/emote/01F6RFTDER000AXK0HX1P1FG0J/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ITARRIVED",
+      "url": "https://cdn.7tv.app/emote/01FMVYDMSG00071FCSB63SABBM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Jammies",
+      "url": "https://cdn.7tv.app/emote/01GB5S18QG00090V9B3D8CGHNG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "julyFirst",
+      "url": "https://cdn.7tv.app/emote/01G6TSQEQR000CY3BJ8KREW184/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Kapp",
+      "url": "https://cdn.7tv.app/emote/01F00ZSP3R0007E4VV006YKSKH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KappaCool",
+      "url": "https://cdn.betterttv.net/emote/560577560874de34757d2dc0/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "KaRappa",
+      "url": "https://cdn.betterttv.net/emote/550b344bff8ecee922d2a3c1/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "KEKL",
+      "url": "https://cdn.7tv.app/emote/01F6S7T5T8000B4N55W5NRFBY4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KEKW",
+      "url": "https://cdn.7tv.app/emote/01F9ZQ53Q00000B0HJJRPJXKJ7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KEKWait",
+      "url": "https://cdn.7tv.app/emote/01F6N7F9WR00052X5637DVR539/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KELP",
+      "url": "https://cdn.7tv.app/emote/01H1AZQRPR0003C6C0Q3R0B5NP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "kindahungry",
+      "url": "https://cdn.7tv.app/emote/01GG08CWMG000CEAKCNMDKVW73/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Kissahomie",
+      "url": "https://cdn.7tv.app/emote/01F5PAAYWR00034VRANA2SYXC7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KKomrade",
+      "url": "https://cdn.7tv.app/emote/01EZPJB06G000C438200A44F35/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KKona",
+      "url": "https://cdn.betterttv.net/emote/566ca04265dbbdab32ec054a/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "KKonaW",
+      "url": "https://cdn.7tv.app/emote/01F6MCCGK00005TFYTWP1TRVA3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KKool",
+      "url": "https://cdn.7tv.app/emote/01F6M8D2F0000B5V5G2M2ZSHC6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "KKrikey",
+      "url": "https://cdn.7tv.app/emote/01EZTACZJ00002GHH6006GD241/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "l!",
+      "url": "https://cdn.betterttv.net/emote/6468f869aee1f7f4756770a8/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Lamonting",
+      "url": "https://cdn.7tv.app/emote/01F6MDR4380000WDA7ERT7KZ43/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Latege",
+      "url": "https://cdn.7tv.app/emote/01F6X70VH80000C5PXC5BD2KY0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LEANBEAN",
+      "url": "https://cdn.7tv.app/emote/01H107NW9R000AHHWDRHKKEWHP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "lebronJAM",
+      "url": "https://cdn.7tv.app/emote/01GA4TYKW0000EN50T4AGZ0CK8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Lemat",
+      "url": "https://cdn.7tv.app/emote/01J90GW798000A5QBDAQ51048H/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LETSFUCKINGGO",
+      "url": "https://cdn.7tv.app/emote/01GH7MG4CG0007MWA994CVVEGX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LEXIBLEEE",
+      "url": "https://cdn.7tv.app/emote/01F6N46JAR0003R9X8PYEC1H8G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Libido",
+      "url": "https://cdn.7tv.app/emote/01F8ASPRWR0002Q92YK3R5QAAZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LICKA",
+      "url": "https://cdn.7tv.app/emote/01FWKAN8AR0007HXQ5EXHFKEZJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Life",
+      "url": "https://cdn.7tv.app/emote/01FT0SJFNR0001M6SADSSJ9P4Q/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Listening",
+      "url": "https://cdn.7tv.app/emote/01FWR6BNTR0007SGPMW6AKG0Q9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LIVESOFBASED",
+      "url": "https://cdn.7tv.app/emote/01G0TGCN58000AJTB0VEB7PXMC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LL",
+      "url": "https://cdn.7tv.app/emote/01F71VTZ7G0005AHDMTSVHKYH2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LOADING",
+      "url": "https://cdn.7tv.app/emote/01GX5GSHE8000DZQQC8JFXW8FK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LOCKEDIN",
+      "url": "https://cdn.7tv.app/emote/01J2JMBGSR000FDPHGHFN1DX0T/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LOCKIN",
+      "url": "https://cdn.7tv.app/emote/01HMFXNQKG0005KTW9067AQCC0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Looking",
+      "url": "https://cdn.7tv.app/emote/01FNCFXWKR000FZADBM40VP6ZW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "lookUp",
+      "url": "https://cdn.7tv.app/emote/01FFRN3K3R0009CAK0J1469HYB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LUBBERS",
+      "url": "https://cdn.7tv.app/emote/01FS112YT80005FHRFCCZBTWPB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LudwigLaughingAtYou",
+      "url": "https://cdn.7tv.app/emote/01K23KFVGM8VZ06QSZ5R2RT07X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "LuL",
+      "url": "https://cdn.betterttv.net/emote/567b00c61ddbe1786688a633/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "LULW",
+      "url": "https://cdn.7tv.app/emote/01F041BKFG0001TJB3006SVBJ6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "lulWut",
+      "url": "https://cdn.7tv.app/emote/01FAJYXPK00005Z0WD0X9HAG69/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "M&Mjc",
+      "url": "https://cdn.betterttv.net/emote/54fab45f633595ca4c713abc/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Madge",
+      "url": "https://cdn.7tv.app/emote/01F6N0CC5R0003R9X8PYE7ZJVK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MadgeJuice",
+      "url": "https://cdn.7tv.app/emote/01F6NH94VR000AAS5FM9Q2YSMC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MadgeLate",
+      "url": "https://cdn.7tv.app/emote/01FSD181Q80009A2M92QGQ17CB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Mahomge",
+      "url": "https://cdn.7tv.app/emote/01JKPSZQ72DZCTQ8NA1MKKD5V6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MaldChamp",
+      "url": "https://cdn.7tv.app/emote/01F7CVFS2G0009AJK7R002QB46/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MaN",
+      "url": "https://cdn.7tv.app/emote/01F2X7D5C8000DSBG200DM9S97/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MattChest",
+      "url": "https://cdn.7tv.app/emote/01GX641W38000E0VG99V8WKGK8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MAUGA",
+      "url": "https://cdn.7tv.app/emote/01HYY72CDG0002X9JFJVAG649E/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MEGALUL",
+      "url": "https://cdn.7tv.app/emote/01F63S31Q0000C5JJ7RZAXMZR2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Menhera7",
+      "url": "https://cdn.7tv.app/emote/01F6TEBTC800083FEJFWNJH72G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MenheraDance",
+      "url": "https://cdn.7tv.app/emote/01GGZ2C58G00054EJ1KJASSKJD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "menheraLost",
+      "url": "https://cdn.7tv.app/emote/01FN3MTR1800071FCSB63SB99C/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "meow",
+      "url": "https://cdn.7tv.app/emote/01F6NCKMP000052X5637DW2XDY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MEOWDY",
+      "url": "https://cdn.7tv.app/emote/01GRVS41CG00082PQC6WGB5Q5X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MinorSpellingError",
+      "url": "https://cdn.7tv.app/emote/01FVK62A0G0001S38MZTEMBCQH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Miyazaki",
+      "url": "https://cdn.7tv.app/emote/01GG61KC380007Q0HFM4VGSTKW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MLADY",
+      "url": "https://cdn.7tv.app/emote/01F6PYVPP80005CV1Y3Z4X4V4K/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Mmmm",
+      "url": "https://cdn.7tv.app/emote/01F8EDJ7J800099FQVFJ9PZJ7J/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "modCheck",
+      "url": "https://cdn.7tv.app/emote/01F6FTE8B80008E39HFFQJ7MWS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Moderator",
+      "url": "https://cdn.7tv.app/emote/01FBX2ZTGG0006XGGYK36X0K0J/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MODS",
+      "url": "https://cdn.7tv.app/emote/01F6N24VSG0004P7N4A9PZCA86/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ModTime",
+      "url": "https://cdn.7tv.app/emote/01F6NG7CS800074ACRXFJ2D2WB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MOLLY",
+      "url": "https://cdn.7tv.app/emote/01GY1W74J80004DMET1T2C5AN3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Monkage",
+      "url": "https://cdn.7tv.app/emote/01F9DCCWV80008Y74E2DDNX0A8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "monkaLaugh",
+      "url": "https://cdn.7tv.app/emote/01FBMP6M7G0000Z6RGKY5R8AFS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "monkaOMEGA",
+      "url": "https://cdn.7tv.app/emote/01F00Z70ER0007E4VV006YKSKB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "monkaS",
+      "url": "https://cdn.betterttv.net/emote/56e9f494fff3cc5c35e5287e/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "monkaSTEER",
+      "url": "https://cdn.7tv.app/emote/01F6NMEF1R000AAS5FM9QEG8S3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "monkaW",
+      "url": "https://cdn.7tv.app/emote/01F6NPHCN0000BEKN8ZXWQNSDC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MRFROG",
+      "url": "https://cdn.7tv.app/emote/01JMKTC5VBYJ5JX6P296KMKXMX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MTD",
+      "url": "https://cdn.7tv.app/emote/01FSZPBM3G000CS587T97X93TD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MufasaPls",
+      "url": "https://cdn.7tv.app/emote/01F6MX1F90000EMM7M7JFFZQHB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "muted",
+      "url": "https://cdn.7tv.app/emote/01F63B8GJR000AE7CZT484KXF9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "MYEYES",
+      "url": "https://cdn.7tv.app/emote/01F6YCW958000AWTYY091Y3SY6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NAHH",
+      "url": "https://cdn.7tv.app/emote/01GFA0HR0R0009751C3WBKGNB2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NAILS",
+      "url": "https://cdn.7tv.app/emote/01GRKSG9E000091TEC1A28HSM5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NaM",
+      "url": "https://cdn.betterttv.net/emote/566ca06065dbbdab32ec054e/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "NaMBuff",
+      "url": "https://cdn.7tv.app/emote/01F7DMZMG00006DYRZ05RECQKP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Name100Women",
+      "url": "https://cdn.7tv.app/emote/01GMKPJQJR0008GS0R6JQ1670A/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "nanaAYAYA",
+      "url": "https://cdn.7tv.app/emote/01FTEZEE900001E12995B12GR4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NoBitches",
+      "url": "https://cdn.7tv.app/emote/01FXHWZWTR000CPSDJXDJW0233/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NODDERS",
+      "url": "https://cdn.7tv.app/emote/01FEN2S3N0000ADVQZMYTADD9B/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NOHELP",
+      "url": "https://cdn.7tv.app/emote/01H24KFQJ0000CVRT9DGWRB3M1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NOIDONTTHINKSO",
+      "url": "https://cdn.7tv.app/emote/01F6JYT7HR000CE64F7FH369B6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NONTARGET",
+      "url": "https://cdn.7tv.app/emote/01GRCYZ64G0004NWC6YE8DPZMB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NOOO",
+      "url": "https://cdn.7tv.app/emote/01GFTBJVX80004TPM1WT47HG49/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NOOOYOUCANT",
+      "url": "https://cdn.7tv.app/emote/01FEZQXMR80001SMD8F5EQXZ7S/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NOPERS",
+      "url": "https://cdn.7tv.app/emote/01FAJRKZGG00032ZHGNNY8RH3K/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "NOTED",
+      "url": "https://cdn.7tv.app/emote/01GEEHRQYG0006MCY6R6BPV3HB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "notListening",
+      "url": "https://cdn.7tv.app/emote/01GHY2N21800025VZ4E5FVRZKW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "notsquishY",
+      "url": "https://cdn.betterttv.net/emote/5709ab688eff3b595e93c595/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "noxSorry",
+      "url": "https://cdn.7tv.app/emote/01EZVNE1Z000012PTN006Q50R6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "noxWhat",
+      "url": "https://cdn.7tv.app/emote/01F6MBDHC80005TFYTWP1R4X76/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "nymnCorn",
+      "url": "https://cdn.7tv.app/emote/01F604KHE80008KDXA2TJR77T6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "o7",
+      "url": "https://cdn.7tv.app/emote/01FS5ZCFG0000500DPPCXJWCP8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OFFLINECHAT",
+      "url": "https://cdn.7tv.app/emote/01FC373DV80009VGCANYFGWH8Y/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Ogre",
+      "url": "https://cdn.7tv.app/emote/01FQRW1RWG000EYPJRF83MB3W3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OkayChamp",
+      "url": "https://cdn.7tv.app/emote/01FPWVG6FG0007YCJT9TVEGQKH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Okayeg",
+      "url": "https://cdn.7tv.app/emote/01EZPFKAH8000FNWX000ADZW5H/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OkayegL",
+      "url": "https://cdn.7tv.app/emote/01FKHS69F0000F3BGNNF3YQ69V/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Okayge",
+      "url": "https://cdn.7tv.app/emote/01F1371Z180009V7MP006J8KYG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OkaygeL",
+      "url": "https://cdn.7tv.app/emote/01F1AVKZN0000BN42J006MA1W3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Oldge",
+      "url": "https://cdn.7tv.app/emote/01F6VRYWHG000ECZXVKQBHSCZW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OMEGALUL",
+      "url": "https://cdn.7tv.app/emote/01F00Z3A9G0007E4VV006YKSK9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OMEGALULiguess",
+      "url": "https://cdn.7tv.app/emote/01F5PF4XN000034VRANA2T586E/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "omgBruh",
+      "url": "https://cdn.7tv.app/emote/01J6J6438R0004C8HA5QGJ1TP2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ONEMORE",
+      "url": "https://cdn.7tv.app/emote/01H7Y7EG28000BFKG18D1TYDVV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OOOO",
+      "url": "https://cdn.7tv.app/emote/01GB4PT9NG000DGEZ8VYY59RSM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OOOOOOBANANA",
+      "url": "https://cdn.7tv.app/emote/01JT0P4EH5FSK1N1KZQ0SY40F5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "oopsie",
+      "url": "https://cdn.7tv.app/emote/01H656FQAG000765H7QPNXMXKR/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Orange",
+      "url": "https://cdn.7tv.app/emote/01H5NMNRH800068AQWX3AF901X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OurOmen",
+      "url": "https://cdn.7tv.app/emote/01H7FHA638000BWJK6TSZ9DKNE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OuttaPocket",
+      "url": "https://cdn.7tv.app/emote/01FPADTQ7R0001BCZZ99DVKQHC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Overleveled",
+      "url": "https://cdn.7tv.app/emote/01GX67B48G0005WCA69WXYNYXW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Overwatch",
+      "url": "https://cdn.7tv.app/emote/01J5S5AQHR0004CHE4PEAWN83Y/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Owen",
+      "url": "https://cdn.7tv.app/emote/01KBVS9XB98APV7YW8HYZ4Z55H/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "OWFROG",
+      "url": "https://cdn.7tv.app/emote/01GX4JVXWG000E0VG99V8WK9CM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "p!",
+      "url": "https://cdn.betterttv.net/emote/65cbe7dbaed093b2eaf87c65/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "PagBounce",
+      "url": "https://cdn.7tv.app/emote/01G3KYTKXR000ET2J0MQP5Y06S/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PagChomp",
+      "url": "https://cdn.7tv.app/emote/01GDVPCRFG000A0NVRJES4XM6B/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PagMan",
+      "url": "https://cdn.7tv.app/emote/01F6N0NRYR000AR0YATR3Q3CPR/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "paidchatter",
+      "url": "https://cdn.7tv.app/emote/01HFBXR8GG0003CV8WEE0DKACP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PAIN",
+      "url": "https://cdn.7tv.app/emote/01GX4JEG6G000E0VG99V8WK98B/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Painsge",
+      "url": "https://cdn.7tv.app/emote/01F6M93T08000B5V5G2M2H321D/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PANIC",
+      "url": "https://cdn.7tv.app/emote/01F6N0TT30000FD8P3PCS7ZWTZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PartyParrot",
+      "url": "https://cdn.7tv.app/emote/01FKSDK14G0008TM5NY9QEG0QV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PauseChamp",
+      "url": "https://cdn.7tv.app/emote/01F6NKA118000BEKN8ZXWVVT63/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PauseMan",
+      "url": "https://cdn.7tv.app/emote/01F6MEJGTG0000WDA7ERTABDD0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PEEPERS",
+      "url": "https://cdn.7tv.app/emote/01F6RMYBHR000B4N55W5NXQ6PJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoAttack",
+      "url": "https://cdn.7tv.app/emote/01FHB8F4PG0003Z6P1ZMJGHAMP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoBlanket",
+      "url": "https://cdn.7tv.app/emote/01F6N1S0WG000FD8P3PCSBAWR1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoBye",
+      "url": "https://cdn.7tv.app/emote/01F6Q09DJR00015Y8FNQBDEPQK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoCheer",
+      "url": "https://cdn.7tv.app/emote/01GFKMBAHG0007SC7A230SCCYX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoClap",
+      "url": "https://cdn.7tv.app/emote/01F6NET6G00009JYTB75QDKV1S/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoFAT",
+      "url": "https://cdn.7tv.app/emote/01F6QZESK8000ATZXMPM5KMFNF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoFine",
+      "url": "https://cdn.7tv.app/emote/01F6N2R7X8000AR0YATR3ZA83Z/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoGift",
+      "url": "https://cdn.7tv.app/emote/01GHR5AGZR00058M1GCX0RKE23/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoGiggles",
+      "url": "https://cdn.7tv.app/emote/01GFR6GNB80001V63R0CCB85YD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PeepoGlad",
+      "url": "https://cdn.7tv.app/emote/01FF5X29PR000DBGDS1Q7ZPGGJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoHappy",
+      "url": "https://cdn.7tv.app/emote/01GAZ199Z8000FEWHS6AT5QZV0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoHey",
+      "url": "https://cdn.7tv.app/emote/01F6NMMEER00015NVG2J8ZH77N/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoJuice",
+      "url": "https://cdn.7tv.app/emote/01FENEEWK0000EM7RFQAJ79BV5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peePoo",
+      "url": "https://cdn.7tv.app/emote/01FB4ZDCRG0001AXCAFYD96Y9V/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoPls",
+      "url": "https://cdn.7tv.app/emote/01HM524VE80004SKSHMCZWXH1T/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoPopcorn",
+      "url": "https://cdn.7tv.app/emote/01F84EBR98000EQSPH7PER6CK2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoS",
+      "url": "https://cdn.7tv.app/emote/01F5PA6DCG00034VRANA2SYMTF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoSad",
+      "url": "https://cdn.7tv.app/emote/01GAZ4SBX80007YCE2RXBT44B2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoShy",
+      "url": "https://cdn.7tv.app/emote/01GK4EW2AG0004SH49XX2J74KJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoSit",
+      "url": "https://cdn.7tv.app/emote/01F9RVMY90000DNGANWDK1Q04G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoSitHey",
+      "url": "https://cdn.7tv.app/emote/01FESDTX6R000F3ZVN1YWV9X1Q/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoTalk",
+      "url": "https://cdn.7tv.app/emote/01F7J1W4YR000DZXD2FPQSXF3D/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoThink",
+      "url": "https://cdn.7tv.app/emote/01F84YS0W80006DA4ATKNFKPV0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoWTF",
+      "url": "https://cdn.7tv.app/emote/01F6M74AR80002B6P5MWZFN3E0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "peepoYELLING",
+      "url": "https://cdn.7tv.app/emote/01GYQ6X8QR0006C64NM0K7EVKP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeCD",
+      "url": "https://cdn.7tv.app/emote/01F6NEDVZ000044EM07K5AM9GS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeD",
+      "url": "https://cdn.7tv.app/emote/01F2ZWD6CR000DSBG200DM9SGM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Pepega",
+      "url": "https://cdn.7tv.app/emote/01EZTD6KQ800012PTN006Q50PV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Pepege",
+      "url": "https://cdn.7tv.app/emote/01F6Q900M0000EQZ7QARQEHENN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PepeHands",
+      "url": "https://cdn.7tv.app/emote/01F010G3WG0007E4VV006YKSKP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeHug",
+      "url": "https://cdn.7tv.app/emote/01GFDW4XEG000FC56W4WNHZBQE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeJAM",
+      "url": "https://cdn.7tv.app/emote/01EZY967K0000CYST6006V20T8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeKneel",
+      "url": "https://cdn.7tv.app/emote/01FRH96DF000084PQ73P1BYMYS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeLaugh",
+      "url": "https://cdn.7tv.app/emote/01EZPHVXS0000C438200A44F24/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeMeltdown",
+      "url": "https://cdn.7tv.app/emote/01F5YCPHCR000ARAYB43QJ1YM9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PepePls",
+      "url": "https://cdn.7tv.app/emote/01GAFTZ9K80003DHH026MC7JW0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeS",
+      "url": "https://cdn.7tv.app/emote/01F010GZ7G0007E4VV006YKSKQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepeW",
+      "url": "https://cdn.7tv.app/emote/01GB9XMSPG00098BZVD7GKTW1Z/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PepoCheer",
+      "url": "https://cdn.7tv.app/emote/01F78EJN2R0005BGS0Y3M57C02/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "pepoJS",
+      "url": "https://cdn.7tv.app/emote/01FFG8W0A00009CAK0J1468J80/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PETPET",
+      "url": "https://cdn.7tv.app/emote/01FE3XY508000AA32JP519W2EW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PETTHEBELIEVERS",
+      "url": "https://cdn.7tv.app/emote/01F73Z5X7R000CDQRGPD8MKVA5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PETTHEDOUBTERS",
+      "url": "https://cdn.7tv.app/emote/01F73Z6DV0000FRPBRWS324GHY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Phonge",
+      "url": "https://cdn.7tv.app/emote/01FW748QK0000EGAS9XF754HXT/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "photo0",
+      "url": "https://cdn.7tv.app/emote/01GYQANGCR000AB2XHR9VBTBK3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PianoTime",
+      "url": "https://cdn.7tv.app/emote/01G98V81Q80000BRQD106P0ZEK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Piratege",
+      "url": "https://cdn.7tv.app/emote/01F7291JNG000F7ZM31E7G9ZQG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "plink",
+      "url": "https://cdn.7tv.app/emote/01HA7QP7C8000BNMZK2KZG7XCQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "POGGERS",
+      "url": "https://cdn.7tv.app/emote/01GX5GHHJR000DGNRF87W3HHMV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Pointless",
+      "url": "https://cdn.7tv.app/emote/01GWXY9H48000CAAEBP2XKP65M/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PoleDoge",
+      "url": "https://cdn.betterttv.net/emote/566ca09365dbbdab32ec0555/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "POLICE",
+      "url": "https://cdn.7tv.app/emote/01HMEHDK6G000CCTN7937R5C87/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Poorge",
+      "url": "https://cdn.7tv.app/emote/01F83GTVYR0003T8BF4Y15TWSJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PoroDisco",
+      "url": "https://cdn.7tv.app/emote/01FY3ZFYJG00019X49G26ZD6F6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PoroHappy",
+      "url": "https://cdn.7tv.app/emote/01FMD8NGF8000B3TR3VAP7V6BX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PoroHug",
+      "url": "https://cdn.7tv.app/emote/01FW8R5D68000087VQP9406KMN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PoroL",
+      "url": "https://cdn.7tv.app/emote/01FRTJEN280005FHRFCCZBSC6E/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "poroListening",
+      "url": "https://cdn.7tv.app/emote/01GYHQJ0680002YN8KK9MW6C72/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "poroPls",
+      "url": "https://cdn.7tv.app/emote/01FSJ0HVKG0001Z3WXBKV36R0Z/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PoroRiot",
+      "url": "https://cdn.7tv.app/emote/01FVVBWSB000048QJVVTD3W5SN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PoroSad",
+      "url": "https://cdn.7tv.app/emote/01FM2Q3X3G000F3BGNNF3YRYPH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PotFriend",
+      "url": "https://cdn.7tv.app/emote/01G4639JBR000611EKVWJSBRFM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppBounce",
+      "url": "https://cdn.7tv.app/emote/01GJ9BKFA8000587WCG8FV3ZGQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppCrazy",
+      "url": "https://cdn.7tv.app/emote/01F6MQPVA8000FFJ97ZB8Q3884/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppDodge",
+      "url": "https://cdn.7tv.app/emote/01FD7D15JG00075H81PJMKQSTA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppFall",
+      "url": "https://cdn.7tv.app/emote/01F6YSTMXR0003W81WR5MWJPF8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppHop",
+      "url": "https://cdn.7tv.app/emote/01F6M75JSG000AXRNAAMWD55RW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppL",
+      "url": "https://cdn.7tv.app/emote/01GGD5PJA8000FH13S498E9D8X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppOverheat",
+      "url": "https://cdn.7tv.app/emote/01FRBYHP9R0009P0ATKBZCFBER/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppPoof",
+      "url": "https://cdn.7tv.app/emote/01EZY9J3F8000CYST6006V20TE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ppSit",
+      "url": "https://cdn.7tv.app/emote/01FS507TXG000600V9N65KJ954/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Prayge",
+      "url": "https://cdn.7tv.app/emote/01F6NACCD80006SZ7ZW5FMWKWK/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "prePffttt",
+      "url": "https://cdn.7tv.app/emote/01J2CQ7NM00006YFK521XXW8YJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PresidentSleeper",
+      "url": "https://cdn.7tv.app/emote/01FJ4KZXNR000CABD5DKA917J0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PTCHEW",
+      "url": "https://cdn.7tv.app/emote/01JGK32EA6ETM6AEAK98AF4P76/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "PuzzleTime",
+      "url": "https://cdn.7tv.app/emote/01FG8JHACG00047CPSV86K46B7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Queso",
+      "url": "https://cdn.7tv.app/emote/01FDCE86E8000F43V49GZTVENZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "quota",
+      "url": "https://cdn.7tv.app/emote/01HEMNH1K8000DXSBGE946WZ27/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "r!",
+      "url": "https://cdn.betterttv.net/emote/6468f883aee1f7f4756770b5/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "R301trick",
+      "url": "https://cdn.7tv.app/emote/01G0P7SBAG000C45HB5GM64KX9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ragebait",
+      "url": "https://cdn.7tv.app/emote/01JE7A88QX19HZ2KZWGN2XSWNJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "rainbowPls",
+      "url": "https://cdn.7tv.app/emote/01G4M2821R000DSYZ0TDHA3ZKX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RainTime",
+      "url": "https://cdn.7tv.app/emote/01FCY771D800007PQ2DF3GDTN6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RareParrot",
+      "url": "https://cdn.7tv.app/emote/01GB4XE3ZR000DKFRGM9Q1M7VS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RarePepe",
+      "url": "https://cdn.betterttv.net/emote/555015b77676617e17dd2e8e/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Ratge",
+      "url": "https://cdn.7tv.app/emote/01FS8KSJ28000BY5RW138SPDEX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ratJAM",
+      "url": "https://cdn.7tv.app/emote/01F6QV6G8R0000TEKRM6BFG0Z3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ReallyMad",
+      "url": "https://cdn.7tv.app/emote/01FN8W1EP8000EXJQ7MWJVSDMP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RebeccaBlack",
+      "url": "https://cdn.7tv.app/emote/01GB5VC57000003DZTMZQNY944/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "reckH",
+      "url": "https://cdn.7tv.app/emote/01F014S6KG0007E4VV006YKSM3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ReeferSad",
+      "url": "https://cdn.7tv.app/emote/01FGDFTKT800064MEQW00DMZ92/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Refball",
+      "url": "https://cdn.7tv.app/emote/01HA07GYNG0004KB5679WA5MDW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ReinaWavu",
+      "url": "https://cdn.7tv.app/emote/01HVWH53WR0003S49WDMY4KN7G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RELEASEME",
+      "url": "https://cdn.7tv.app/emote/01FPRAG32R0006J1JS3TKF402V/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RightThere",
+      "url": "https://cdn.7tv.app/emote/01GPKXS30R0003JXYZCZHJT32P/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RIPBOZO",
+      "url": "https://cdn.7tv.app/emote/01F9DGR2YG000E7SC8F959BREV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RIPBOZOftSenatorArmstrong",
+      "url": "https://cdn.7tv.app/emote/01FTFS6JB80003AV56G21Q60TC/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RIZZLER",
+      "url": "https://cdn.7tv.app/emote/01H64149DG0008897YC4VJ776W/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "RonSmug",
+      "url": "https://cdn.betterttv.net/emote/55f324c47f08be9f0a63cce0/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "RoxyPotato",
+      "url": "https://cdn.7tv.app/emote/01GB54CZTG0004ZBZEDT30HE2M/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "s!",
+      "url": "https://cdn.betterttv.net/emote/662953eeea369c0ece39eb93/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Sadeg",
+      "url": "https://cdn.7tv.app/emote/01F124PFE80008S1RA006Y72VD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Sadge",
+      "url": "https://cdn.7tv.app/emote/01FHNBZRW8000C3ZWT2Z63JS92/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SadgeBusiness",
+      "url": "https://cdn.7tv.app/emote/01F764AZK80005BGS0Y3M70N1T/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SadgeCry",
+      "url": "https://cdn.7tv.app/emote/01F6MMZW3R00012ZP6HJJ38G2E/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SaltyCorn",
+      "url": "https://cdn.betterttv.net/emote/56901914991f200c34ffa656/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "SAMANTHA",
+      "url": "https://cdn.7tv.app/emote/01JBBQMD37BF77H1NRVAEWS268/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Saved",
+      "url": "https://cdn.7tv.app/emote/01F6SD865R0004VBRD7RGY6XAX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SAVEME",
+      "url": "https://cdn.7tv.app/emote/01HAX3XVH8000CK4GBCA21EJPN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SCATTER",
+      "url": "https://cdn.7tv.app/emote/01GP2BY1XG0009TPRPGFYX0Q91/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "sevenTV",
+      "url": "https://cdn.7tv.app/emote/01J107C3E8000DX4MZBQSYGRXS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SEXO",
+      "url": "https://cdn.7tv.app/emote/01FSGX5V000007E5TN8YT2AW0D/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Shakespepeare",
+      "url": "https://cdn.7tv.app/emote/01GD6EPFP80002MSDCE86ZDJJ9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "shesRight",
+      "url": "https://cdn.7tv.app/emote/01HEJTH1JR0004F2B5D9XYF65F/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "shhh",
+      "url": "https://cdn.7tv.app/emote/01J6GP0AT000095HSJ1PN3X826/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ShoopDaWhoop",
+      "url": "https://cdn.betterttv.net/emote/54fa932201e468494b85b555/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Shruge",
+      "url": "https://cdn.7tv.app/emote/01FS4ZNPV00002F97PTSA4XW9N/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SillyPoro",
+      "url": "https://cdn.7tv.app/emote/01GF6K9G4G000BJ4F8N4T65JR9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Sippin",
+      "url": "https://cdn.7tv.app/emote/01FQCD6K0G000CN5EX69TVHF55/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "sJerk",
+      "url": "https://cdn.7tv.app/emote/01GG4FKKQ00007H0P85CWKHGKD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SLAY",
+      "url": "https://cdn.7tv.app/emote/01GY1RDSR8000ENJJARE9FMTJR/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "slorp",
+      "url": "https://cdn.7tv.app/emote/01JHSHVXBESAY9DWRQMFZA56G0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Sludge",
+      "url": "https://cdn.7tv.app/emote/01F9MAHY3G000510RDD251WVW8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Smadge",
+      "url": "https://cdn.7tv.app/emote/01FDBCHQPG000A7GR3946VAFFF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Smadging",
+      "url": "https://cdn.7tv.app/emote/01FMJSR5FG000D6HG894PC6VQP/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SmokeTime",
+      "url": "https://cdn.7tv.app/emote/01FEHRN6PR000AEZ0QNPT4F4MF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SNIFFA",
+      "url": "https://cdn.7tv.app/emote/01F7M225F8000AWSXNQ65M4PKG/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SoCute",
+      "url": "https://cdn.7tv.app/emote/01GBZ948DG00012FGEGNTX5M9G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "sosGame",
+      "url": "https://cdn.betterttv.net/emote/553b48a21f145f087fc15ca6/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "SourPls",
+      "url": "https://cdn.betterttv.net/emote/566ca38765dbbdab32ec0560/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "SoySmirk",
+      "url": "https://cdn.7tv.app/emote/01J17J23R8000A9JQ25Y1DNMK3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SoyVibe",
+      "url": "https://cdn.7tv.app/emote/01G4QR0WK000019ZDS444XVKR4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SpeedLaugh",
+      "url": "https://cdn.7tv.app/emote/01HPSDAPAR0009V37317AFM230/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SqShy",
+      "url": "https://cdn.betterttv.net/emote/59cf182fcbe2693d59d7bf46/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "sReady",
+      "url": "https://cdn.7tv.app/emote/01GX7PKBVR0008RZ8A0FMXSX2K/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Stare",
+      "url": "https://cdn.7tv.app/emote/01GG3YGWK8000DWE419062SG28/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SteerR",
+      "url": "https://cdn.7tv.app/emote/01HM2F7Q1R00022X3E2804NBNQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "STG",
+      "url": "https://cdn.7tv.app/emote/01GW4CG758000F77ZWEEKMSJSA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "stopbeingMean",
+      "url": "https://cdn.7tv.app/emote/01FN5J4P8G000EXJQ7MWJVS1XB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "sumSmash",
+      "url": "https://cdn.7tv.app/emote/01EZPHJ86R000C438200A44F1S/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SunflowerJam",
+      "url": "https://cdn.7tv.app/emote/01FWSM7HGG0007YZP2DR4NVY53/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "superExplainingHow",
+      "url": "https://cdn.7tv.app/emote/01GJKRHH08000B7KWN3FNPZENN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "superLaughingAtYou",
+      "url": "https://cdn.7tv.app/emote/01G1T0TD000006B8AG98Z5AC43/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "superLookingAtYou",
+      "url": "https://cdn.7tv.app/emote/01GX7P9NA80009YEK80W3CSYEV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprAD",
+      "url": "https://cdn.7tv.app/emote/01GX7P6DSR0006BEVSM8E56NTS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprBOZO",
+      "url": "https://cdn.7tv.app/emote/01G0C61V8R000BNDCWZMDRQ9ZJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprCheer",
+      "url": "https://cdn.7tv.app/emote/01FT7QEHTG0001E12995B11E39/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprCRINGE",
+      "url": "https://cdn.7tv.app/emote/01FX1KTPX8000AY6WE2SPE6PY2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprDance",
+      "url": "https://cdn.7tv.app/emote/01FVMBEAF80008TTS3W38497KM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprDespair",
+      "url": "https://cdn.7tv.app/emote/01FD91SMTG00075H81PJMKQX0Y/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprFist",
+      "url": "https://cdn.betterttv.net/emote/5fa45e76f32aa26441c7e4f8/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "suprFlirt",
+      "url": "https://cdn.7tv.app/emote/01G01K4S90000E4DPAJXTYSRD1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprFocus",
+      "url": "https://cdn.7tv.app/emote/01GBYFNA9G00012FGEGNTX5JTQ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprHmm",
+      "url": "https://cdn.7tv.app/emote/01GX63P25G0003X14AM8PZ7GM3/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprInsane",
+      "url": "https://cdn.7tv.app/emote/01GX63KA90000FRDHR6A82TQ0P/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprJAM",
+      "url": "https://cdn.7tv.app/emote/01GX7PCG4G0008EFP8QR37RJDS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprJets",
+      "url": "https://cdn.7tv.app/emote/01GX7PHEB00003276PM4R2B672/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprL",
+      "url": "https://cdn.7tv.app/emote/01GB44821G000CW87FDNNPRDDN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprLibido",
+      "url": "https://cdn.7tv.app/emote/01GRG5Z4V00001TG5544QSMYFR/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprNerd",
+      "url": "https://cdn.7tv.app/emote/01GX5GAWP8000F2EJ2AV3PA4EM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprReaper",
+      "url": "https://cdn.7tv.app/emote/01JNVZDP9P0WZ0SPRF0CW43M3X/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprSit",
+      "url": "https://cdn.7tv.app/emote/01FPA13JXG000FZADBM40VTBKZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprSLAY",
+      "url": "https://cdn.7tv.app/emote/01GBMS0JS00009W1N0G17SG4HN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprSmash",
+      "url": "https://cdn.7tv.app/emote/01GX7NY648000D5E68MVQJ01HA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprSoy",
+      "url": "https://cdn.7tv.app/emote/01HHE19E2R00019YQXMRBV280W/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprTwerk",
+      "url": "https://cdn.7tv.app/emote/01GB9AJT5G0002HX1EJV60VZC6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprWarmup",
+      "url": "https://cdn.7tv.app/emote/01JYMW2BW93PSZQPNEDS9ZQY5B/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "suprYikes",
+      "url": "https://cdn.7tv.app/emote/01GX7RENAG0006BEVSM8E56P37/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Susge",
+      "url": "https://cdn.7tv.app/emote/01F6S7PENR0008HT14D95H43BY/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SwaggedOn",
+      "url": "https://cdn.7tv.app/emote/01GVA6X10G00020HF4FWWS54C7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SWOONER",
+      "url": "https://cdn.7tv.app/emote/01F6NCHN6R0005DXADF906WRX9/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "SydneySprint",
+      "url": "https://cdn.7tv.app/emote/01GJ1M4PXR000CP79NPZAE11DB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "tail",
+      "url": "https://cdn.7tv.app/emote/01JHP2FM6R80FAH9BB7SW3JM8G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "takingapoo",
+      "url": "https://cdn.7tv.app/emote/01G7GE0E80000C5DHX3RQKW81M/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TAMED",
+      "url": "https://cdn.7tv.app/emote/01GR7XRHZ0000AWT794WJDFG7C/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Tasty",
+      "url": "https://cdn.7tv.app/emote/01F6NAA63800052X5637DGY0E8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TaxiBro",
+      "url": "https://cdn.betterttv.net/emote/54fbefeb01abde735115de5b/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "TeamUSA",
+      "url": "https://cdn.7tv.app/emote/01GZCWVAFR00042TBZ3G3HP72C/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TeaTime",
+      "url": "https://cdn.7tv.app/emote/01HM4P26CR000449DZBT4FVMA5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "tehPoleCat",
+      "url": "https://cdn.betterttv.net/emote/566ca11a65dbbdab32ec0558/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "tenseSmash",
+      "url": "https://cdn.7tv.app/emote/01F6MZ4QM0000255K4X1K5VKHZ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ThankYou",
+      "url": "https://cdn.7tv.app/emote/01KBGG88BH919Y531XPZ6SE4DH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "THEUNIVERSE",
+      "url": "https://cdn.7tv.app/emote/01GZZ2C6VR000ARSA3Z5RYAWJ5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "THEVOICES",
+      "url": "https://cdn.7tv.app/emote/01GNDAV6R8000ASVTS4W77SX5G/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TICKTOCK",
+      "url": "https://cdn.7tv.app/emote/01K6YB7824FZGVVZ85C9TG4HC6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TifaAbusingYou",
+      "url": "https://cdn.7tv.app/emote/01GX677XQ8000C1NWRM619Y6TW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Timeout",
+      "url": "https://cdn.7tv.app/emote/01HAK105SR0004CB92YXKWM09Q/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TomatoTime",
+      "url": "https://cdn.7tv.app/emote/01FEBHF038000F2J2K72V9H4A8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Tomfoolery",
+      "url": "https://cdn.7tv.app/emote/01F71JRYYR0007SQ1FTSAZ7RCV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Trainwashed",
+      "url": "https://cdn.7tv.app/emote/01H3DX09Y00006GJS7ZTH9P0NT/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TriKool",
+      "url": "https://cdn.7tv.app/emote/01EZPH3FHR000C438200A44F11/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TRUEING",
+      "url": "https://cdn.7tv.app/emote/01F00YT2CR0007E4VV006YKSK6/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TruthNuke",
+      "url": "https://cdn.7tv.app/emote/01JEN3VEQFY0V24CYNVG4SG8AW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Tssk",
+      "url": "https://cdn.7tv.app/emote/01GJECMQKR000FJVP0DX6EYSNN/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Turteg",
+      "url": "https://cdn.7tv.app/emote/01FFZ7NS600004BM088TM6XC8Y/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TwaT",
+      "url": "https://cdn.betterttv.net/emote/54fa935601e468494b85b557/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "TWISTED",
+      "url": "https://cdn.7tv.app/emote/01G41ZXC60000CWBFS5PAP9Q11/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "TylerLaughingAtYou",
+      "url": "https://cdn.7tv.app/emote/01H2ZN1KK0000FR29RANYXMTY0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "UHOHHH",
+      "url": "https://cdn.7tv.app/emote/01GKANEF4R000A8ZT1E8DX6MEJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ULTRALUL",
+      "url": "https://cdn.7tv.app/emote/01GFSSR0AR0001P4AQZV0Y6KDX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "um",
+      "url": "https://cdn.7tv.app/emote/01HPGMXVF8000012ZCBFP3ZFKE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Unlucky",
+      "url": "https://cdn.7tv.app/emote/01EZPNC1NG00077NX500A43YFM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "unPog",
+      "url": "https://cdn.7tv.app/emote/01GX4Z8DCG000FRDHR6A82TJGX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "UNTAMED",
+      "url": "https://cdn.7tv.app/emote/01GFAXQXJG00085WMXZZDT54GF/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "USAflagXL",
+      "url": "https://cdn.7tv.app/emote/01FBMD3EV8000DCCEXSQ2XBEN7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "uuh",
+      "url": "https://cdn.7tv.app/emote/01H0405680000AJFXTYVX2PNJ7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "v!",
+      "url": "https://cdn.betterttv.net/emote/6468f89caee1f7f4756770c2/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "VaN",
+      "url": "https://cdn.7tv.app/emote/01EZSY6CH80002GHH6006GD226/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "VapeNation",
+      "url": "https://cdn.betterttv.net/emote/56f5be00d48006ba34f530a4/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "VarietyLater",
+      "url": "https://cdn.7tv.app/emote/01JTRRDK76HDVTH215TF3M5TB8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Very2B",
+      "url": "https://cdn.7tv.app/emote/01GH1C2VS0000EAY4VXF83G9CV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "VeryBased",
+      "url": "https://cdn.7tv.app/emote/01F6JBJ4PR000FY32H4AKWNBVB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "VeryPog",
+      "url": "https://cdn.7tv.app/emote/01EZPGPAN0000C438200A44F0K/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "VeryTasty",
+      "url": "https://cdn.7tv.app/emote/01GX5MDEDR0006F6Q5VK5B0SRA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "VietNaMeseManWavingHisGun",
+      "url": "https://cdn.7tv.app/emote/01FM0N10B80004X8QJ9S80KRTW/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "ViolinTime",
+      "url": "https://cdn.7tv.app/emote/01F6M697J8000B5V5G2M2WDXMX/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "VIP",
+      "url": "https://cdn.7tv.app/emote/01F762F0N00008W3P80HTMFNDA/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "VisLaud",
+      "url": "https://cdn.betterttv.net/emote/550352766f86a5b26c281ba2/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Voices",
+      "url": "https://cdn.7tv.app/emote/01GM6SK91R000C18F61MV5SEQE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "vp",
+      "url": "https://cdn.7tv.app/emote/01FF4NRKKR000FF5VVCKV49JZ2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "w!",
+      "url": "https://cdn.betterttv.net/emote/64e3b31920cb0d25d950a9f9/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "Walkies",
+      "url": "https://cdn.7tv.app/emote/01G2WK7DY0000EE4AVVRRYMTBS/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "walterShocked",
+      "url": "https://cdn.7tv.app/emote/01F6TF1JNG0008F83ZNWG5CSST/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WatChuSay",
+      "url": "https://cdn.betterttv.net/emote/54fa99b601e468494b85b55d/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "WAYTOODANK",
+      "url": "https://cdn.7tv.app/emote/01G98W833R0000BRQD106P0ZNT/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WAYTOOSMART",
+      "url": "https://cdn.7tv.app/emote/01F5Y7JW30000ARAYB43QGQ4KV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WeirdChamp",
+      "url": "https://cdn.7tv.app/emote/01F6QGX84G0006ZQQQYN8PN0A0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WeirdDude",
+      "url": "https://cdn.7tv.app/emote/01F6MV4J20000255K4X1KA3GB8/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Weirdge",
+      "url": "https://cdn.7tv.app/emote/01FAHMS95R000AC3XA5A8ZGENM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WHATDOYOUMEANBYTHAT",
+      "url": "https://cdn.7tv.app/emote/01F6T6M2MR000DDVB8PWZQAPQ1/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Whateverrr",
+      "url": "https://cdn.7tv.app/emote/01GBSVC6HG000BS4BKZQQDAWB0/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WHATTT",
+      "url": "https://cdn.7tv.app/emote/01G4ZTECKR0002P97QQ94BDSP4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WhitestManAlive",
+      "url": "https://cdn.7tv.app/emote/01JFW1T698NY9YR2DM96TZF2N5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WHOOM",
+      "url": "https://cdn.7tv.app/emote/01GYKWGNF80001RPDK5A4JXCN4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WHYGOD",
+      "url": "https://cdn.7tv.app/emote/01F5PD4F5000034VRANA2T2WCE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WICKED",
+      "url": "https://cdn.7tv.app/emote/01F6R75RXG00079MHMN5MZX6WM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WideHard",
+      "url": "https://cdn.7tv.app/emote/01GEG4ABM0000A2XSM9X91YPCV/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "widepeepoHappy",
+      "url": "https://cdn.7tv.app/emote/01GF1Y2Q5G0000BGNJSP34TQRD/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "widepeepoKillme",
+      "url": "https://cdn.7tv.app/emote/01GX4PVMSR0005WCA69WXYNRMH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "widepeepoSad",
+      "url": "https://cdn.7tv.app/emote/01GF1YB3Q800098Y8CCB8YXT8Z/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "wideppL",
+      "url": "https://cdn.7tv.app/emote/01F8ATF18G0003B4ESHH01B8X4/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "wideRainTime",
+      "url": "https://cdn.7tv.app/emote/01FEP16C600008B6AHWPR5YE6Y/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WineTime",
+      "url": "https://cdn.7tv.app/emote/01HM4PGHC80007635TAZG67FT5/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "winstonStare",
+      "url": "https://cdn.7tv.app/emote/01GA2S0X48000FP1SZVANP10BT/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Wokege",
+      "url": "https://cdn.7tv.app/emote/01FA5SDV8G000406QJFVPJYTJE/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "woof",
+      "url": "https://cdn.7tv.app/emote/01FJDXBCSG000FZHS49NWQS1XM/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WorldsGreatest",
+      "url": "https://cdn.7tv.app/emote/01JX0W0KM94TPNZ38E4WNGT8H7/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Wowee",
+      "url": "https://cdn.betterttv.net/emote/58d2e73058d8950a875ad027/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "WTFF",
+      "url": "https://cdn.7tv.app/emote/01F6M8R11R000B5V5G2M2GAG6J/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "WubTF",
+      "url": "https://cdn.betterttv.net/emote/5dc36a8db537d747e37ac187/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "WW",
+      "url": "https://cdn.7tv.app/emote/01GQJKFQJG0003FYSQJ75NTXME/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "xqcDitch",
+      "url": "https://cdn.7tv.app/emote/01F6QHK4AR00079MHMN5MJY82S/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "YAAAY",
+      "url": "https://cdn.7tv.app/emote/01G2D0TFQ80001PJPE0DMT4V46/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "YAPPP",
+      "url": "https://cdn.7tv.app/emote/01GX5F7GVG000DZQQC8JFXW896/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "Yoink",
+      "url": "https://cdn.7tv.app/emote/01F6QSZ9CG0004V0XPDH20PMRB/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "YoungMan",
+      "url": "https://cdn.7tv.app/emote/01H62F48800008897YC4VJ6ZP2/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "YoureAnArtist",
+      "url": "https://cdn.7tv.app/emote/01GW98PKD00002D39WVF5R3VEH/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "YUMP",
+      "url": "https://cdn.7tv.app/emote/01FDC150C8000F43V49GZTVECJ/2x.webp",
+      "provider": "7tv"
+    },
+    {
+      "code": "z!",
+      "url": "https://cdn.betterttv.net/emote/6468f8d1aee1f7f4756770cf/2x",
+      "provider": "bttv"
+    },
+    {
+      "code": "ZZoomer",
+      "url": "https://cdn.7tv.app/emote/01G0KWZRK8000167A5H0K2MXQC/2x.webp",
+      "provider": "7tv"
+    }
+  ]
+}
