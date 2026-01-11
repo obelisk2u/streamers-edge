@@ -43,6 +43,21 @@ export function ChatReplay({ messages, emotes }: ChatReplayProps) {
     return order;
   }
 
+  function cleanMessage(message: string) {
+    const tokens = message.trim().split(/\s+/);
+    while (tokens.length) {
+      const last = tokens[tokens.length - 1];
+      const isSingleChar = last.length === 1;
+      const isBarePunct = /^[^\w]+$/.test(last);
+      if (isSingleChar || isBarePunct) {
+        tokens.pop();
+        continue;
+      }
+      break;
+    }
+    return tokens.join(" ");
+  }
+
   useEffect(() => {
     if (!messages.length) {
       orderRef.current = [];
@@ -88,7 +103,7 @@ export function ChatReplay({ messages, emotes }: ChatReplayProps) {
     const order = orderRef.current;
     const nextMessage =
       order.length && order[currentIndex] !== undefined
-        ? messages[order[currentIndex]]
+        ? cleanMessage(messages[order[currentIndex]])
         : "";
     setFeed((prev) => {
       const next = [...prev, nextMessage];
@@ -184,8 +199,7 @@ export function ChatReplay({ messages, emotes }: ChatReplayProps) {
               <AlertDialogHeader>
                 <AlertDialogTitle></AlertDialogTitle>
                 <AlertDialogDescription>
-                  Messages are produced by a language model trained on real supertf chat messages. Not my views. <br/><br/>Nerd: It's a LoRA-fine-tuned Phi-3-mini model. Each message is a next chat
-                  prediction on real messages so no context awareness. I'm looking into a neural tpp rendition with the LORA for generation.
+                  Messages are produced by a language model trained on supertf chat messages. Not my views. <br/><br/>Nerd: It's a LoRA-fine-tuned Phi-3-mini model. I know it's shit. I'm looking into a neural tpp hybrid rendition or a different training objective.
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <div className="flex justify-end">

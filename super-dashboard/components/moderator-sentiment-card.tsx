@@ -57,7 +57,13 @@ export function ModeratorSentimentCard({
           onValueChange={(value) => setSelected(value ?? "")}
         >
           <SelectTrigger className="w-full sm:w-72">
-            <SelectValue placeholder="Pick a moderator" />
+            {selected ? (
+              <SelectValue />
+            ) : (
+              <span className="flex flex-1 text-left text-muted-foreground">
+                Pick a moderator
+              </span>
+            )}
           </SelectTrigger>
           <SelectContent>
             {data.map((item) => (
