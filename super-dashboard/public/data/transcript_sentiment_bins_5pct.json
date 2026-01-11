@@ -1,0 +1,105 @@
+{
+  "stream_count": 30,
+  "bins": [
+    {
+      "label": "0-5%",
+      "avg_sentiment": -0.0626,
+      "count": 5704
+    },
+    {
+      "label": "5-10%",
+      "avg_sentiment": -0.1042,
+      "count": 3152
+    },
+    {
+      "label": "10-15%",
+      "avg_sentiment": -0.0803,
+      "count": 2927
+    },
+    {
+      "label": "15-20%",
+      "avg_sentiment": -0.1426,
+      "count": 2590
+    },
+    {
+      "label": "20-25%",
+      "avg_sentiment": -0.1191,
+      "count": 1726
+    },
+    {
+      "label": "25-30%",
+      "avg_sentiment": -0.1551,
+      "count": 1425
+    },
+    {
+      "label": "30-35%",
+      "avg_sentiment": -0.1515,
+      "count": 1497
+    },
+    {
+      "label": "35-40%",
+      "avg_sentiment": -0.1429,
+      "count": 1697
+    },
+    {
+      "label": "40-45%",
+      "avg_sentiment": -0.1564,
+      "count": 1579
+    },
+    {
+      "label": "45-50%",
+      "avg_sentiment": -0.1586,
+      "count": 1552
+    },
+    {
+      "label": "50-55%",
+      "avg_sentiment": -0.1726,
+      "count": 1539
+    },
+    {
+      "label": "55-60%",
+      "avg_sentiment": -0.1839,
+      "count": 1845
+    },
+    {
+      "label": "60-65%",
+      "avg_sentiment": -0.202,
+      "count": 1842
+    },
+    {
+      "label": "65-70%",
+      "avg_sentiment": -0.2325,
+      "count": 2088
+    },
+    {
+      "label": "70-75%",
+      "avg_sentiment": -0.2167,
+      "count": 1806
+    },
+    {
+      "label": "75-80%",
+      "avg_sentiment": -0.2025,
+      "count": 1442
+    },
+    {
+      "label": "80-85%",
+      "avg_sentiment": -0.1899,
+      "count": 1355
+    },
+    {
+      "label": "85-90%",
+      "avg_sentiment": -0.2084,
+      "count": 1337
+    },
+    {
+      "label": "90-95%",
+      "avg_sentiment": -0.1939,
+      "count": 1332
+    },
+    {
+      "label": "95-100%",
+      "avg_sentiment": -0.1361,
+      "count": 1149
+    }
+  ]
+}

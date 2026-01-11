@@ -9,13 +9,6 @@ import { cn } from "@/lib/utils";
 import { SentimentLineChart } from "@/components/sentiment-line-chart";
 import { SentimentBarChart } from "@/components/sentiment-bar-chart";
 
-const ANALYSIS_DIR = path.join(
-  process.cwd(),
-  "..",
-  "analysis",
-  "data",
-  "processed"
-);
 const PUBLIC_DIR = path.join(process.cwd(), "public", "data");
 
 async function loadJsonFrom(dir: string, filename: string) {
@@ -57,7 +50,7 @@ export default async function Page() {
       avg_sentiment: number;
       total_sentences: number;
       total_streams: number;
-    }>(ANALYSIS_DIR, "transcript_avg_sentiment.json", {
+    }>(PUBLIC_DIR, "transcript_avg_sentiment.json", {
       avg_sentiment: 0,
       total_sentences: 0,
       total_streams: 0,
@@ -67,7 +60,7 @@ export default async function Page() {
         vod_id: string;
         transcript?: { duration?: number };
       }>
-    >(ANALYSIS_DIR, "combined_transcripts_sentences.json", []),
+    >(PUBLIC_DIR, "combined_transcripts_sentences.json", []),
     loadJsonFromSafe<{
       positive: Array<{
         vod_id: string;
@@ -92,7 +85,7 @@ export default async function Page() {
     loadJsonFromSafe<{
       stream_count: number;
       bins: Array<{ label: string; avg_sentiment: number; count: number }>;
-    }>(ANALYSIS_DIR, "transcript_sentiment_bins_5pct.json", {
+    }>(PUBLIC_DIR, "transcript_sentiment_bins_5pct.json", {
       stream_count: 0,
       bins: [],
     }),
@@ -113,7 +106,7 @@ export default async function Page() {
       shit: number;
       ass: number;
       hell: number;
-    }>(ANALYSIS_DIR, "streamer_swear_counts.json", {
+    }>(PUBLIC_DIR, "streamer_swear_counts.json", {
       fuck: 0,
       shit: 0,
       ass: 0,
