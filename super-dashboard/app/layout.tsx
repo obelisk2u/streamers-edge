@@ -35,7 +35,6 @@ export default function RootLayout({
         <div className="fixed right-4 top-4 z-50 w-72 space-y-4">
           <Card className="bg-white/90 backdrop-blur">
             <CardContent className="space-y-2 p-4 text-sm">
-              <p className="font-medium">Please help me get a job</p>
               <p className="text-muted-foreground">
                 Star my projects on{" "}
                 <a
