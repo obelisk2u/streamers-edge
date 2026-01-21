@@ -41,6 +41,7 @@ streamers-edge-back/.env
 streamers-edge-back/.env.*
 landing-page/
 streamers-edge-back/
+super-dashboard/node_modules/
 
 # Python cache (global)
 **/__pycache__/
@@ -60,3 +61,4 @@ htmlcov/
 ################################
 .env
 .env.*
+node_modules/

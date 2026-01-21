@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 import { PersistentChat } from "@/components/persistent-chat";
 import { Card, CardContent } from "@/components/ui/card";
@@ -60,6 +61,7 @@ export default function RootLayout({
           <PersistentChat />
         </div>
         {children}
+        <Analytics />
       </body>
     </html>
   );
